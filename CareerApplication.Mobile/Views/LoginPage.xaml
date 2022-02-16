@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CareerApplication.Mobile.Views.LoginPage"
+             Title="LoginPage"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout 
+                Spacing="20" 
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand">
+
+                <Image
+                    Source="logo.png"
+                    WidthRequest="250"
+                    HeightRequest="150"/>
+
+                <VerticalStackLayout Spacing="10">
+                    <Entry
+                        Placeholder="Enter Email Address"
+                        Text="{Binding Email}"
+                        Keyboard="Email"/>
+
+                    <Entry
+                        Placeholder="Enter Password"
+                        Text="{Binding Password}"
+                        IsPassword="True" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="10">
+                    <Button
+                        Text="SIGN IN"
+                        CornerRadius="30"
+                        BackgroundColor="{DynamicResource PrimaryColor}"
+                        Command="{Binding LoginButtonClicked}"/>
+
+                    <Button 
+                        Text="SIGN UP"
+                        TextTransform="Uppercase"
+                        CornerRadius="30"
+                        BorderWidth="1" 
+                        BorderColor="{DynamicResource PrimaryColor}"
+                        TextColor = "{DynamicResource PrimaryColor}"
+                        BackgroundColor = "White"
+                        Command="{Binding GoToRegistrationPageButtonClicked}"/>
+                </VerticalStackLayout>
+
+                <HorizontalStackLayout WidthRequest="250">
+                    <Label
+                        Text="Forgot your password?  "/>
+                    <Button
+                        Text="Reset Password"
+                        BorderWidth="0"
+                        BackgroundColor = "White"
+                        HeightRequest="20"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource SecondaryColor}"
+                        Command="{Binding GoToForgotPasswordPageButtonClicked}"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
