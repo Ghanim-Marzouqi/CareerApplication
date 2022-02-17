@@ -6,7 +6,7 @@ public partial class RegistrationPage : ContentPage
     {
         InitializeComponent();
 
-        BindingContext = new AuthViewModel(Navigation, auth, db);
+        BindingContext = new AuthViewModel(auth, db);
 
         // Remove default Appbar
         NavigationPage.SetHasNavigationBar(this, false);

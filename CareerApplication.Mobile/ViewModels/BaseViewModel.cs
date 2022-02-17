@@ -2,6 +2,8 @@
 
 public class BaseViewModel : INotifyPropertyChanged
 {
+    public INavigation Navigation { get => Application.Current.MainPage.Navigation; }
+
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected void OnPropertyChanged([CallerMemberName] string name = null) =>
@@ -18,4 +20,13 @@ public class BaseViewModel : INotifyPropertyChanged
         Regex regex = new Regex(@"^[79]\d{7}$", RegexOptions.CultureInvariant | RegexOptions.Singleline);
         return regex.IsMatch(email);
     }
+
+    public void StoreData<T>(string key, T value) =>
+        Preferences.Set(key, JsonSerializer.Serialize(value));
+
+    public T GetData<T>(string key) =>
+        JsonSerializer.Deserialize<T>(Preferences.Get(key, null));
+
+    public void RemoveData(string key) =>
+        Preferences.Remove(key);
 }

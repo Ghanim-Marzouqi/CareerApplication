@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CareerApplication.Mobile.Views.RegistrationPage"
              Title="RegistrationPage"
-             BackgroundColor="{DynamicResource BackgroundColor}">
+             BackgroundColor="{DynamicResource LightBackgroundColor}">
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout 
@@ -44,16 +44,15 @@
                     BackgroundColor="{DynamicResource PrimaryColor}"
                     Command="{Binding RegisterButtonClicked}"/>
 
-                <Button 
-                    Text="I have an account already"
+                <Label
+                    Text="I already have an account"
+                    TextColor="{DynamicResource SecondaryColor}"
                     FontAttributes="Bold"
-                    TextTransform="Uppercase"
-                    HeightRequest="20"
-                    BorderWidth="0" 
-                    BorderColor="{DynamicResource PrimaryColor}"
-                    TextColor = "{DynamicResource SecondaryColor}"
-                    BackgroundColor = "White"
-                    Command="{Binding GoToBackButtonClicked}"/>
+                    HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToBackButtonClicked}" />
+                    </Label.GestureRecognizers>
+                </Label>
 
             </VerticalStackLayout>
         </ScrollView>

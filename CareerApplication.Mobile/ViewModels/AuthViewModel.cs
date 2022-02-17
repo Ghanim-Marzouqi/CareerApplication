@@ -1,11 +1,8 @@
-﻿using System.Text.Json.Nodes;
-
-namespace CareerApplication.Mobile.ViewModels;
+﻿namespace CareerApplication.Mobile.ViewModels;
 
 public class AuthViewModel : BaseViewModel
 {
     #region Properties
-    private readonly INavigation _navigation;
     private readonly AuthProvider _auth;
     private readonly DatabaseProvider _db;
 
@@ -63,6 +60,16 @@ public class AuthViewModel : BaseViewModel
             OnPropertyChanged(nameof(ConfirmPassword));
         }
     }
+
+    private bool _rememberMe;
+    public bool RememberMe { 
+        get => _rememberMe; 
+        set 
+        {
+            _rememberMe = value;
+            OnPropertyChanged(nameof(RememberMe));
+        }
+    }
     #endregion
 
     #region Commands
@@ -76,19 +83,28 @@ public class AuthViewModel : BaseViewModel
     #endregion
 
     #region Constructors
-    public AuthViewModel(INavigation navigation, AuthProvider auth, DatabaseProvider db)
+    public AuthViewModel(AuthProvider auth, DatabaseProvider db)
     {
-        _navigation = navigation;
         _auth = auth;
         _db = db;
 
         LoginButtonClicked = new Command(async () => await LoginAsync());
         RegisterButtonClicked = new Command(async () => await RegisterAsync());
         ForgotPasswordButtonClicked = new Command(async () => await ForgetPasswordAsync());
-        GoToRegistrationPageButtonClicked = new Command(async () => await navigation.PushAsync(new RegistrationPage(auth, db)));
-        GoToForgotPasswordPageButtonClicked = new Command(async () => await navigation.PushAsync(new ForgotPasswordPage(auth, db)));
-        GoToHomePageButtonClicked = new Command(async () => await navigation.PushAsync(new HomePage()));
-        GoToBackButtonClicked = new Command(async () => await navigation.PopAsync());
+        GoToRegistrationPageButtonClicked = new Command(async () => await Navigation.PushAsync(new RegistrationPage(auth, db)));
+        GoToForgotPasswordPageButtonClicked = new Command(async () => await Navigation.PushAsync(new ForgotPasswordPage(auth, db)));
+        GoToHomePageButtonClicked = new Command(async () => await Navigation.PushAsync(new HomePage()));
+        GoToBackButtonClicked = new Command(async () => await Navigation.PopAsync());
+
+        // Get credetials if stored
+        var credentails = GetData<LoginModel>("credentials");
+
+        if (credentails != null)
+        {
+            Email = credentails.Email;
+            Password = credentails.Password;
+            RememberMe = credentails.RememberMe;
+        }
     }
     #endregion
 
@@ -120,9 +136,38 @@ public class AuthViewModel : BaseViewModel
 
             if (result != null && result.User != null)
             {
-                // TODO: retrieve user from Firebase Realtime Database and save in shared peferences
+                // Retieve user data from database
+                Func<UserEntity, bool> predicate = (user) => user.Id == result.User.LocalId;
+                Func<FirebaseObject<UserEntity>, UserEntity> selector = (user) =>
+                    new UserEntity
+                    {
+                        Id = user.Object.Id,
+                        Name = user.Object.Name,
+                        Email = user.Object.Email,
+                        Phone = user.Object.Phone,
+                        IsActive = user.Object.IsActive,
+                        CreatedBy = user.Object.CreatedBy,
+                        CreatedAt = user.Object.CreatedAt,
+                        UpdatedBy = user.Object.UpdatedBy,
+                        UpdatedAt = user.Object.UpdatedAt
+                    };
+                var loggedInUser = await _db.GetById(UserEntity.Node, predicate, selector);
+
+                if (loggedInUser == null)
+                {
+                    await Toast.Make("User data not found", ToastDuration.Long).Show();
+                    return;
+                }
+                    
+                StoreData("user", loggedInUser);
+
+                if (RememberMe)
+                    StoreData("credentials", new LoginModel { Email = Email, Password = Password, RememberMe = RememberMe });
+                else
+                    RemoveData("credentials");
+
                 await Toast.Make("Login successfull", ToastDuration.Long).Show();
-                await _navigation.PushAsync(new HomePage());
+                await Navigation.PushAsync(new HomePage());
                 ClearFields();
             }
             else
@@ -205,9 +250,20 @@ public class AuthViewModel : BaseViewModel
 
             if (result != null && result.User != null)
             {
-                var isAdded = await _db.Add("users", new UserEntity
+                Func<UserTypeEntity, bool> predicate = (userType) => userType.Name == "Applicant";
+                Func<FirebaseObject<UserTypeEntity>, UserTypeEntity> selector = (userType) => 
+                    new UserTypeEntity 
+                    { 
+                        Id = userType.Object.Id, 
+                        Name = userType.Object.Name,
+                        CreatedBy = userType.Object.CreatedBy,
+                        CreatedAt = userType.Object.CreatedAt
+                    };
+                var userType = _db.GetById(UserTypeEntity.Node, predicate, selector);
+                var isAdded = await _db.Add(UserEntity.Node, new UserEntity
                 {
                     Id = result.User.LocalId,
+                    UserTypeId = userType.Id,
                     Name = Name,
                     Email = Email,
                     Phone = Phone,
@@ -216,11 +272,13 @@ public class AuthViewModel : BaseViewModel
 
                 if (isAdded)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Alert", "User registered successfully", "OK");
+                    // Send email verification request
+                    await _auth.SendEmailVerification(result.FirebaseToken);
+                    await Application.Current.MainPage.DisplayAlert("Success", "User registered successfully", "OK");
                     ClearFields();
                 }
                 else
-                    await Application.Current.MainPage.DisplayAlert("Alert", "Cannot register user", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Failure", "Cannot register user", "OK");
             }
             else
             {
@@ -258,7 +316,26 @@ public class AuthViewModel : BaseViewModel
             return;
         }
 
-        // TODO: Send reset password request
+        try
+        {
+            await _auth.SendPasswordResetEmail(Email);
+            await Application.Current.MainPage.DisplayAlert("Success", "Reset password request has been sent. Please check your inbox!", "OK");
+            ClearFields();
+        }
+        catch (FirebaseAuthException e)
+        {
+            var json = JsonNode.Parse(e.ResponseData);
+            var code = json["error"]["message"].GetValue<string>();
+
+            if (code != null && code == "EMAIL_NOT_FOUND")
+                await Toast.Make("User not found", ToastDuration.Long).Show();
+            else
+                await Toast.Make("Unknown error", ToastDuration.Long).Show();
+        }
+        catch (Exception)
+        {
+            await Toast.Make("Cannot send password reset request", ToastDuration.Long).Show();
+        }
     }
 
     private void ClearFields()

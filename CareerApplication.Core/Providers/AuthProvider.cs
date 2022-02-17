@@ -25,4 +25,9 @@ public class AuthProvider
     {
         await _firebaseAuth.SendPasswordResetEmailAsync(email);
     }
+
+    public async Task SendEmailVerification(string token)
+    {
+        await _firebaseAuth.SendEmailVerificationAsync(token);
+    }
 }

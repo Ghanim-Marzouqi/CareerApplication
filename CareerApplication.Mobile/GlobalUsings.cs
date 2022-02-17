@@ -1,6 +1,7 @@
 ﻿global using System.ComponentModel;
 global using System.Runtime.CompilerServices;
 global using System.Text.Json;
+global using System.Text.Json.Nodes;
 global using System.Text.RegularExpressions;
 global using System.Windows.Input;
 global using CommunityToolkit.Maui.Alerts;
@@ -10,5 +11,6 @@ global using Firebase.Database;
 global using CareerApplication.Core;
 global using CareerApplication.Core.Entities;
 global using CareerApplication.Core.Providers;
+global using CareerApplication.Mobile.Models;
 global using CareerApplication.Mobile.ViewModels;
 global using CareerApplication.Mobile.Views;
