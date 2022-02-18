@@ -6,7 +6,7 @@ public partial class LoginPage : ContentPage
     {
         InitializeComponent();
 
-        BindingContext = new AuthViewModel(auth, db);
+        BindingContext = new LoginPageViewModel(auth, db);
 
         // Remove default Appbar
         NavigationPage.SetHasNavigationBar(this, false);

@@ -6,7 +6,7 @@
              Title="HomePage"
              BackgroundColor="{DynamicResource LightBackgroundColor}">
     <ContentPage.BindingContext>
-        <viewmodels:HomeViewModel />
+        <viewmodels:HomePageViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
