@@ -147,12 +147,10 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\netstandard.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -168,7 +166,6 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Core.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -179,7 +176,6 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -229,9 +225,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Reactive.dll
@@ -299,7 +293,6 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Web.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Windows.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -909,3 +902,10 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.dll

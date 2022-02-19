@@ -25,7 +25,7 @@ public class ViewModelBase : INotifyPropertyChanged
         Preferences.Set(key, JsonSerializer.Serialize(value));
 
     public T GetData<T>(string key) =>
-        JsonSerializer.Deserialize<T>(Preferences.Get(key, null));
+        JsonSerializer.Deserialize<T>(Preferences.Get(key, string.Empty));
 
     public void RemoveData(string key) =>
         Preferences.Remove(key);

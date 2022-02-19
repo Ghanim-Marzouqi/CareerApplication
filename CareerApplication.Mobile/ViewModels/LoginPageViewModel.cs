@@ -58,15 +58,23 @@ public class LoginPageViewModel : ViewModelBase
         GoToForgotPasswordPageButtonClicked = new Command(async () => await Navigation.PushAsync(new ForgotPasswordPage(auth)));
         GoToHomePageButtonClicked = new Command(async () => await Navigation.PushAsync(new HomePage()));
 
-        // Get credetials if stored
-        var credentails = GetData<LoginModel>("credentials");
-
-        if (credentails != null)
+        try
         {
-            Email = credentails.Email;
-            Password = credentails.Password;
-            RememberMe = credentails.RememberMe;
+            // Get credetials if stored
+            var credentails = GetData<LoginModel>("credentials");
+
+            if (credentails != null)
+            {
+                Email = credentails.Email;
+                Password = credentails.Password;
+                RememberMe = credentails.RememberMe;
+            }
         }
+        catch (Exception)
+        {
+            // TODO: Display error to user
+        }
+        
     }
     #endregion
 
