@@ -7,8 +7,5 @@ public partial class ForgotPasswordPage : ContentPage
         InitializeComponent();
 
         BindingContext = new ForgotPasswordPageViewModel(auth);
-
-        // Remove default Appbar
-        NavigationPage.SetHasNavigationBar(this, false);
     }
 }

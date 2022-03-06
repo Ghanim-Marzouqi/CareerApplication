@@ -602,12 +602,6 @@ C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\CareerApp
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\CareerApplication.Admin.AssemblyInfo.cs
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\CareerApplication.Admin.csproj.CoreCompileInputs.cache
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\CareerApplication.Admin.MvcApplicationPartsAssemblyInfo.cache
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\unwB+2H8.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\amdIdn2U.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\pQy1+kqW.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\FHf9zL+P.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\vDwwSZtl.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\NAChYn3p.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\a4pF9SDF.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\9X2HZSKY.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\AgHl+x2g.gz
@@ -622,9 +616,6 @@ C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\9BDApIZE.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\Kl+PJFQH.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\D+yds9kz.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\BKPA7cnV.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\o044iTZe.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\7MD2Q+FY.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\OOZd9KEs.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\soRCjJ8M.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\4kSH5wh8.gz
@@ -800,7 +791,6 @@ C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\EpIkm95L.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\VTi5pxr1.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\JVxvjJJU.gz
-C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\ND40O+NV.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\blazor.boot.json
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\staticwebassets.build.json
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\staticwebassets.development.json
@@ -813,3 +803,13 @@ C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\CareerApp
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\refint\CareerApplication.Admin.dll
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\CareerApplication.Admin.pdb
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\ref\CareerApplication.Admin.dll
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\CbRBNpyy.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\q+OEPg6r.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\d+pCoRRL.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\8oy+AD2j.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\RDIozVvA.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\rM+bfMu1.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\N42hIOda.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\+jKAZw9n.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\UBSpL4sZ.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\x8Qgb05l.gz

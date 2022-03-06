@@ -39,6 +39,11 @@
         <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.30" />
     </ItemGroup>
     <ItemGroup>
+      <None Remove="Resources\Fonts\MaterialDesignIcons.ttf" />
+      <None Remove="Resources\Images\avatar_placeholder.jpg" />
+      <None Remove="Resources\Images\ic_about.png" />
+      <None Remove="Resources\Images\ic_home.png" />
+      <None Remove="Resources\Images\ic_settings.png" />
       <None Remove="Resources\Images\white_logo.png" />
     </ItemGroup>
     <ItemGroup>
@@ -51,6 +56,17 @@
       <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
       <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
       <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <MauiXaml Update="AppShell.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\AboutPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\SettingsPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
     </ItemGroup>
     <PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
         <OutputType>WinExe</OutputType>

@@ -4,7 +4,7 @@
              xmlns:viewmodels="clr-namespace:CareerApplication.Mobile.ViewModels"
              x:Class="CareerApplication.Mobile.Views.HomePage"
              Title="HomePage"
-             BackgroundColor="{DynamicResource LightBackgroundColor}">
+             BackgroundColor="{DynamicResource BackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:HomePageViewModel />
     </ContentPage.BindingContext>
@@ -17,7 +17,7 @@
                 VerticalOptions="CenterAndExpand">
 
                 <Label 
-                    Text="{Binding User.Name}"
+                    Text="Home Page"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"/>
 

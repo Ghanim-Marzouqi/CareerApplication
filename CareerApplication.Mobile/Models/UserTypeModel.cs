@@ -1,5 +1,5 @@
 ﻿namespace CareerApplication.Mobile.Models;
 
-public class UserTypeModel : UserTypeEntity
+public class UserTypeModel : RoleEntity
 {
 }

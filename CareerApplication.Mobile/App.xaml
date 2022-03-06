@@ -8,8 +8,7 @@
         <ResourceDictionary>
             <Color x:Key="PrimaryColor">#F37422</Color>
             <Color x:Key="SecondaryColor">#046FAD</Color>
-            <Color x:Key="DarkBackgroundColor">#046FAD</Color>
-            <Color x:Key="LightBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="BackgroundColor">#FFFFFF</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

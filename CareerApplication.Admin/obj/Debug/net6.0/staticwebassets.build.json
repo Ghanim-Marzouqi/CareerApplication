@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "60W71cNtGx8pT4O2ds83JL03V/syD1eVxvmyi58EyF8=",
+  "Hash": "Pgt1EclWEwoJlhaf5mwhvaydjsesMJp6mS7PXLouX4o=",
   "Source": "CareerApplication.Admin",
   "BasePath": "/",
   "Mode": "Root",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.1\\build\\net6.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.2\\build\\net6.0\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\CareerApplication.Admin.dll",
@@ -218,7 +218,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -235,7 +235,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -252,7 +252,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -286,7 +286,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
@@ -303,7 +303,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -575,7 +575,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.jsinterop\\6.0.1\\lib\\net6.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.jsinterop\\6.0.2\\lib\\net6.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -592,7 +592,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.1\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.2\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -1544,7 +1544,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\system.io.pipelines\\6.0.1\\lib\\net6.0\\System.IO.Pipelines.dll"
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\system.io.pipelines\\6.0.2\\lib\\net6.0\\System.IO.Pipelines.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll",
@@ -3502,6 +3502,23 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.AccessControl.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\+jKAZw9n.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\+S44Mqjd.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -4063,23 +4080,6 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Debug.dll"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\7MD2Q+FY.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\7qOzUisH.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -4146,6 +4146,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Dynamic.Runtime.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\8oy+AD2j.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\8UZ9L1BX.gz",
@@ -4301,23 +4318,6 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\amdIdn2U.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\aQ2IKxD0.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -4454,23 +4454,6 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Extensions.dll"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\BKPA7cnV.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\bL1dQzFC.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -4556,6 +4539,23 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Contracts.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\CbRBNpyy.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\cd1JV8U9.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -4588,6 +4588,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\d+pCoRRL.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\D+yds9kz.gz",
@@ -4724,23 +4741,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Immutable.dll"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\FHf9zL+P.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\fJ5dcZsL.gz",
@@ -5423,6 +5423,23 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\N42hIOda.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\N4k8Ebw+.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -5438,40 +5455,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.dll"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\NAChYn3p.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\ND40O+NV.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\NdklnHtx.gz",
@@ -5591,23 +5574,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.IsolatedStorage.dll"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\o044iTZe.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\oHMPNetx.gz",
@@ -5814,23 +5780,6 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.Linq.dll"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\pQy1+kqW.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\pw6rHilf.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -5846,6 +5795,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Timer.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\q+OEPg6r.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\q5RDbFKt.gz",
@@ -5950,6 +5916,23 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Formats.Asn1.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\RDIozVvA.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\RDUMPlBf.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -5999,6 +5982,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Extensions.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\rM+bfMu1.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\rqo0HMAc.gz",
@@ -6273,6 +6273,23 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebClient.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\UBSpL4sZ.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\uD4SbbxB.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -6288,23 +6305,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.dll"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\unwB+2H8.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\UyQJKKqL.gz",
@@ -6356,23 +6356,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.dll"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\vDwwSZtl.gz",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\VfLhfEwL.gz",
@@ -6560,6 +6543,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.Vectors.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\x8Qgb05l.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\XdEaAfqw.gz",

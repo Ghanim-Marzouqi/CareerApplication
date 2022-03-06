@@ -136,20 +136,20 @@ public class RegistrationPageViewModel : ViewModelBase
 
             if (result != null && result.User != null)
             {
-                Func<UserTypeEntity, bool> predicate = (userType) => userType.Name == "Applicant";
-                Func<FirebaseObject<UserTypeEntity>, UserTypeEntity> selector = (userType) =>
-                    new UserTypeEntity
+                Func<RoleEntity, bool> predicate = (userType) => userType.Name == "Applicant";
+                Func<FirebaseObject<RoleEntity>, RoleEntity> selector = (role) =>
+                    new RoleEntity
                     {
-                        Id = userType.Object.Id,
-                        Name = userType.Object.Name,
-                        CreatedBy = userType.Object.CreatedBy,
-                        CreatedAt = userType.Object.CreatedAt
+                        Id = role.Object.Id,
+                        Name = role.Object.Name,
+                        CreatedBy = role.Object.CreatedBy,
+                        CreatedAt = role.Object.CreatedAt
                     };
-                var userType = _db.GetById(UserTypeEntity.Node, predicate, selector);
+                var role = _db.GetById(RoleEntity.Node, predicate, selector);
                 var isAdded = await _db.Add(UserEntity.Node, new UserEntity
                 {
                     Id = result.User.LocalId,
-                    UserTypeId = userType.Id,
+                    RoleId = role.Id,
                     Name = Name,
                     Email = Email,
                     Phone = Phone,
@@ -187,6 +187,7 @@ public class RegistrationPageViewModel : ViewModelBase
         }
 
     }
+
     private void ClearFields()
     {
         Name = string.Empty;
