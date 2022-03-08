@@ -1,0 +1,15 @@
+﻿global using System.ComponentModel.DataAnnotations;
+global using System.Text.Json;
+global using System.Text.Json.Nodes;
+global using Microsoft.JSInterop;
+global using Microsoft.AspNetCore.Components.Web;
+global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+global using MudBlazor;
+global using MudBlazor.Services;
+global using Firebase.Auth;
+global using Firebase.Database;
+global using CareerApplication.Core;
+global using CareerApplication.Core.Entities;
+global using CareerApplication.Core.Providers;
+global using CareerApplication.Admin;
+global using CareerApplication.Admin.Services;

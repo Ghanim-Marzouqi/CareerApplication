@@ -1,7 +1,6 @@
-﻿namespace CareerApplication.Mobile.Models
+﻿namespace CareerApplication.Mobile.Models;
+
+public class UserModel : UserEntity
 {
-    public class UserModel : UserEntity
-    {
-        public UserTypeModel UserType { get; set; }
-    }
+    public RoleModel Role { get; set; }
 }

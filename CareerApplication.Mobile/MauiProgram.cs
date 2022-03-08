@@ -17,13 +17,8 @@ public static class MauiProgram
                 fonts.AddFont("MaterialDesignIcons.ttf", "IconFontTypes");
             });
 
-        builder.Services.AddSingleton(_ => new AuthProvider(
-            new FirebaseAuthProvider(firebaseApiKey)
-        ));
-
-        builder.Services.AddSingleton(_ => new DatabaseProvider(
-            new FirebaseClient(firebaseSettings.RealtimeDatabaseUrl)
-        ));
+        builder.Services.AddSingleton(_ => new AuthProvider(new FirebaseAuthProvider(firebaseApiKey)));
+        builder.Services.AddSingleton(_ => new DatabaseProvider(new FirebaseClient(firebaseSettings.RealtimeDatabaseUrl)));
 
         return builder.Build();
     }
