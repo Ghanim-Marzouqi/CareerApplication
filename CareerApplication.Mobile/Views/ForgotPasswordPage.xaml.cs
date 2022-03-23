@@ -7,5 +7,7 @@ public partial class ForgotPasswordPage : ContentPage
         InitializeComponent();
 
         BindingContext = new ForgotPasswordPageViewModel(auth);
+
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 }

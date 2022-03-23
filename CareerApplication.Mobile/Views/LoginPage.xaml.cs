@@ -7,5 +7,7 @@ public partial class LoginPage : ContentPage
         InitializeComponent();
 
         BindingContext = new LoginPageViewModel(auth, db);
+
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 }

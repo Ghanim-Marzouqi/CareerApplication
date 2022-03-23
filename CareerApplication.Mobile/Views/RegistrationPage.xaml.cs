@@ -7,5 +7,7 @@ public partial class RegistrationPage : ContentPage
         InitializeComponent();
 
         BindingContext = new RegistrationPageViewModel(auth, db);
+
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 }

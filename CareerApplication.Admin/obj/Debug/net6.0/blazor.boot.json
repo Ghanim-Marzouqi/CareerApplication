@@ -208,14 +208,14 @@
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
       "CareerApplication.Core.dll": "sha256-0\/zS1R58HD4c5ESDqNg4uCuz738KCMerzHjkm+0KBXA=",
-      "CareerApplication.Admin.dll": "sha256-w+rglqUfWooQsjIYo0PpGw6FxeeJQ+H+4xaoz24DliU="
+      "CareerApplication.Admin.dll": "sha256-ShugIhXI8YIuRhCPUNTuFqIS0hblR4I+ZfqrtHRABaI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "CareerApplication.Core.pdb": "sha256-tyrmnu9MUQwv67\/4R5dR9yNriWhc8bDmKzSY8poADY4=",
-      "CareerApplication.Admin.pdb": "sha256-7fikr9UqBggzvpML5s883m6zS6x5eOy9CVL70JHHBu8="
+      "CareerApplication.Admin.pdb": "sha256-P7xFnkAow8p5IZyijYS07aoH6I74w3JeVkyoKnAa2QM="
     },
     "runtime": {
       "dotnet.6.0.3.k4rg04dpep.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",
