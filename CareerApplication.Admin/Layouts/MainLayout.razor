@@ -1,24 +1,40 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager _navigationManager
+@inject IBrowserStorageService _browserService
 
-<MudThemeProvider />
+<MudThemeProvider Theme="_themeManager.Theme" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar Elevation="0">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudSpacer />
-        <MudIconButton Icon="@Icons.Custom.Brands.MudBlazor" Color="Color.Inherit" Link="https://mudblazor.com/" Target="_blank" />
-        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor/" Target="_blank" />
+    <MudAppBar Elevation="_themeManager.AppBarElevation">
+        <MudHidden Breakpoint="Breakpoint.MdAndUp">
+            <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@(e => DrawerToggle())"/>
+        </MudHidden>
+        <MudText Typo="Typo.subtitle2">Career Application</MudText>
+        <MudSpacer/>
+        <MudMenu Direction="Direction.Left" OffsetX="true" Dense="true" Class="mt-1 ml-4">
+            <ActivatorContent>
+                <MudAvatar Image="images/avatar.jpeg"/>
+            </ActivatorContent>
+            <ChildContent>
+                <PersonCard Class="mt-n2"/>
+                <MudDivider Class="mb-2"/>
+                <MudListItem Text="Profile" Icon="@Icons.Material.Outlined.Person" Href="@(GetProfileLink(_user))"/>
+                <MudListItem Text="Logout" Icon="@Icons.Material.Outlined.Login" OnClick="Logout"/>
+            </ChildContent>
+        </MudMenu>
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
-        <MudDrawerHeader>
-            <MudText Typo="Typo.h6">Career Application</MudText>
-        </MudDrawerHeader>
-        <NavMenu />
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="_themeManager.DrawerElevation" ClipMode="_themeManager.DrawerClipMode">
+        <NavMenu/>
     </MudDrawer>
     <MudMainContent>
-        <MudContainer MaxWidth="MaxWidth.Large" Class="my-16 pt-16">
+        <MudHidden Breakpoint="Breakpoint.SmAndDown">
+            <MudToolBar DisableGutters="true">
+                <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@(e => DrawerToggle())" Class="ml-3"/>
+            </MudToolBar>
+        </MudHidden>
+        <MudContainer MaxWidth="MaxWidth.False" Class="mt-4">
             @Body
         </MudContainer>
     </MudMainContent>
@@ -26,8 +42,59 @@
 
 @code {
     // Properties
-    bool _drawerOpen = true;
+    private readonly ThemeManagerTheme _themeManager = new();
+    private UserModel _user = new();
+    private bool _drawerOpen = true;
+
+    // Lifecycle Methods
+    protected override void OnInitialized()
+    {
+        _themeManager.Theme = new ApplicationTheme();
+        _themeManager.DrawerClipMode = DrawerClipMode.Always;
+        _themeManager.FontFamily = "Open Sans";
+        _themeManager.DefaultBorderRadius = 3;
+        _themeManager.AppBarElevation = 4;
+        _themeManager.DrawerElevation = 25;
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var user = await _browserService.GetItem<UserModel>("user");
+
+        if (user == null)
+        {
+            _navigationManager.NavigateTo("/");
+        }
+        else
+            _user = user;
+    }
 
     // Private Methods
-    void DrawerToggle() => _drawerOpen = !_drawerOpen;
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private string GetProfileLink(UserModel user)
+    {
+        if (user == null)
+            return string.Empty;
+
+        if (user.RoleId == 2)
+            return "/company/profile";
+        else if (user.RoleId == 3)
+            return "/admin/profile";
+        else
+            return string.Empty;
+    }
+
+    private async void Logout()
+    {
+        // Remove user from session storage
+        await _browserService.RemoveItem("user");
+
+        // Redirect to login page
+        _navigationManager.NavigateTo("/", replace: true);
+    }
 }

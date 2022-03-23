@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Projects/CareerApplication/CareerApplication.Admin/Components/Dialogs/AddOrEditJobDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dzXEFkZE9yRWRpdEpvYkRpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projects/CareerApplication/CareerApplication.Admin/Components/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,20 +42,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xNYWluTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Admin/HomePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSG9tZVBhZ2UucmF6b3I=
+[C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Admin/DashboardPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Admin/ProfilePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Company/HomePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxIb21lUGFnZS5yYXpvcg==
+[C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Company/DashboardPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxEYXNoYm9hcmRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Company/PostedJobsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxQb3N0ZWRKb2JzUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/CareerApplication/CareerApplication.Admin/Pages/Company/ProfilePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxQcm9maWxlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/CareerApplication/CareerApplication.Admin/Pages/ForgotPasswordPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmRQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/CareerApplication/CareerApplication.Admin/Pages/LoginPage.razor]

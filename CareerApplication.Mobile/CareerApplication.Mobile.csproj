@@ -2,7 +2,6 @@
     <PropertyGroup>
         <!-- Android, iOS, MacCatalyst -->
         <TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net6.0-windows10.0.19041</TargetFrameworks>
         <OutputType>Exe</OutputType>
         <UseMaui>true</UseMaui>
         <SingleProject>true</SingleProject>
@@ -20,8 +19,6 @@
         <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-ios'">14.2</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-maccatalyst'">14.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
-        <SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
-        <TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
     </PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -33,11 +30,6 @@
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 	</ItemGroup>
-    <ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
-        <!-- Required - WinUI does not yet have buildTransitive for everything -->
-        <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
-        <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.30" />
-    </ItemGroup>
     <ItemGroup>
       <None Remove="Resources\Fonts\MaterialDesignIcons.ttf" />
       <None Remove="Resources\Images\avatar_placeholder.jpg" />
@@ -68,8 +60,5 @@
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
     </ItemGroup>
-    <PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
-        <OutputType>WinExe</OutputType>
-        <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
-    </PropertyGroup>
+    <ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionCareerApplicationMobileHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 </Project>

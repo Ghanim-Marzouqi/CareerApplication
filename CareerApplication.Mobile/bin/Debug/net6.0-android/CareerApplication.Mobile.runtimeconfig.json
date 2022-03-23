@@ -4,11 +4,11 @@
     "frameworks": [
       {
         "name": "Microsoft.NETCore.App",
-        "version": "6.0.0"
+        "version": "6.0.3"
       },
       {
         "name": "Microsoft.Android",
-        "version": ""
+        "version": "**FromWorkload**"
       },
       {
         "name": "Microsoft.Maui.Core",
@@ -24,8 +24,10 @@
       }
     ],
     "configProperties": {
+      "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability": true,
       "System.AggressiveAttributeTrimming": true,
       "System.Diagnostics.Tracing.EventSource.IsSupported": false,
+      "System.Globalization.Invariant": false,
       "System.Net.Http.EnableActivityPropagation": false,
       "System.Net.Http.UseNativeHttpHandler": true,
       "System.Reflection.NullabilityInfoContext.IsSupported": false,

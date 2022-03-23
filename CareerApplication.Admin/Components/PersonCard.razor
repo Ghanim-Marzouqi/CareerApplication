@@ -1,4 +1,4 @@
-﻿@inject IBrowserStorageService browserStorageService
+﻿@inject IBrowserStorageService _browserStorageService
 
 <MudCard Elevation="0" Square="true" Class="@Class" Style="@Style">
     <MudCardHeader>
@@ -24,7 +24,7 @@
     // Lifecycle Methods
     protected override async Task OnInitializedAsync()
     {
-        var user = await browserStorageService.GetItem<UserModel>("user");
+        var user = await _browserStorageService.GetItem<UserModel>("user");
 
         if (user != null) loggedInUser = user;
     }

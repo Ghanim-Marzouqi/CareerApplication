@@ -15,13 +15,13 @@ public final class R {
 	public static final class id {
 		public static final int action0 = 0x7f080030;
 		public static final int action_divider = 0x7f08003d;
-		public static final int cancel_action = 0x7f08006d;
-		public static final int chronometer = 0x7f08007c;
-		public static final int end_padder = 0x7f0800b7;
-		public static final int icon = 0x7f0800da;
-		public static final int info = 0x7f0800e2;
-		public static final int line1 = 0x7f0800ee;
-		public static final int line3 = 0x7f0800ef;
+		public static final int cancel_action = 0x7f08006c;
+		public static final int chronometer = 0x7f08007b;
+		public static final int end_padder = 0x7f0800b6;
+		public static final int icon = 0x7f0800d9;
+		public static final int info = 0x7f0800e1;
+		public static final int line1 = 0x7f0800ed;
+		public static final int line3 = 0x7f0800ee;
 		public static final int media_actions = 0x7f08010d;
 		public static final int media_controller_compat_view_tag = 0x7f08010e;
 		public static final int notification_main_column = 0x7f080147;

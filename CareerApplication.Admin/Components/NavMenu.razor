@@ -1,5 +1,35 @@
-﻿<MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
-    <MudNavLink Href="/counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
-    <MudNavLink Href="/fetchdata" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Fetch data</MudNavLink>
+﻿@inject IBrowserStorageService _browserService
+@inject NavigationManager _navigationManager
+
+<div class="d-flex flex-row justify-center mud-width-full">
+    <img src="/images/appicon.png" alt="Logo" width="150">
+</div>
+<MudDivider Class="mb-4"/>
+<MudNavMenu Color="Color.Primary" Bordered="true">
+    @if (_user.RoleId == 2)
+    {
+        <MudNavLink Href="/company/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard</MudNavLink>
+        <MudNavLink Href="/company/posted-jobs" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Assignment">Posted Jobs</MudNavLink>
+    }
+    else if (_user.RoleId == 3)
+    {
+        <MudNavLink Href="/admin/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard</MudNavLink>
+        <MudNavLink Href="/admin/users" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Groups">Users</MudNavLink>
+    }
 </MudNavMenu>
+
+@code {
+    // Properties
+    private UserModel _user = new();
+
+    // Lifecycle Methods
+    protected override async Task OnInitializedAsync()
+    {
+        var user = await _browserService.GetItem<UserModel>("user");
+
+        if (user == null)
+            _navigationManager.NavigateTo(_navigationManager.BaseUri, replace: true);
+        else
+            _user = user;
+    }
+}

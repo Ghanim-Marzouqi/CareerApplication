@@ -4,7 +4,7 @@
     "includedFrameworks": [
       {
         "name": "Microsoft.NETCore.App",
-        "version": "6.0.2-mauipre.1.22102.15"
+        "version": "6.0.3"
       },
       {
         "name": "Microsoft.Maui.Core",
@@ -24,6 +24,7 @@
       }
     ],
     "configProperties": {
+      "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability": true,
       "System.AggressiveAttributeTrimming": true,
       "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization": false,
       "System.Diagnostics.Debugger.IsSupported": true,

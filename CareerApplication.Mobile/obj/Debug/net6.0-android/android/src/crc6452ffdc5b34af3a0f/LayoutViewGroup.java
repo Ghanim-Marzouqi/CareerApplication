@@ -10,6 +10,7 @@ public class LayoutViewGroup
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_dispatchTouchEvent:(Landroid/view/MotionEvent;)Z:GetDispatchTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"";
@@ -47,6 +48,14 @@ public class LayoutViewGroup
 		if (getClass () == LayoutViewGroup.class)
 			mono.android.TypeManager.Activate ("Microsoft.Maui.Platform.LayoutViewGroup, Microsoft.Maui", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, System.Private.CoreLib:System.Int32, System.Private.CoreLib", this, new java.lang.Object[] { p0, p1, p2, p3 });
 	}
+
+
+	public boolean dispatchTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_dispatchTouchEvent (p0);
+	}
+
+	private native boolean n_dispatchTouchEvent (android.view.MotionEvent p0);
 
 
 	public void onMeasure (int p0, int p1)

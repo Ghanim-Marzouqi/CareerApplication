@@ -16,14 +16,14 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64192d9de59b079c6d.BatteryBroadcastReceiver" />
-    <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64192d9de59b079c6d.EnergySaverBroadcastReceiver" />
-    <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="crc64192d9de59b079c6d.ConnectivityBroadcastReceiver" />
     <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="crc64192d9de59b079c6d.IntermediateActivity" />
     <provider android:authorities="com.companyname.CareerApplication.Mobile.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="microsoft.maui.essentials.fileProvider">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/microsoft_maui_essentials_fileprovider_file_paths" />
     </provider>
-    <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="crc64192d9de59b079c6d.WebAuthenticatorIntermediateActivity" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64e8b56ba282b0b4c3.BatteryBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64e8b56ba282b0b4c3.EnergySaverBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="crc64e8b56ba282b0b4c3.ConnectivityBroadcastReceiver" />
+    <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="crc64e8b56ba282b0b4c3.WebAuthenticatorIntermediateActivity" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.CareerApplication.Mobile.mono.MonoRuntimeProvider.__mono_init__" />
   </application>

@@ -1,0 +1,64 @@
+﻿<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
+    <MudDialog>
+        <DialogContent>
+            <DataAnnotationsValidator />
+            @if (_alert.IsVisible)
+            {
+                <MudAlert Severity="_alert.AlertType">@(_alert.Message)</MudAlert>
+            }
+            <MudTextField 
+                T="string" 
+                @bind-Value="@_model.Title" 
+                For="@(() => _model.Title)" 
+                Label="Job Title" 
+                Class="my-6" 
+                Variant="Variant.Outlined" />
+            <MudSelect T="int" @bind-Value="_model.Category" Label="Job Category" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem T="int" Value="0">- Select Job Category -</MudSelectItem>
+                <MudSelectItem T="int" Value="1">Information Technology</MudSelectItem>
+                <MudSelectItem T="int" Value="2">Finance</MudSelectItem>
+                <MudSelectItem T="int" Value="3">Human Resources</MudSelectItem>
+            </MudSelect>
+            <MudTextField 
+                T="string" 
+                @bind-Value="@_model.Description" 
+                For="@(() => _model.Description)" 
+                Label="Job Description" 
+                Lines="3"
+                Class="my-6" 
+                Variant="Variant.Outlined" />
+            <MudTextField 
+                T="string" 
+                @bind-Value="@_model.Responsibilities" 
+                For="@(() => _model.Responsibilities)" 
+                Label="Applicant Responsibilities" 
+                Lines="3"
+                Class="my-6" 
+                Variant="Variant.Outlined" />
+            <MudTextField 
+                T="string" 
+                @bind-Value="@_model.Qualifications" 
+                For="@(() => _model.Qualifications)" 
+                Label="Applicant Qualifications" 
+                Lines="3"
+                Class="my-6" 
+                Variant="Variant.Outlined" />
+        </DialogContent>
+        <DialogActions>
+            <MudButton OnClick="Cancel">Cancel</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Color="Color.Primary">Add</MudButton>
+        </DialogActions>
+    </MudDialog>
+</EditForm>
+
+@code {
+    // Private Methods
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; } = new MudDialogInstance();
+    private JobFormModel _model = new();
+    private AlertModel _alert = new();
+
+    // Private Methods
+    void Cancel() => MudDialog.Cancel();
+
+    private void OnValidSubmit() => MudDialog.Close(DialogResult.Ok(true));
+}

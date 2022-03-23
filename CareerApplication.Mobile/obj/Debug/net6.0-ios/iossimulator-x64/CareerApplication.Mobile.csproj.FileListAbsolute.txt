@@ -189,7 +189,6 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\ioss
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Controls.Xaml.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Controls.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Essentials.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Xamarin.iOS.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\System.Private.CoreLib.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\icudt.dat
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\icudt_CJK.dat
@@ -290,3 +289,4 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\ioss
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\CareerApplication.Mobile.genruntimeconfig.cache
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\ref\CareerApplication.Mobile.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\build-signature\signature
+C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.iOS.dll

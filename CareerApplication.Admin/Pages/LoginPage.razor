@@ -25,12 +25,13 @@
         @bind-Value="@_model.Password" 
         For="@(() => _model.Password)" 
         Label="Password"
+        Class="my-6"
         InputType="@_passwordInput" 
         Variant="Variant.Outlined" 
         Adornment="Adornment.End"
         AdornmentIcon="@_passwordInputIcon" 
         OnAdornmentClick="TogglePasswordVisibility" />
-    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="ml-n1 my-3">
+    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="ml-n1 mt-3">
         @if (_isLoading)
         {
             <MudProgressCircular Color="Color.Tertiary" Size="Size.Small" Style="margin-left: 10px;" Indeterminate="true" />
@@ -39,6 +40,9 @@
         {
             @("Sign In")
         }
+    </MudButton>
+    <MudButton Link="/forgot-password" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="ml-n1 my-3">
+        Forgot Password
     </MudButton>
 </EditForm>
 
@@ -85,6 +89,7 @@
                     new UserEntity
                     {
                         Id = user.Object.Id,
+                        RoleId = user.Object.RoleId,
                         Name = user.Object.Name,
                         Email = user.Object.Email,
                         Phone = user.Object.Phone,
@@ -116,9 +121,9 @@
                 StateHasChanged();
 
                 if (loggedInUser.RoleId == 3)
-                    _navigationManager.NavigateTo("/admin/home");
+                    _navigationManager.NavigateTo("/admin/dashboard");
                 else if (loggedInUser.RoleId == 2)
-                    _navigationManager.NavigateTo("/company/home");
+                    _navigationManager.NavigateTo("/company/dashboard");
                 else
                 {
                     _isLoading = false;
