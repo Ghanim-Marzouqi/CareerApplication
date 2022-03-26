@@ -1,7 +1,34 @@
 ﻿@page "/company/profile"
+@inject IBrowserStorageService _browserStorageService
 
 <PageTitle>Career Application | Profile</PageTitle>
 
 <MudText Typo="Typo.h5" Color="Color.Secondary" Class="mb-4">
     <strong>Company Profile</strong>
 </MudText>
+
+<MudPaper>
+    <MudList>
+        <MudListItem Text="@(_user.Name)" Icon="@Icons.Material.Filled.Person" />
+        <MudListItem Text="@(_user.Email)" Icon="@Icons.Material.Filled.Email" />
+        <MudListItem Text="@(_user.Phone)" Icon="@Icons.Material.Filled.Phone" />
+        <MudListItem Text="@(_user.Role?.Name)" Icon="@Icons.Material.Filled.AccountTree" />
+    </MudList>
+</MudPaper>
+
+@code {
+    // Properties
+    UserModel _user = new();
+
+    // Lifecycle Methods
+    protected override async Task OnInitializedAsync()
+    {
+        var user = await _browserStorageService.GetItem<UserModel>("user");
+
+        if (user != null)
+        {
+            _user = user;
+            StateHasChanged();
+        }
+    }
+}

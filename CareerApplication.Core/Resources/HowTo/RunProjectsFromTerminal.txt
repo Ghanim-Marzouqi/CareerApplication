@@ -1,0 +1,29 @@
+﻿=============================================================
+************ How To Run Project From Terminal ***************
+=============================================================
+1. Admin:
+	- From top menu in visual studio, click on "Tools", then
+      "Command Line", and "Developer PowerShell"
+	- Once the solution path loaded, navigate to admin project:
+
+	  > cd CareerApplication.Admin
+	  > dotnet watch run
+
+
+2. Mobile:
+	- First, make sure a connectd device is running: emulator,
+	  simulator or real phone 
+	- From top menu in visual studio, click on "Tools", then
+      "Command Line", and "Developer PowerShell"
+	- Once the solution path loaded, navigate to mobile project:
+		
+	  > cd CareerApplication.Mobile
+
+	  a. Android
+	  > dotnet build -t:Run -f net6.0-android
+
+	  b. iOS
+      > dotnet build -t:Run -f net6.0-ios
+
+	  c. Mac Catalyst
+	  > dotnet build -t:Run -f net6.0-maccatalyst

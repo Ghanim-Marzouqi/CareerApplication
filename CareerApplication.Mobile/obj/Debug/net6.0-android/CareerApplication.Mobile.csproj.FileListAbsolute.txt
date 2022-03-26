@@ -909,3 +909,5 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\AutoMapper.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

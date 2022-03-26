@@ -193,14 +193,14 @@ MonoLibrary=C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Runtime.Mono.mac
 MonoLibrary=C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Runtime.Mono.maccatalyst-x64\6.0.3\runtimes\maccatalyst-x64\native\libmonosgen-2.0.dylib
 				MtouchFloat32=
 				Optimize=
-				PartialStaticRegistrarLibrary=C:\Program Files\dotnet\packs\Microsoft.MacCatalyst.Runtime.maccatalyst-x64\15.2.302-preview.14.117/runtimes/maccatalyst-x64/native/Microsoft.MacCatalyst.registrar.a
+				PartialStaticRegistrarLibrary=C:\Program Files\dotnet\packs\Microsoft.MacCatalyst.Runtime.maccatalyst-x64\15.2.302-preview.14.122/runtimes/maccatalyst-x64/native/Microsoft.MacCatalyst.registrar.a
 				Platform=MacCatalyst
 				PlatformAssembly=Microsoft.MacCatalyst.dll
 				RelativeAppBundlePath=..\CareerApplication.Mobile.app\
 				Registrar=
 				RuntimeConfigurationFile=runtimeconfig.bin
 				SdkDevPath=
-				SdkRootDirectory=C:\Program Files\dotnet\packs\Microsoft.MacCatalyst.Sdk\15.2.302-preview.14.117\
+				SdkRootDirectory=C:\Program Files\dotnet\packs\Microsoft.MacCatalyst.Sdk\15.2.302-preview.14.122\
 				SdkVersion=
 				TargetArchitectures=x86_64
 				TargetFramework=.NETCoreApp,Version=v6.0,Profile=maccatalyst

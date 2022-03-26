@@ -42,6 +42,8 @@
       <ProjectReference Include="..\CareerApplication.Core\CareerApplication.Core.csproj" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="11.0.1" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
       <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-pre7" />
       <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.0.0-pre7" />
       <PackageReference Include="CommunityToolkit.Maui.Markup" Version="1.0.0-pre5" />
@@ -54,6 +56,15 @@
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
       <MauiXaml Update="Views\AboutPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\PostedJobDetailsPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\PostedJobsPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\ProfilePage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
       <MauiXaml Update="Views\SettingsPage.xaml">

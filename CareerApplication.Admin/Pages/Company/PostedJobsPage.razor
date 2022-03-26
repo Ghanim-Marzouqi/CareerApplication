@@ -1,5 +1,8 @@
 ﻿@page "/company/posted-jobs"
+@inject DatabaseProvider _db
 @inject IDialogService _dialogService
+@inject IMapper _mapper
+@inject ISnackbar _snackbar
 
 <PageTitle>Career Application | Posted Jobs</PageTitle>
 
@@ -27,7 +30,7 @@
     <RowTemplate>
         <MudTd DataLabel="Title">@context.Title</MudTd>
         <MudTd DataLabel="Job Category">@context.JobCategory?.Name</MudTd>
-        <MudTd DataLabel="Applying Due Date">@context.ApplicationDueDate.ToString("dd MMM yyyy")</MudTd>
+        <MudTd DataLabel="Applying Due Date">@context.ApplicationDueDate</MudTd>
         <MudTd DataLabel="View">
             <MudIconButton Icon="@Icons.Material.Filled.Visibility" Color="Color.Success" Class="px-1"></MudIconButton>
         </MudTd>
@@ -49,58 +52,43 @@
     private string _searchString = string.Empty;
 
     // Lifecycle Methods
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        _jobs = new List<JobModel>
-        {
-            new JobModel
-            {
-                Id = "1",
-                Title = "Senior Software Developer",
-                JobCategory = new JobCategoryModel
-                {
-                    Id = "1",
-                    Name = "Information Technology"
-                },
-                ApplicationDueDate = new DateTime(2022, 4, 5)
-            },
-            new JobModel
-            {
-                Id = "1",
-                Title = "Accountant",
-                JobCategory = new JobCategoryModel
-                {
-                    Id = "1",
-                    Name = "Finance"
-                },
-                ApplicationDueDate = new DateTime(2022, 3, 29)
-            },
-            new JobModel
-            {
-                Id = "1",
-                Title = "HR Manager",
-                JobCategory = new JobCategoryModel
-                {
-                    Id = "1",
-                    Name = "Human Resources"
-                },
-                ApplicationDueDate = new DateTime(2022, 4, 15)
-            },
-            new JobModel
-            {
-                Id = "1",
-                Title = "System Architect",
-                JobCategory = new JobCategoryModel
-                {
-                    Id = "1",
-                    Name = "Information Technology"
-                },
-                ApplicationDueDate = new DateTime(2022, 4, 10)
-            }
-        };
+        await GetPostedJobsAsync();
     }
 
     // Private Methods
+    private async Task GetPostedJobsAsync()
+    {
+        try
+        {
+            Func<FirebaseObject<JobEntity>, JobEntity> selector = (job) => _mapper.Map<JobEntity>(job.Object);
+
+            var jobs = await _db.GetAll<JobEntity>(JobEntity.Node, selector);
+
+            if (jobs != null && jobs.Count() > 0)
+            {
+                _jobs = jobs.Select(job => _mapper.Map<JobModel>(job)).ToList();
+
+                foreach (var job in _jobs)
+                {
+                    Func<JobCategoryEntity, bool> jobCategpryPredicate = (jc) => jc.Id == job.JobCategoryId;
+                    Func<FirebaseObject<JobCategoryEntity>, JobCategoryEntity> jobCategprySelector = (jc) => _mapper.Map<JobCategoryEntity>(jc.Object);
+
+                    var jobCategory = await _db.GetById<JobCategoryEntity>(JobCategoryEntity.Node, jobCategpryPredicate, jobCategprySelector);
+                    _jobs.Where(j => j.Id == job.Id).First().JobCategory = _mapper.Map<JobCategoryModel>(jobCategory);
+                }
+            }
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            _snackbar.Add("Cannot fetch posted jobs", Severity.Error);
+        }
+
+    }
+
     private bool FilterJobs(JobModel job) => FilterFunc(job, _searchString);
 
     private bool FilterFunc(JobModel job, string searchString)
@@ -109,15 +97,32 @@
             return true;
         if (job.Title.Contains(searchString, StringComparison.OrdinalIgnoreCase))
             return true;
-        if (job.ApplicationDueDate.ToString("dd MMM yyyy").Contains(searchString))
+        if (job.ApplicationDueDate.Contains(searchString))
             return true;
         return false;
     }
 
     private async void OpenAddJobDialog()
     {
+        var parameters = new DialogParameters { ["Type"] = "Add" };
         var options = new DialogOptions { CloseOnEscapeKey = true, FullWidth = true, MaxWidth = MaxWidth.Medium };
-        var dialog = _dialogService.Show<AddOrEditJobDialog>("Add New Job", options);
+        var dialog = _dialogService.Show<AddOrEditJobDialog>("Add New Job", parameters, options);
         var result = await dialog.Result;
+
+        if (!result.Cancelled)
+        {
+            var isModified = (bool) result.Data;
+
+            if (isModified)
+            {
+                _snackbar.Add("Operation done successfully", Severity.Success);
+                await GetPostedJobsAsync();
+                StateHasChanged();
+            }
+            else
+            {
+                _snackbar.Add("An error has occurred", Severity.Success);
+            }
+        }
     }
 }

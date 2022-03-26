@@ -1,4 +1,9 @@
-﻿<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
+﻿@inject DatabaseProvider _db
+@inject IMapper _mapper
+@inject ISnackbar _snackbar
+@inject IBrowserStorageService _browserStorageService
+
+<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
     <MudDialog>
         <DialogContent>
             <DataAnnotationsValidator />
@@ -13,11 +18,12 @@
                 Label="Job Title" 
                 Class="my-6" 
                 Variant="Variant.Outlined" />
-            <MudSelect T="int" @bind-Value="_model.Category" Label="Job Category" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
-                <MudSelectItem T="int" Value="0">- Select Job Category -</MudSelectItem>
-                <MudSelectItem T="int" Value="1">Information Technology</MudSelectItem>
-                <MudSelectItem T="int" Value="2">Finance</MudSelectItem>
-                <MudSelectItem T="int" Value="3">Human Resources</MudSelectItem>
+            <MudSelect T="string" @bind-Value="_model.JobCategoryId" Label="Job Category" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem T="string" Value="@("select_job_category")">- Select Job Category -</MudSelectItem>
+                @foreach (var category in _jobCategories)
+                {
+                    <MudSelectItem T="string" Value="@(category.Id)">@(category.Name)</MudSelectItem>
+                }
             </MudSelect>
             <MudTextField 
                 T="string" 
@@ -43,6 +49,12 @@
                 Lines="3"
                 Class="my-6" 
                 Variant="Variant.Outlined" />
+            <MudDatePicker 
+                @bind-Date="_model.ApplicationDueDate"
+                For="@(() => _model.ApplicationDueDate)"
+                Label="Applying Due Date"
+                DateFormat="dd MMM yyyy"
+                Variant="Variant.Outlined"/>
         </DialogContent>
         <DialogActions>
             <MudButton OnClick="Cancel">Cancel</MudButton>
@@ -54,11 +66,101 @@
 @code {
     // Private Methods
     [CascadingParameter] MudDialogInstance MudDialog { get; set; } = new MudDialogInstance();
+    [Parameter] public JobModel Job { get; set; } = new();
+    [Parameter] public string Type { get; set; } = string.Empty;
+    private IEnumerable<JobCategoryModel> _jobCategories = new List<JobCategoryModel>();
     private JobFormModel _model = new();
     private AlertModel _alert = new();
 
+    // Lifecycle Methods
+    protected override void OnInitialized()
+    {
+        if (Type == "Edit" && Job != null)
+        {
+            bool isValidDate = DateTime.TryParse(Job.ApplicationDueDate, out DateTime applicationDueDate);
+
+            _model.Title = Job.Title;
+            _model.JobCategoryId = Job.JobCategoryId;
+            _model.Description = Job.Description;
+            _model.Responsibilities = Job.Responsibilities;
+            _model.Qualifications = Job.Qualifications;
+
+            if (isValidDate)
+                _model.ApplicationDueDate = applicationDueDate;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetJobCategoriesAsync();
+    }
+
     // Private Methods
+    private async Task GetJobCategoriesAsync()
+    {
+        try
+        {
+            Func<FirebaseObject<JobCategoryEntity>, JobCategoryEntity> selector = (jc) => _mapper.Map<JobCategoryEntity>(jc.Object);
+            var jobCategories = await _db.GetAll(JobCategoryEntity.Node, selector);
+            _jobCategories = _mapper.Map<IEnumerable<JobCategoryModel>>(jobCategories);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            _snackbar.Add("Cannot get list of job categories", Severity.Error);
+        }
+    }
+
     void Cancel() => MudDialog.Cancel();
 
-    private void OnValidSubmit() => MudDialog.Close(DialogResult.Ok(true));
+    private async Task OnValidSubmit()
+    {
+        try
+        {
+            var user = await _browserStorageService.GetItem<UserModel>("user");
+
+            if (user == null)
+            {
+                _snackbar.Add("Unknown user", Severity.Error);
+                MudDialog.Close(DialogResult.Ok(false));
+            }
+
+            if (string.IsNullOrEmpty(Type))
+            {
+                _snackbar.Add("Unknown operation", Severity.Error);
+                MudDialog.Close(DialogResult.Ok(false));
+            }
+
+            if (Type == "Add")
+            {
+                await _db.Add(JobEntity.Node, new JobEntity
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    JobCategoryId = _model.JobCategoryId,
+                    CompanyId = user.Id,
+                    Title = _model.Title,
+                    Description = _model.Description,
+                    Responsibilities = _model.Responsibilities,
+                    Qualifications = _model.Qualifications,
+                    ApplicationDueDate = _model.ApplicationDueDate.HasValue ? _model.ApplicationDueDate.Value.ToString("dd MMM yyyy") : DateTime.Now.ToString("dd MMM yyyy"),
+                    CreatedBy = user.Name
+                });
+
+                MudDialog.Close(DialogResult.Ok(true));
+            }
+            else if (Type == "Edit")
+            {
+                MudDialog.Close(DialogResult.Ok(false));
+            }
+            else
+            {
+                MudDialog.Close(DialogResult.Ok(false));
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            MudDialog.Close(DialogResult.Ok(false));
+        }
+    }
 }

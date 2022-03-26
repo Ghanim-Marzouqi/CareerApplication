@@ -3,7 +3,7 @@
 @inject IBrowserStorageService _browserService
 
 <MudThemeProvider Theme="_themeManager.Theme" />
-<MudDialogProvider />
+<MudDialogProvider DisableBackdropClick="true" />
 <MudSnackbarProvider />
 
 <MudLayout>
@@ -78,13 +78,13 @@
 
     private string GetProfileLink(UserModel user)
     {
-        if (user == null)
+        if (user == null || user.Role == null)
             return string.Empty;
 
-        if (user.RoleId == 2)
-            return "/company/profile";
-        else if (user.RoleId == 3)
+        if (user.Role.Name == "Administrator")
             return "/admin/profile";
+        else if (user.Role.Name == "Company")
+            return "/company/profile";
         else
             return string.Empty;
     }

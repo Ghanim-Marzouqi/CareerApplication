@@ -47,6 +47,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[3.7.2, )"
@@ -149,6 +153,14 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[1.0.0-pre7, )"
@@ -230,6 +242,14 @@
         "net6.0-ios15.2": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[1.0.0-pre7, )"
@@ -301,6 +321,14 @@
         "net6.0-maccatalyst15.2": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[1.0.0-pre7, )"

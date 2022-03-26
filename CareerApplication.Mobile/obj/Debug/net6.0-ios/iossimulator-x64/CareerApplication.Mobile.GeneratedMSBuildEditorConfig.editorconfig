@@ -45,6 +45,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.V
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
+[C:/Projects/CareerApplication/CareerApplication.Mobile/Views/PostedJobDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.Views.PostedJobDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PostedJobDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PostedJobDetailsPage.xaml
+
+[C:/Projects/CareerApplication/CareerApplication.Mobile/Views/PostedJobsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.Views.PostedJobsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PostedJobsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PostedJobsPage.xaml
+
+[C:/Projects/CareerApplication/CareerApplication.Mobile/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
 [C:/Projects/CareerApplication/CareerApplication.Mobile/Views/RegistrationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.Views.RegistrationPage.xaml

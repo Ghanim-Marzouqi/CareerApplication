@@ -2,8 +2,10 @@ namespace CareerApplication.Mobile.Views;
 
 public partial class AboutPage : ContentPage
 {
-	public AboutPage()
+	public AboutPage(AboutPageViewModel viewModel)
 	{
 		InitializeComponent();
+
+		BindingContext = viewModel;
 	}
 }

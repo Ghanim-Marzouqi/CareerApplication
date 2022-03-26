@@ -854,3 +854,11 @@ C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\J2O3h5BM.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\3Cze6+7w.gz
 C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\2KofL7lw.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.dll
+C:\Projects\CareerApplication\CareerApplication.Admin\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\CareerApplication\CareerApplication.Admin\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.dll.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.Extensions.Microsoft.DependencyInjection.dll.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\bin\Debug\net6.0\AutoMapper.dll
+C:\Projects\CareerApplication\CareerApplication.Admin\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\dkXqUx70.gz
+C:\Projects\CareerApplication\CareerApplication.Admin\obj\Debug\net6.0\build-gz\GtmGXPuY.gz

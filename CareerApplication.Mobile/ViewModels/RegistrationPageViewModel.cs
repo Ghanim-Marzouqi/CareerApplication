@@ -1,6 +1,6 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class RegistrationPageViewModel : ViewModelBase
+public class RegistrationPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly AuthProvider _auth;
@@ -74,7 +74,7 @@ public class RegistrationPageViewModel : ViewModelBase
         _db = db;
 
         RegisterButtonClicked = new Command(async () => await RegisterAsync());
-        GoToBackButtonClicked = new Command(async () => await Navigation.PopAsync());
+        GoToBackButtonClicked = new Command(async () => await Shell.Current.GoToAsync(".."));
     }
     #endregion
 
@@ -136,8 +136,8 @@ public class RegistrationPageViewModel : ViewModelBase
 
             if (result != null && result.User != null)
             {
-                Func<RoleEntity, bool> predicate = (userType) => userType.Name == "Applicant";
-                Func<FirebaseObject<RoleEntity>, RoleEntity> selector = (role) =>
+                Func<RoleEntity, bool> rolesPredicate = (role) => role.Name == "Job Seeker";
+                Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) =>
                     new RoleEntity
                     {
                         Id = role.Object.Id,
@@ -145,7 +145,7 @@ public class RegistrationPageViewModel : ViewModelBase
                         CreatedBy = role.Object.CreatedBy,
                         CreatedAt = role.Object.CreatedAt
                     };
-                var role = _db.GetById(RoleEntity.Node, predicate, selector);
+                var role = await _db.GetById(RoleEntity.Node, rolesPredicate, rolesSelector);
                 var isAdded = await _db.Add(UserEntity.Node, new UserEntity
                 {
                     Id = result.User.LocalId,

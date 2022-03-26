@@ -2,12 +2,10 @@ namespace CareerApplication.Mobile.Views;
 
 public partial class ForgotPasswordPage : ContentPage
 {
-    public ForgotPasswordPage(AuthProvider auth)
+    public ForgotPasswordPage(ForgotPasswordPageViewModel viewModel)
     {
         InitializeComponent();
 
-        BindingContext = new ForgotPasswordPageViewModel(auth);
-
-        NavigationPage.SetHasNavigationBar(this, false);
+        BindingContext = viewModel;
     }
 }

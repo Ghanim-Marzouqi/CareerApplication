@@ -2,8 +2,10 @@ namespace CareerApplication.Mobile.Views;
 
 public partial class SettingsPage : ContentPage
 {
-	public SettingsPage()
+	public SettingsPage(SettingsPageViewModel viewModel)
 	{
 		InitializeComponent();
+
+		BindingContext = viewModel;
 	}
 }

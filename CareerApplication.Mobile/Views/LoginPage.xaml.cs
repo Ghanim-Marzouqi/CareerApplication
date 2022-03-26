@@ -2,12 +2,10 @@ namespace CareerApplication.Mobile.Views;
 
 public partial class LoginPage : ContentPage
 {
-    public LoginPage(AuthProvider auth, DatabaseProvider db)
+    public LoginPage(LoginPageViewModel viewModel)
     {
         InitializeComponent();
 
-        BindingContext = new LoginPageViewModel(auth, db);
-
-        NavigationPage.SetHasNavigationBar(this, false);
+        BindingContext = viewModel;
     }
 }

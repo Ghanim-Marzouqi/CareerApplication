@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nC3//C2gjK/Fww+VB9GoDNqEgR0QmujhHOiOyo04ci0=",
+  "Hash": "U6RkwP2C83NVVdXlJtJ2GAMxw+qZe266mS3x1PmYRDM=",
   "Source": "CareerApplication.Admin",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AutoMapper.dll",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AutoMapper.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper\\11.0.1\\lib\\netstandard2.1\\AutoMapper.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\lib\\netstandard2.1\\AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+    },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "CareerApplication.Admin",
@@ -221,23 +255,6 @@
       "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasestorage.net\\1.0.3\\lib\\netstandard1.1\\Firebase.Storage.dll"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -287,6 +304,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\LiteDB.dll",
@@ -4624,6 +4658,23 @@
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Runtime.InteropServices.JavaScript.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\dkXqUx70.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AutoMapper.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AutoMapper.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AutoMapper.dll"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\ds9Xz7be.gz",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -5030,6 +5081,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tools.dll"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\GtmGXPuY.gz",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AutoMapper.Extensions.Microsoft.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\Debug\\net6.0\\build-gz\\GzLLdrNI.gz",
@@ -7378,23 +7446,6 @@
       "OriginalItemSpec": "wwwroot\\images\\loading.gif"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\logo.png",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "images/logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo.png"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\logo_white.png",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Discovered",
@@ -7410,6 +7461,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo_white.png"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\logo.png",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\placeholder.jpg",

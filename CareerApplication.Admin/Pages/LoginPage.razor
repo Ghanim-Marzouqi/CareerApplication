@@ -3,7 +3,8 @@
 @inject AuthProvider _auth
 @inject DatabaseProvider _db
 @inject NavigationManager _navigationManager
-@inject IBrowserStorageService _browserService
+@inject IBrowserStorageService _browserStorageService
+@inject IMapper _mapper;
 
 <PageTitle>Career Application | Login</PageTitle>
 
@@ -50,6 +51,7 @@
     // Properties
     LoginModel _model = new();
     AlertModel _alert = new();
+    UserModel _user = new();
     bool _isLoading;
     bool _passwordVisibility;
     InputType _passwordInput = InputType.Password;
@@ -84,23 +86,10 @@
             if (result != null && result.User != null)
             {
                 // Retieve user data from database
-                Func<UserEntity, bool> predicate = (user) => user.Id == result.User.LocalId;
-                Func<FirebaseObject<UserEntity>, UserEntity> selector = (user) =>
-                    new UserEntity
-                    {
-                        Id = user.Object.Id,
-                        RoleId = user.Object.RoleId,
-                        Name = user.Object.Name,
-                        Email = user.Object.Email,
-                        Phone = user.Object.Phone,
-                        IsActive = user.Object.IsActive,
-                        CreatedBy = user.Object.CreatedBy,
-                        CreatedAt = user.Object.CreatedAt,
-                        UpdatedBy = user.Object.UpdatedBy,
-                        UpdatedAt = user.Object.UpdatedAt
-                    };
+                Func<UserEntity, bool> usersPredicate = (user) => user.Id == result.User.LocalId;
+                Func<FirebaseObject<UserEntity>, UserEntity> usersSelector = (user) => _mapper.Map<UserEntity>(user.Object);
 
-                var loggedInUser = await _db.GetById<UserEntity>(UserEntity.Node, predicate, selector);
+                var loggedInUser = await _db.GetById<UserEntity>(UserEntity.Node, usersPredicate, usersSelector);
 
                 if (loggedInUser == null)
                 {
@@ -112,7 +101,17 @@
                     return;
                 }
 
-                await _browserService.SetItem("user", loggedInUser);
+                _user = _mapper.Map<UserModel>(loggedInUser);
+
+                Func<RoleEntity, bool> rolesPredicate = (role) => role.Id == loggedInUser.RoleId;
+                Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) => _mapper.Map<RoleEntity>(role.Object);
+
+                var userRole = await _db.GetById<RoleEntity>(RoleEntity.Node, rolesPredicate, rolesSelector);
+
+                if (userRole != null)
+                    _user.Role = _mapper.Map<RoleModel>(userRole);
+
+                await _browserStorageService.SetItem("user", _user);
 
                 _isLoading = false;
                 _alert.IsVisible = true;
@@ -120,9 +119,9 @@
                 _alert.AlertType = Severity.Success;
                 StateHasChanged();
 
-                if (loggedInUser.RoleId == 3)
+                if (_user.Role != null && _user.Role.Name == "Administrator")
                     _navigationManager.NavigateTo("/admin/dashboard");
-                else if (loggedInUser.RoleId == 2)
+                else if (_user.Role != null && _user.Role.Name == "Company")
                     _navigationManager.NavigateTo("/company/dashboard");
                 else
                 {

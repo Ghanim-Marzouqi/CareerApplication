@@ -2,10 +2,10 @@ namespace CareerApplication.Mobile.Views;
 
 public partial class HomePage : ContentPage
 {
-    public HomePage()
+    public HomePage(HomePageViewModel viewModel)
     {
         InitializeComponent();
 
-        NavigationPage.SetHasNavigationBar(this, false);
+        BindingContext = viewModel;
     }
 }

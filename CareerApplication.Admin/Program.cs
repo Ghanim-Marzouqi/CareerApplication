@@ -1,21 +1,20 @@
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 var firebaseSettings = new FirebaseSettings();
 var firebaseApiKey = new FirebaseConfig(firebaseSettings.ApiKey);
-var firebaseJson = JsonSerializer.Serialize(firebaseSettings);
 
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-var http = new HttpClient
-{
-    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
-};
+// AutoMapper setup
+var mappingConfig = new MapperConfiguration(config => { config.AddProfile<MappingService>(); });
+IMapper mapper = mappingConfig.CreateMapper();
 
 builder.Services.AddOptions();
 builder.Services.AddAuthorizationCore();
-builder.Services.AddScoped(_ => http);
+builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddSingleton(_ => new AuthProvider(new FirebaseAuthProvider(firebaseApiKey)));
 builder.Services.AddSingleton(_ => new DatabaseProvider(new FirebaseClient(firebaseSettings.RealtimeDatabaseUrl)));
+builder.Services.AddSingleton(mapper);
 builder.Services.AddScoped<IBrowserStorageService, BrowserStorageService>();
 builder.Services.AddMudServices(config =>
 {

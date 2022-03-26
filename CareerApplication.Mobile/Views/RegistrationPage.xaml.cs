@@ -2,12 +2,10 @@ namespace CareerApplication.Mobile.Views;
 
 public partial class RegistrationPage : ContentPage
 {
-    public RegistrationPage(AuthProvider auth, DatabaseProvider db)
+    public RegistrationPage(RegistrationPageViewModel viewModel)
     {
         InitializeComponent();
 
-        BindingContext = new RegistrationPageViewModel(auth, db);
-
-        NavigationPage.SetHasNavigationBar(this, false);
+        BindingContext = viewModel;
     }
 }

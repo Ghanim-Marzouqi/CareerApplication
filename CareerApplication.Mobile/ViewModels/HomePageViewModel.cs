@@ -1,6 +1,6 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class HomePageViewModel : ViewModelBase
+public class HomePageViewModel : BaseViewModel
 {
     public UserEntity User { get; set; }
 

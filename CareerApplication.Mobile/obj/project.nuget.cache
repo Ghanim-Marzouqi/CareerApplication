@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "loRwc0SqihRZSu3NNB+PL2kG30knNtNrRfJnFI63Evg6YX9H9u6hGclAOV8w29yEaV7DwGJId0x2Q/quATwD6g==",
+  "dgSpecHash": "H/Kb/UzQoDCUW3U1jAicKW8cNZ9SxphHlI0I3oI5kS6m5nkxa/YK6+DT9zVsShyNOK39TKNLemBL6V2ab2HN5A==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CareerApplication\\CareerApplication.Mobile\\CareerApplication.Mobile.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\communitytoolkit.maui\\1.0.0-pre7\\communitytoolkit.maui.1.0.0-pre7.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\communitytoolkit.maui.core\\1.0.0-pre7\\communitytoolkit.maui.core.1.0.0-pre7.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\communitytoolkit.maui.markup\\1.0.0-pre5\\communitytoolkit.maui.markup.1.0.0-pre5.nupkg.sha512",
@@ -12,6 +14,7 @@
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\googlegson\\2.8.8.2\\googlegson.2.8.8.2.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",

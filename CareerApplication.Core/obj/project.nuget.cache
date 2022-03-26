@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "OwUZNhSCm45UlHZcblCgCnyKKmj0Qf9Su0SEwmLMALolT7LO8NngyoqK8FGrBzgCSX/MNxI0KYxpEWxXwa3GZw==",
+  "dgSpecHash": "YD3ImSSeKDWmlE8AcEXA1mNOt6Gyc0bGMudMueDs2LSb7+lFrasMx3MUmv0XrpMbP4E6flqbbyiWDryFFrPvkw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasedatabase.net\\4.0.7\\firebasedatabase.net.4.0.7.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",

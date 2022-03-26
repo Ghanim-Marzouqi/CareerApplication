@@ -1,58 +1,96 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:local="clr-namespace:CareerApplication.Mobile"
        xmlns:pages="clr-namespace:CareerApplication.Mobile.Views"
        xmlns:helpers="clr-namespace:CareerApplication.Mobile.Helpers"
+       xmlns:viewmodels="clr-namespace:CareerApplication.Mobile.ViewModels"
        x:Class="CareerApplication.Mobile.AppShell"
        Title="AppShell"
        BackgroundColor="{DynamicResource BackgroundColor}">
+
+    <Shell.BindingContext>
+        <viewmodels:AppShellViewModel />
+    </Shell.BindingContext>
+    
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Color x:Key="NavigationPrimaryColor">#F37422</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimaryColor}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimaryColor}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
             </Style>
-            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
-            <Style x:Key="MyShell"  TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="FlyoutItem" />
         </ResourceDictionary>
     </Shell.Resources>
+    
     <Shell.FlyoutHeader>
-        <Grid>
-            <Image 
+        <Grid RowDefinitions="Auto,Auto" Padding="0,10,0,10">
+            <Image
+                Grid.Row="0"
                 Source="avatar_placeholder.jpg"
-                HeightRequest="142"
-                WidthRequest="230"
-                VerticalOptions="Center"
-                HorizontalOptions="Center" />
+                HeightRequest="110"
+                WidthRequest="110"
+                HorizontalOptions="Center">
+                <Image.Clip>
+                    <EllipseGeometry 
+                        RadiusX="150"
+                        RadiusY="150"
+                        Center="150,150" />
+                </Image.Clip>
+            </Image>
+            <Label
+                Grid.Row="1"
+                Text="{Binding UserName}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
         </Grid>
     </Shell.FlyoutHeader>
-    <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:HomePage}" />
-    <ShellContent Title="About" ContentTemplate="{DataTemplate pages:AboutPage}" />
-    <ShellContent Title="Settings" ContentTemplate="{DataTemplate pages:SettingsPage}" />
-    <TabBar>
-        <Tab 
-            Title="Home"
-            Icon="ic_home.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" />
-        </Tab>
-        <Tab 
-            Title="About"
-            Icon="ic_about.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}" />
-        </Tab>
-        <Tab 
-            Title="Settings"
-            Icon="ic_settings.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:SettingsPage}" />
-        </Tab>
-    </TabBar>
+
+    <ShellItem Route="LoginPage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate pages:LoginPage}"/>
+    </ShellItem>
+
+    <FlyoutItem Title="Home">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="IconFontTypes"
+                             Color="{x:StaticResource SecondaryColor}"
+                             Glyph="{x:Static helpers:IconFont.Home}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" Route="HomePage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Posted Jobs">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="IconFontTypes"
+                             Color="{x:StaticResource SecondaryColor}"
+                             Glyph="{x:Static helpers:IconFont.FileDocumentMultiple}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:PostedJobsPage}" Route="PostedJobsPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Profile">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="IconFontTypes"
+                             Color="{x:StaticResource SecondaryColor}"
+                             Glyph="{x:Static helpers:IconFont.AccountBox}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:ProfilePage}" Route="ProfilePage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="About">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="IconFontTypes"
+                             Color="{x:StaticResource SecondaryColor}"
+                             Glyph="{x:Static helpers:IconFont.Information}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}" Route="AboutPage" />
+    </FlyoutItem>
 </Shell>

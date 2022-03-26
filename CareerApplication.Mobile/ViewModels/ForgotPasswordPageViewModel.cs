@@ -1,6 +1,6 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class ForgotPasswordPageViewModel : ViewModelBase
+public class ForgotPasswordPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly AuthProvider _auth;
@@ -28,7 +28,7 @@ public class ForgotPasswordPageViewModel : ViewModelBase
         _auth = auth;
 
         ForgotPasswordButtonClicked = new Command(async () => await ForgetPasswordAsync());
-        GoToBackButtonClicked = new Command(async () => await Navigation.PopAsync());
+        GoToBackButtonClicked = new Command(async () => await Shell.Current.GoToAsync(".."));
     }
     #endregion
 

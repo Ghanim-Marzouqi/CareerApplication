@@ -6,15 +6,15 @@
 </div>
 <MudDivider Class="mb-4"/>
 <MudNavMenu Color="Color.Primary" Bordered="true">
-    @if (_user.RoleId == 2)
-    {
-        <MudNavLink Href="/company/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard</MudNavLink>
-        <MudNavLink Href="/company/posted-jobs" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Assignment">Posted Jobs</MudNavLink>
-    }
-    else if (_user.RoleId == 3)
+    @if (_user.Role?.Name == "Administrator")
     {
         <MudNavLink Href="/admin/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard</MudNavLink>
         <MudNavLink Href="/admin/users" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Groups">Users</MudNavLink>
+    }
+    else if (_user.Role?.Name == "Company")
+    {
+        <MudNavLink Href="/company/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard</MudNavLink>
+        <MudNavLink Href="/company/posted-jobs" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Assignment">Posted Jobs</MudNavLink>
     }
 </MudNavMenu>
 

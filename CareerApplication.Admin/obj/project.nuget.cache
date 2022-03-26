@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Vi6TUI6GPb9QeLazXKmHgvnG0MNOKqk3R1sZLAUwzBTgHdU1dlXrDd3DJ3rkgMIDX0Ruvi5Acekp+EWOsghaSw==",
+  "dgSpecHash": "LEP0LJx+HY5e1Qe9hdyDWWIwdnMr3v8sQti+VIFV3J70n0gUZgeBm238qp5osFAiTmh1xQ15V69HMMJ0Q8+g9Q==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasedatabase.net\\4.0.7\\firebasedatabase.net.4.0.7.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
@@ -16,6 +18,7 @@
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.3\\microsoft.aspnetcore.components.webassembly.6.0.3.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\6.0.3\\microsoft.aspnetcore.components.webassembly.devserver.6.0.3.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.3\\microsoft.aspnetcore.metadata.6.0.3.nupkg.sha512",
+    "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\MUCI226-D\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",

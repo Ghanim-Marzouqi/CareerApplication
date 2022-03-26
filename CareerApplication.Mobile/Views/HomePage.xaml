@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:CareerApplication.Mobile.ViewModels"
              x:Class="CareerApplication.Mobile.Views.HomePage"
-             Title="HomePage"
+             Title="Home"
              BackgroundColor="{DynamicResource BackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:HomePageViewModel />

@@ -9,6 +9,8 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
       "Firebase.Auth.dll": "sha256-cptNzFxM2eVaLigHviAS6aaQj7gr0YR02xDKHTex884=",
       "Firebase.dll": "sha256-L5ATJfvuL8GK2oyz5xqpxPGV7uA4jCLmDDJRClR4Ev0=",
       "Firebase.Storage.dll": "sha256-+VLFUCAgK4O2Ng\/mTbX\/rTq0RYV4G8HIVBBsbuaRl64=",
@@ -207,15 +209,15 @@
       "mscorlib.dll": "sha256-tSv6NEbBsHuM5P3AUJGybafS0hxrXlzDmmcyG2eGk3I=",
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
-      "CareerApplication.Core.dll": "sha256-0\/zS1R58HD4c5ESDqNg4uCuz738KCMerzHjkm+0KBXA=",
-      "CareerApplication.Admin.dll": "sha256-ShugIhXI8YIuRhCPUNTuFqIS0hblR4I+ZfqrtHRABaI="
+      "CareerApplication.Core.dll": "sha256-a37LwI\/ltrU5munXsvhrEOXFh5LeqHrn6wbrO8d6uv4=",
+      "CareerApplication.Admin.dll": "sha256-lYDvU57K7EO\/beMBQT4mYFTJU0TpPRLZIW8Q2zWp4LE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CareerApplication.Core.pdb": "sha256-tyrmnu9MUQwv67\/4R5dR9yNriWhc8bDmKzSY8poADY4=",
-      "CareerApplication.Admin.pdb": "sha256-P7xFnkAow8p5IZyijYS07aoH6I74w3JeVkyoKnAa2QM="
+      "CareerApplication.Core.pdb": "sha256-UMpDxfN1kebfiZ1iWnmJmAljzuhqOcbvt8pxVgPwrbQ=",
+      "CareerApplication.Admin.pdb": "sha256-I9lYd8RysLxMfRLA8HznEqf6qat5IRu1OjRrX4m9Zwk="
     },
     "runtime": {
       "dotnet.6.0.3.k4rg04dpep.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",

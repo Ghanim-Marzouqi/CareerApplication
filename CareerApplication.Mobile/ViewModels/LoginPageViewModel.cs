@@ -1,6 +1,6 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class LoginPageViewModel : ViewModelBase
+public class LoginPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly AuthProvider _auth;
@@ -44,7 +44,6 @@ public class LoginPageViewModel : ViewModelBase
     public ICommand LoginButtonClicked { get; set; }
     public ICommand GoToRegistrationPageButtonClicked { get; set; }
     public ICommand GoToForgotPasswordPageButtonClicked { get; set; }
-    public ICommand GoToHomePageButtonClicked { get; set; }
     #endregion
 
     #region Constructors
@@ -54,9 +53,8 @@ public class LoginPageViewModel : ViewModelBase
         _db = db;
 
         LoginButtonClicked = new Command(async () => await LoginAsync());
-        GoToRegistrationPageButtonClicked = new Command(async () => await Navigation.PushAsync(new RegistrationPage(auth, db)));
-        GoToForgotPasswordPageButtonClicked = new Command(async () => await Navigation.PushAsync(new ForgotPasswordPage(auth)));
-        GoToHomePageButtonClicked = new Command(async () => await Navigation.PushAsync(new HomePage()));
+        GoToRegistrationPageButtonClicked = new Command(async () => await Shell.Current.GoToAsync(nameof(RegistrationPage)));
+        GoToForgotPasswordPageButtonClicked = new Command(async () => await Shell.Current.GoToAsync(nameof(ForgotPasswordPage)));
 
         try
         {
@@ -129,6 +127,7 @@ public class LoginPageViewModel : ViewModelBase
                     return;
                 }
 
+                UpdateUserState(loggedInUser);
                 StoreData("user", loggedInUser);
 
                 if (RememberMe)
@@ -137,7 +136,7 @@ public class LoginPageViewModel : ViewModelBase
                     RemoveData("credentials");
 
                 await Toast.Make("Login successfull", ToastDuration.Long).Show();
-                await Navigation.PushAsync(new HomePage());
+                await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
                 ClearFields();
             }
             else
