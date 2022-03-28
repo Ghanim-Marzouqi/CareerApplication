@@ -1,60 +1,31 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class LoginPageViewModel : BaseViewModel
+[INotifyPropertyChanged]
+public partial class LoginPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly AuthProvider _auth;
     private readonly DatabaseProvider _db;
+    private readonly IMapper _mapper;
 
-    private string _email;
-    public string Email
-    {
-        get => _email;
-        set
-        {
-            _email = value;
-            OnPropertyChanged(nameof(Email));
-        }
-    }
+    [ObservableProperty]
+    [AlsoNotifyCanExecuteFor(nameof(LoginCommand))]
+    private string email;
 
-    private string _password;
-    public string Password
-    {
-        get => _password;
-        set
-        {
-            _password = value;
-            OnPropertyChanged(nameof(Password));
-        }
-    }
+    [ObservableProperty]
+    [AlsoNotifyCanExecuteFor(nameof(LoginCommand))]
+    private string password;
 
-    private bool _rememberMe;
-    public bool RememberMe
-    {
-        get => _rememberMe;
-        set
-        {
-            _rememberMe = value;
-            OnPropertyChanged(nameof(RememberMe));
-        }
-    }
-    #endregion
-
-    #region Commands
-    public ICommand LoginButtonClicked { get; set; }
-    public ICommand GoToRegistrationPageButtonClicked { get; set; }
-    public ICommand GoToForgotPasswordPageButtonClicked { get; set; }
+    [ObservableProperty]
+    private bool rememberMe;
     #endregion
 
     #region Constructors
-    public LoginPageViewModel(AuthProvider auth, DatabaseProvider db)
+    public LoginPageViewModel(AuthProvider auth, DatabaseProvider db, IMapper mapper)
     {
         _auth = auth;
         _db = db;
-
-        LoginButtonClicked = new Command(async () => await LoginAsync());
-        GoToRegistrationPageButtonClicked = new Command(async () => await Shell.Current.GoToAsync(nameof(RegistrationPage)));
-        GoToForgotPasswordPageButtonClicked = new Command(async () => await Shell.Current.GoToAsync(nameof(ForgotPasswordPage)));
+        _mapper = mapper;
 
         try
         {
@@ -68,16 +39,17 @@ public class LoginPageViewModel : BaseViewModel
                 RememberMe = credentails.RememberMe;
             }
         }
-        catch (Exception)
+        catch (Exception e)
         {
-            // TODO: Display error to user
+           Debug.WriteLine($"LoginViewModel Exception: {e.Message}");
         }
         
     }
     #endregion
 
     #region Private Methods
-    private async Task LoginAsync()
+    [ICommand]
+    private async Task Login()
     {
         // Validate user input
         if (string.IsNullOrEmpty(Email))
@@ -106,19 +78,7 @@ public class LoginPageViewModel : BaseViewModel
             {
                 // Retieve user data from database
                 Func<UserEntity, bool> predicate = (user) => user.Id == result.User.LocalId;
-                Func<FirebaseObject<UserEntity>, UserEntity> selector = (user) =>
-                    new UserEntity
-                    {
-                        Id = user.Object.Id,
-                        Name = user.Object.Name,
-                        Email = user.Object.Email,
-                        Phone = user.Object.Phone,
-                        IsActive = user.Object.IsActive,
-                        CreatedBy = user.Object.CreatedBy,
-                        CreatedAt = user.Object.CreatedAt,
-                        UpdatedBy = user.Object.UpdatedBy,
-                        UpdatedAt = user.Object.UpdatedAt
-                    };
+                Func<FirebaseObject<UserEntity>, UserEntity> selector = (user) => _mapper.Map<UserEntity>(user.Object);
                 var loggedInUser = await _db.GetById(UserEntity.Node, predicate, selector);
 
                 if (loggedInUser == null)
@@ -127,7 +87,6 @@ public class LoginPageViewModel : BaseViewModel
                     return;
                 }
 
-                UpdateUserState(loggedInUser);
                 StoreData("user", loggedInUser);
 
                 if (RememberMe)
@@ -156,11 +115,20 @@ public class LoginPageViewModel : BaseViewModel
             else
                 await Toast.Make("Unknown error", ToastDuration.Long).Show();
         }
-        catch (Exception)
+        catch (Exception e)
         {
+            Debug.WriteLine(e.Message);
             await Toast.Make("Cannot send login request", ToastDuration.Long).Show();
         }
     }
+
+    [ICommand]
+    async Task GoToRegistrationPage() =>
+        await Shell.Current.GoToAsync(nameof(RegistrationPage));
+
+    [ICommand]
+    async Task GoToForgotPasswordPage() =>
+        await Shell.Current.GoToAsync(nameof(ForgotPasswordPage));
 
     private void ClearFields()
     {

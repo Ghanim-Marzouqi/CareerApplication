@@ -27,12 +27,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -41,11 +41,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -54,19 +54,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -249,12 +259,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -288,12 +292,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1962,12 +1960,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -1976,11 +1974,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -1989,19 +1987,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -2184,12 +2192,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -2223,12 +2225,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -3827,12 +3823,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -3841,11 +3837,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -3854,19 +3850,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -4049,12 +4055,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -4088,12 +4088,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -5692,12 +5686,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -5706,11 +5700,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -5719,19 +5713,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -5914,12 +5918,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -5953,12 +5951,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -7557,12 +7549,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -7571,11 +7563,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -7584,19 +7576,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -7779,12 +7781,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -7818,12 +7814,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -9422,12 +9412,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -9436,11 +9426,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -9449,19 +9439,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -9644,12 +9644,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -9683,12 +9677,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -11287,12 +11275,12 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
@@ -11301,11 +11289,11 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
@@ -11314,19 +11302,29 @@
           "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -11509,12 +11507,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -11548,12 +11540,6 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -13152,12 +13138,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -13166,11 +13153,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -13179,19 +13167,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -13365,12 +13363,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -13395,12 +13387,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -14722,12 +14708,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -14736,11 +14723,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -14749,19 +14737,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -14935,12 +14933,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -14965,12 +14957,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -16583,12 +16569,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -16597,11 +16584,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -16610,19 +16598,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -16796,12 +16794,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -16826,12 +16818,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -18444,12 +18430,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -18458,11 +18445,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -18471,19 +18459,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -18657,12 +18655,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -18687,12 +18679,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -20305,12 +20291,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -20319,11 +20306,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -20332,19 +20320,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -20518,12 +20516,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -20548,12 +20540,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -22166,12 +22152,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -22180,11 +22167,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -22193,19 +22181,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -22379,12 +22377,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -22409,12 +22401,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -24027,12 +24013,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
@@ -24041,11 +24028,12 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -24054,19 +24042,29 @@
           "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -24240,12 +24238,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -24270,12 +24262,6 @@
         },
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -25888,12 +25874,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -25902,11 +25889,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -25915,19 +25903,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -26101,12 +26099,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -26131,12 +26123,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -27458,12 +27444,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -27472,11 +27459,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -27485,19 +27473,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -27671,12 +27669,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -27701,12 +27693,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -29319,12 +29305,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -29333,11 +29320,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -29346,19 +29334,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -29532,12 +29530,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -29562,12 +29554,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -31180,12 +31166,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -31194,11 +31181,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -31207,19 +31195,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -31393,12 +31391,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -31423,12 +31415,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -33041,12 +33027,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -33055,11 +33042,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -33068,19 +33056,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -33254,12 +33252,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -33284,12 +33276,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -34902,12 +34888,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -34916,11 +34903,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -34929,19 +34917,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -35115,12 +35113,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -35145,12 +35137,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -36763,12 +36749,13 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CommunityToolkit.Maui/1.0.0-pre7": {
+      "CommunityToolkit.Maui/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "1.0.0-pre7",
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "CommunityToolkit.Maui.Core": "1.0.0-pre8",
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
@@ -36777,11 +36764,12 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Core/1.0.0-pre7": {
+      "CommunityToolkit.Maui.Core/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Dependencies": "6.0.200-preview.13.2865",
-          "Microsoft.Maui.Extensions": "6.0.200-preview.13.2865"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
@@ -36790,19 +36778,29 @@
           "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll": {}
         }
       },
-      "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
+      "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Dependencies": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Extensions": "6.0.101-preview.11.2349",
-          "Microsoft.Maui.Resizetizer.Sdk": "6.0.101-preview.11.2349"
+          "Microsoft.Maui.Dependencies": "6.0.200-preview.14.5099",
+          "Microsoft.Maui.Extensions": "6.0.200-preview.14.5099"
         },
         "compile": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
         },
         "runtime": {
           "lib/net6.0/CommunityToolkit.Maui.Markup.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0-preview2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
       "FirebaseAuthentication.net/3.7.2": {
@@ -36976,12 +36974,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
         "type": "package",
         "dependencies": {
@@ -37006,12 +36998,6 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {}
-        }
-      },
-      "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -38629,15 +38615,16 @@
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
-    "CommunityToolkit.Maui/1.0.0-pre7": {
-      "sha512": "oetYIhwR1T11R2Zp81xkVWJG26Uh5NWqyHMbYXD/wGJWY9YuOon5vvHPckxGrSIB75FYBYenCoepurB7JVi7rw==",
+    "CommunityToolkit.Maui/1.0.0-pre8": {
+      "sha512": "2XruxKmt0la8ut1HEGEyZFBC3s8zZlwYu6j7C8oMRDRyf2Ssspzq3y2PvoCV4+ny6RoglG8LJok0E3L8PJklIQ==",
       "type": "package",
-      "path": "communitytoolkit.maui/1.0.0-pre7",
+      "path": "communitytoolkit.maui/1.0.0-pre8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "ReadMe.txt",
         "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
-        "communitytoolkit.maui.1.0.0-pre7.nupkg.sha512",
+        "communitytoolkit.maui.1.0.0-pre8.nupkg.sha512",
         "communitytoolkit.maui.nuspec",
         "icon.png",
         "lib/net6.0-android31.0/CommunityToolkit.Maui.aar",
@@ -38647,20 +38634,21 @@
         "lib/net6.0-ios15.2/CommunityToolkit.Maui.xml",
         "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.dll",
         "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.xml",
-        "lib/net6.0-windows10.0.17763/CommunityToolkit.Maui.dll",
-        "lib/net6.0-windows10.0.17763/CommunityToolkit.Maui.xml",
+        "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.xml",
         "lib/net6.0/CommunityToolkit.Maui.dll",
         "lib/net6.0/CommunityToolkit.Maui.xml"
       ]
     },
-    "CommunityToolkit.Maui.Core/1.0.0-pre7": {
-      "sha512": "5zhnCsuVuXf3fJMxJhqDDbsMmAhA+OcTk4VNdyUJb9V1QBKdioJNY/YSrD63Cxj2HvwsN1B6zBaar97mbupkRA==",
+    "CommunityToolkit.Maui.Core/1.0.0-pre8": {
+      "sha512": "tpLo7vWN7GWqOh0X+21+mfAaeAl2EpcAfcit2yOfVbfUWWZaKyeNRAYrzVhD3JeeHRDvUwHayuTZ4fHA2p5gtw==",
       "type": "package",
-      "path": "communitytoolkit.maui.core/1.0.0-pre7",
+      "path": "communitytoolkit.maui.core/1.0.0-pre8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "communitytoolkit.maui.core.1.0.0-pre7.nupkg.sha512",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.1.0.0-pre8.nupkg.sha512",
         "communitytoolkit.maui.core.nuspec",
         "icon.png",
         "lib/net6.0-android31.0/CommunityToolkit.Maui.Core.aar",
@@ -38670,25 +38658,54 @@
         "lib/net6.0-ios15.2/CommunityToolkit.Maui.Core.xml",
         "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.dll",
         "lib/net6.0-maccatalyst15.2/CommunityToolkit.Maui.Core.xml",
-        "lib/net6.0-windows10.0.17763/CommunityToolkit.Maui.Core.dll",
-        "lib/net6.0-windows10.0.17763/CommunityToolkit.Maui.Core.pri",
-        "lib/net6.0-windows10.0.17763/CommunityToolkit.Maui.Core.xml",
+        "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.Core.pri",
+        "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
         "lib/net6.0/CommunityToolkit.Maui.Core.dll",
         "lib/net6.0/CommunityToolkit.Maui.Core.xml"
       ]
     },
-    "CommunityToolkit.Maui.Markup/1.0.0-pre5": {
-      "sha512": "aksNXa9AoYv4M+RiLQgIY7MnZvM5ij34w9/ObQxkMXB6N3ckIlD8P5zF598g7sDSE9oDn//NUjq4+SZnlVvAyA==",
+    "CommunityToolkit.Maui.Markup/1.0.0-pre8": {
+      "sha512": "7TtrH3yPkLUK6+DgqqS2Ba65Pkkkl9jJbCvdOejBtijdka2kwpB2SWc52/nyJ1ZtMGylc4SXRiTnb+ymlRKaXg==",
       "type": "package",
-      "path": "communitytoolkit.maui.markup/1.0.0-pre5",
+      "path": "communitytoolkit.maui.markup/1.0.0-pre8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "communitytoolkit.maui.markup.1.0.0-pre5.nupkg.sha512",
+        "ReadMe.txt",
+        "communitytoolkit.maui.markup.1.0.0-pre8.nupkg.sha512",
         "communitytoolkit.maui.markup.nuspec",
         "icon.png",
         "lib/net6.0/CommunityToolkit.Maui.Markup.dll",
         "lib/net6.0/CommunityToolkit.Maui.Markup.xml"
+      ]
+    },
+    "CommunityToolkit.Mvvm/8.0.0-preview2": {
+      "sha512": "0QaS1RM6WutMbUiJ785RdEvWVGXVTH9vIArsucPAlGZxY6FTgaRC6hLPVKLPTOd5zOnJAxDfxuwy40a5JzZdVw==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/8.0.0-preview2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.0.0-preview2.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net6.0/CommunityToolkit.Mvvm.dll",
+        "lib/net6.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net6.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
       ]
     },
     "FirebaseAuthentication.net/3.7.2": {
@@ -39041,54 +39058,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Maui.Controls.Build.Tasks/6.0.101-preview.11.2349": {
-      "sha512": "/aUQAERBMIF+HemA0F9G0wt+/OIRiY/J2GyahgW8ffalOlLhXlKuqWyajS6YKfnE/4dVs5Ln/tZY9TfeGk9i2Q==",
-      "type": "package",
-      "path": "microsoft.maui.controls.build.tasks/6.0.101-preview.11.2349",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Microsoft.Maui.Controls.Build.Tasks.dll",
-        "build/Microsoft.Maui.Controls.Build.Tasks.pdb",
-        "build/Microsoft.Maui.Controls.Build.Tasks.props",
-        "build/Microsoft.Maui.Controls.Build.Tasks.targets",
-        "build/Microsoft.Maui.Controls.SourceGen.dll",
-        "build/Microsoft.Maui.Controls.SourceGen.pdb",
-        "build/Microsoft.Maui.Controls.Xaml.dll",
-        "build/Microsoft.Maui.Controls.Xaml.pdb",
-        "build/Microsoft.Maui.Controls.dll",
-        "build/Microsoft.Maui.Controls.pdb",
-        "build/Microsoft.Maui.Graphics.dll",
-        "build/Microsoft.Maui.Graphics.pdb",
-        "build/Microsoft.Maui.dll",
-        "build/Microsoft.Maui.pdb",
-        "build/Mono.Cecil.Mdb.dll",
-        "build/Mono.Cecil.Mdb.pdb",
-        "build/Mono.Cecil.Pdb.dll",
-        "build/Mono.Cecil.Pdb.pdb",
-        "build/Mono.Cecil.Rocks.dll",
-        "build/Mono.Cecil.Rocks.pdb",
-        "build/Mono.Cecil.dll",
-        "build/Mono.Cecil.pdb",
-        "build/System.CodeDom.dll",
-        "build/cs/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/de/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/es/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/fr/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/it/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/ja/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/ko/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/maui.aotprofile",
-        "build/pl/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/pt-BR/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/ru/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/tr/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/zh-Hans/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "build/zh-Hant/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
-        "microsoft.maui.controls.build.tasks.6.0.101-preview.11.2349.nupkg.sha512",
-        "microsoft.maui.controls.build.tasks.nuspec"
-      ]
-    },
     "Microsoft.Maui.Dependencies/6.0.200-preview.14.5099": {
       "sha512": "CBMsTh805bJTA8BJ7+d9zEhqyv6jpg1R7Aou1vRmzp1hoYRqcNDdgmHZaRjxefd3REUIdWiTLqq3azLHVKtwiQ==",
       "type": "package",
@@ -39142,57 +39111,6 @@
         "lib/xamarin.mac20/Microsoft.Maui.Graphics.pdb",
         "microsoft.maui.graphics.6.0.200-preview.14.1092.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
-      ]
-    },
-    "Microsoft.Maui.Resizetizer.Sdk/6.0.101-preview.11.2349": {
-      "sha512": "yWyhwAfV27fVDFmDJGymXS3/35/VJpYPxeILnvOK1l0I34RGtnAJYIZielE+bTLWtluI9pXHP9G2I7tNLOv00g==",
-      "type": "package",
-      "path": "microsoft.maui.resizetizer.sdk/6.0.101-preview.11.2349",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Fizzler.dll",
-        "build/HarfBuzzSharp.dll",
-        "build/HarfBuzzSharp.pdb",
-        "build/Microsoft.Maui.Resizetizer.Sdk.targets",
-        "build/Microsoft.Maui.Resizetizer.dll",
-        "build/Microsoft.Maui.Resizetizer.pdb",
-        "build/Newtonsoft.Json.dll",
-        "build/SkiaSharp.HarfBuzz.dll",
-        "build/SkiaSharp.HarfBuzz.pdb",
-        "build/SkiaSharp.dll",
-        "build/SkiaSharp.pdb",
-        "build/Svg.Custom.dll",
-        "build/Svg.Custom.pdb",
-        "build/Svg.Picture.dll",
-        "build/Svg.Picture.pdb",
-        "build/Svg.Skia.dll",
-        "build/Svg2VectorDrawable.Net.dll",
-        "build/Svg2VectorDrawable.Net.pdb",
-        "build/System.Buffers.dll",
-        "build/System.IO.UnmanagedMemoryStream.dll",
-        "build/System.Memory.dll",
-        "build/System.Numerics.Vectors.dll",
-        "build/System.ObjectModel.dll",
-        "build/System.Runtime.CompilerServices.Unsafe.dll",
-        "build/arm/libHarfBuzzSharp.so",
-        "build/arm/libSkiaSharp.so",
-        "build/arm64/libHarfBuzzSharp.dll",
-        "build/arm64/libHarfBuzzSharp.so",
-        "build/arm64/libSkiaSharp.dll",
-        "build/arm64/libSkiaSharp.so",
-        "build/libHarfBuzzSharp.dylib",
-        "build/libSkiaSharp.dylib",
-        "build/musl-x64/libHarfBuzzSharp.so",
-        "build/musl-x64/libSkiaSharp.so",
-        "build/x64/libHarfBuzzSharp.dll",
-        "build/x64/libHarfBuzzSharp.so",
-        "build/x64/libSkiaSharp.dll",
-        "build/x64/libSkiaSharp.so",
-        "build/x86/libHarfBuzzSharp.dll",
-        "build/x86/libSkiaSharp.dll",
-        "microsoft.maui.resizetizer.sdk.6.0.101-preview.11.2349.nupkg.sha512",
-        "microsoft.maui.resizetizer.sdk.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -44830,9 +44748,10 @@
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CareerApplication.Core >= 1.0.0",
-      "CommunityToolkit.Maui >= 1.0.0-pre7",
-      "CommunityToolkit.Maui.Core >= 1.0.0-pre7",
-      "CommunityToolkit.Maui.Markup >= 1.0.0-pre5",
+      "CommunityToolkit.Maui >= 1.0.0-pre8",
+      "CommunityToolkit.Maui.Core >= 1.0.0-pre8",
+      "CommunityToolkit.Maui.Markup >= 1.0.0-pre8",
+      "CommunityToolkit.Mvvm >= 8.0.0-preview2",
       "FirebaseAuthentication.net >= 3.7.2",
       "FirebaseDatabase.net >= 4.0.7",
       "FirebaseStorage.net >= 1.0.3",
@@ -44843,9 +44762,10 @@
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CareerApplication.Core >= 1.0.0",
-      "CommunityToolkit.Maui >= 1.0.0-pre7",
-      "CommunityToolkit.Maui.Core >= 1.0.0-pre7",
-      "CommunityToolkit.Maui.Markup >= 1.0.0-pre5",
+      "CommunityToolkit.Maui >= 1.0.0-pre8",
+      "CommunityToolkit.Maui.Core >= 1.0.0-pre8",
+      "CommunityToolkit.Maui.Markup >= 1.0.0-pre8",
+      "CommunityToolkit.Mvvm >= 8.0.0-preview2",
       "FirebaseAuthentication.net >= 3.7.2",
       "FirebaseDatabase.net >= 4.0.7",
       "FirebaseStorage.net >= 1.0.3",
@@ -44857,9 +44777,10 @@
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CareerApplication.Core >= 1.0.0",
-      "CommunityToolkit.Maui >= 1.0.0-pre7",
-      "CommunityToolkit.Maui.Core >= 1.0.0-pre7",
-      "CommunityToolkit.Maui.Markup >= 1.0.0-pre5",
+      "CommunityToolkit.Maui >= 1.0.0-pre8",
+      "CommunityToolkit.Maui.Core >= 1.0.0-pre8",
+      "CommunityToolkit.Maui.Markup >= 1.0.0-pre8",
+      "CommunityToolkit.Mvvm >= 8.0.0-preview2",
       "FirebaseAuthentication.net >= 3.7.2",
       "FirebaseDatabase.net >= 4.0.7",
       "FirebaseStorage.net >= 1.0.3",
@@ -44949,15 +44870,19 @@
           },
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[1.0.0-pre7, )"
+            "version": "[1.0.0-pre8, )"
           },
           "CommunityToolkit.Maui.Core": {
             "target": "Package",
-            "version": "[1.0.0-pre7, )"
+            "version": "[1.0.0-pre8, )"
           },
           "CommunityToolkit.Maui.Markup": {
             "target": "Package",
-            "version": "[1.0.0-pre5, )"
+            "version": "[1.0.0-pre8, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.0.0-preview2, )"
           },
           "FirebaseAuthentication.net": {
             "target": "Package",
@@ -45038,15 +44963,19 @@
           },
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[1.0.0-pre7, )"
+            "version": "[1.0.0-pre8, )"
           },
           "CommunityToolkit.Maui.Core": {
             "target": "Package",
-            "version": "[1.0.0-pre7, )"
+            "version": "[1.0.0-pre8, )"
           },
           "CommunityToolkit.Maui.Markup": {
             "target": "Package",
-            "version": "[1.0.0-pre5, )"
+            "version": "[1.0.0-pre8, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.0.0-preview2, )"
           },
           "FirebaseAuthentication.net": {
             "target": "Package",
@@ -45117,15 +45046,19 @@
           },
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[1.0.0-pre7, )"
+            "version": "[1.0.0-pre8, )"
           },
           "CommunityToolkit.Maui.Core": {
             "target": "Package",
-            "version": "[1.0.0-pre7, )"
+            "version": "[1.0.0-pre8, )"
           },
           "CommunityToolkit.Maui.Markup": {
             "target": "Package",
-            "version": "[1.0.0-pre5, )"
+            "version": "[1.0.0-pre8, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.0.0-preview2, )"
           },
           "FirebaseAuthentication.net": {
             "target": "Package",

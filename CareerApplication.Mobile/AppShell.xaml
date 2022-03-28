@@ -11,7 +11,7 @@
     <Shell.BindingContext>
         <viewmodels:AppShellViewModel />
     </Shell.BindingContext>
-    
+
     <Shell.Resources>
         <ResourceDictionary>
             <Color x:Key="NavigationPrimaryColor">#F37422</Color>
@@ -48,7 +48,7 @@
             </Image>
             <Label
                 Grid.Row="1"
-                Text="{Binding UserName}"
+                Text="Ghanim Al Marzouqi"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"/>
         </Grid>
@@ -93,4 +93,7 @@
         </FlyoutItem.Icon>
         <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}" Route="AboutPage" />
     </FlyoutItem>
+
+    <MenuItem Text="Logout" IconImageSource="ic_logout.png" Command="{Binding LogoutCommand}">
+    </MenuItem>
 </Shell>

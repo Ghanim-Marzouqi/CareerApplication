@@ -1,85 +1,44 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class RegistrationPageViewModel : BaseViewModel
+[INotifyPropertyChanged]
+public partial class RegistrationPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly AuthProvider _auth;
     private readonly DatabaseProvider _db;
+    private readonly IMapper _mapper;
 
-    private string _name;
-    public string Name
-    {
-        get => _name;
-        set
-        {
-            _name = value;
-            OnPropertyChanged(nameof(Name));
-        }
-    }
+    [ObservableProperty]
+    private string name;
 
-    private string _email;
-    public string Email
-    {
-        get => _email;
-        set
-        {
-            _email = value;
-            OnPropertyChanged(nameof(Email));
-        }
-    }
+    [ObservableProperty]
+    private string email;
 
-    private string _phone;
-    public string Phone
-    {
-        get => _phone;
-        set
-        {
-            _phone = value;
-            OnPropertyChanged(nameof(Phone));
-        }
-    }
+    [ObservableProperty]
+    private string phone;
 
-    private string _password;
-    public string Password
-    {
-        get => _password;
-        set
-        {
-            _password = value;
-            OnPropertyChanged(nameof(Password));
-        }
-    }
+    [ObservableProperty]
+    private string password;
 
-    private string _confirmPassword;
-    public string ConfirmPassword
-    {
-        get => _confirmPassword;
-        set
-        {
-            _confirmPassword = value;
-            OnPropertyChanged(nameof(ConfirmPassword));
-        }
-    }
-    #endregion
-
-    #region Commands
-    public ICommand RegisterButtonClicked { get; set; }
-    public ICommand GoToBackButtonClicked { get; set; }
+    [ObservableProperty]
+    private string confirmPassword;
     #endregion
 
     #region Constructors
-    public RegistrationPageViewModel(AuthProvider auth, DatabaseProvider db)
+    public RegistrationPageViewModel()
+    {}
+
+    public RegistrationPageViewModel(AuthProvider auth, DatabaseProvider db, IMapper mapper)
     {
         _auth = auth;
         _db = db;
-
-        RegisterButtonClicked = new Command(async () => await RegisterAsync());
-        GoToBackButtonClicked = new Command(async () => await Shell.Current.GoToAsync(".."));
+        _mapper = mapper;
     }
     #endregion
 
     #region Private Methods
-    private async Task RegisterAsync()
+    [ICommand]
+    private async Task Register()
     {
         // Validate user input
         if (string.IsNullOrEmpty(Name))
@@ -137,14 +96,7 @@ public class RegistrationPageViewModel : BaseViewModel
             if (result != null && result.User != null)
             {
                 Func<RoleEntity, bool> rolesPredicate = (role) => role.Name == "Job Seeker";
-                Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) =>
-                    new RoleEntity
-                    {
-                        Id = role.Object.Id,
-                        Name = role.Object.Name,
-                        CreatedBy = role.Object.CreatedBy,
-                        CreatedAt = role.Object.CreatedAt
-                    };
+                Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) => _mapper.Map<RoleEntity>(role.Object);
                 var role = await _db.GetById(RoleEntity.Node, rolesPredicate, rolesSelector);
                 var isAdded = await _db.Add(UserEntity.Node, new UserEntity
                 {
@@ -185,8 +137,11 @@ public class RegistrationPageViewModel : BaseViewModel
         {
             await Toast.Make("Unknown Error", ToastDuration.Long).Show();
         }
-
     }
+
+    [ICommand]
+    private async Task GoBack() => 
+        await Shell.Current.GoToAsync("..");
 
     private void ClearFields()
     {

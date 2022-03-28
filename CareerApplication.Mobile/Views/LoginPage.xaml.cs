@@ -8,4 +8,6 @@ public partial class LoginPage : ContentPage
 
         BindingContext = viewModel;
     }
+
+    public bool Not(bool value) => !value;
 }

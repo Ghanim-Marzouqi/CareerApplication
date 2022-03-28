@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U6RkwP2C83NVVdXlJtJ2GAMxw+qZe266mS3x1PmYRDM=",
+  "Hash": "PgknJqjp3pp0I9/6mKkmNxxzpxlW9jJZ73ytsOQ7Ldw=",
   "Source": "CareerApplication.Admin",
   "BasePath": "/",
   "Mode": "Root",
@@ -255,6 +255,23 @@
       "OriginalItemSpec": "C:\\Users\\MUCI226-D\\.nuget\\packages\\firebasestorage.net\\1.0.3\\lib\\netstandard1.1\\Firebase.Storage.dll"
     },
     {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
+    },
+    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Computed",
@@ -304,23 +321,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
-    },
-    {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\bin\\Debug\\net6.0\\wwwroot\\_framework\\LiteDB.dll",
@@ -7446,23 +7446,6 @@
       "OriginalItemSpec": "wwwroot\\images\\loading.gif"
     },
     {
-      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\logo_white.png",
-      "SourceId": "CareerApplication.Admin",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "images/logo_white.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_white.png"
-    },
-    {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\logo.png",
       "SourceId": "CareerApplication.Admin",
       "SourceType": "Discovered",
@@ -7478,6 +7461,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\logo_white.png",
+      "SourceId": "CareerApplication.Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/logo_white.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo_white.png"
     },
     {
       "Identity": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\wwwroot\\images\\placeholder.jpg",

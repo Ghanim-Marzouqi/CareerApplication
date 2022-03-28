@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:CareerApplication.Mobile.Converters"
              x:Class="CareerApplication.Mobile.Views.RegistrationPage"
              Title="Registration"
              BackgroundColor="{DynamicResource BackgroundColor}"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarIsVisible="False">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:NotConverter x:Key="isNot" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout 
@@ -44,7 +52,8 @@
                     Text="SIGN UP"
                     CornerRadius="30"
                     BackgroundColor="{DynamicResource PrimaryColor}"
-                    Command="{Binding RegisterButtonClicked}"/>
+                    IsEnabled="{Binding RegisterCommand.IsRunning, Converter={StaticResource isNot}, Mode=OneWay}"
+                    Command="{Binding RegisterCommand}"/>
 
                 <Label
                     Text="I already have an account"
@@ -52,11 +61,12 @@
                     FontAttributes="Bold"
                     HorizontalOptions="Center">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GoToBackButtonClicked}" />
+                        <TapGestureRecognizer Command="{Binding GoBackCommand}" />
                     </Label.GestureRecognizers>
                 </Label>
 
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

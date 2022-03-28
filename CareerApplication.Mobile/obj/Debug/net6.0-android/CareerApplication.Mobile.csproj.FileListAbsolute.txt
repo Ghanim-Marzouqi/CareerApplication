@@ -25,6 +25,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\avatar_placeholder.jpg
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\ic_about.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\ic_home.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\ic_logout.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\ic_settings.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\logo.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\white_logo.png
@@ -32,6 +33,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\avatar_placeholder.jpg
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\ic_about.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\ic_home.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\ic_logout.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\ic_settings.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\logo.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\white_logo.png
@@ -39,6 +41,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\avatar_placeholder.jpg
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\ic_about.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\ic_home.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\ic_logout.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\ic_settings.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\logo.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\white_logo.png
@@ -46,6 +49,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\avatar_placeholder.jpg
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\ic_about.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\ic_home.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\ic_logout.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\ic_settings.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\logo.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\white_logo.png
@@ -53,6 +57,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\avatar_placeholder.jpg
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\ic_about.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\ic_home.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\ic_logout.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\ic_settings.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\logo.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\white_logo.png
@@ -123,6 +128,8 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\res\resources\values\maui_colors.xml
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\uploadflags.txt
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\resolvedassemblies.hash
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\AutoMapper.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CareerApplication.Core.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CareerApplication.Core.pdb
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CareerApplication.Mobile.dll
@@ -130,6 +137,8 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Maui.Core.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Maui.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Maui.Markup.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Mvvm.pdb
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Firebase.Auth.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Firebase.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Firebase.Storage.dll
@@ -168,10 +177,12 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\netstandard.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -187,6 +198,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Core.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -197,6 +209,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -246,7 +259,9 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Reactive.dll
@@ -314,6 +329,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Web.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Windows.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -487,6 +503,7 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc64124e178812aeed4c\LabelRenderer.java
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc6413a2ffd8f229512a\CarouselViewAdapter_2.java
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc6413a2ffd8f229512a\RecyclerViewScrollListener_2.java
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc64159f3caeb1269279\MauiPopup.java
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc64192d9de59b079c6d\ActivityLifecycleContextListener.java
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc64192d9de59b079c6d\IntermediateActivity.java
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\src\crc64192d9de59b079c6d\WebAuthenticatorCallbackActivity.java
@@ -902,12 +919,3 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\mscorlib.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Data.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\System.Xml.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\AutoMapper.dll
-C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-android\android\assets\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

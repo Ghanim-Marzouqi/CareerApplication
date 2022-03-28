@@ -3,6 +3,7 @@ C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\Care
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\CareerApplication.ConsoleApp.runtimeconfig.json
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\CareerApplication.ConsoleApp.dll
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\CareerApplication.ConsoleApp.pdb
+C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\AutoMapper.dll
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\Firebase.Auth.dll
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\Firebase.dll
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\Firebase.Storage.dll
@@ -24,4 +25,3 @@ C:\Projects\CareerApplication\CareerApplication.ConsoleApp\obj\Debug\net6.0\refi
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\obj\Debug\net6.0\CareerApplication.ConsoleApp.pdb
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\obj\Debug\net6.0\CareerApplication.ConsoleApp.genruntimeconfig.cache
 C:\Projects\CareerApplication\CareerApplication.ConsoleApp\obj\Debug\net6.0\ref\CareerApplication.ConsoleApp.dll
-C:\Projects\CareerApplication\CareerApplication.ConsoleApp\bin\Debug\net6.0\AutoMapper.dll

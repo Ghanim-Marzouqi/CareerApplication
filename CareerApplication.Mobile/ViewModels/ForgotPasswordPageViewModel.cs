@@ -1,39 +1,28 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class ForgotPasswordPageViewModel : BaseViewModel
+[INotifyPropertyChanged]
+public partial class ForgotPasswordPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly AuthProvider _auth;
 
-    private string _email;
-    public string Email
-    {
-        get => _email;
-        set
-        {
-            _email = value;
-            OnPropertyChanged(nameof(Email));
-        }
-    }
-    #endregion
-
-    #region Commands
-    public ICommand ForgotPasswordButtonClicked { get; set; }
-    public ICommand GoToBackButtonClicked { get; set; }
+    [ObservableProperty]
+    private string email;
     #endregion
 
     #region Constructors
+    public ForgotPasswordPageViewModel()
+    {}
+
     public ForgotPasswordPageViewModel(AuthProvider auth)
     {
         _auth = auth;
-
-        ForgotPasswordButtonClicked = new Command(async () => await ForgetPasswordAsync());
-        GoToBackButtonClicked = new Command(async () => await Shell.Current.GoToAsync(".."));
     }
     #endregion
 
     #region Private Methods
-    private async Task ForgetPasswordAsync()
+    [ICommand]
+    private async Task ForgetPassword()
     {
         if (string.IsNullOrEmpty(Email))
         {
@@ -68,6 +57,10 @@ public class ForgotPasswordPageViewModel : BaseViewModel
             await Toast.Make("Cannot send password reset request", ToastDuration.Long).Show();
         }
     }
+
+    [ICommand]
+    private async Task GoBack() => 
+        await Shell.Current.GoToAsync("..");
 
     private void ClearFields()
     {

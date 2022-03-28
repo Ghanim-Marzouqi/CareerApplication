@@ -1,12 +1,9 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class AppShellViewModel : BaseViewModel
+[INotifyPropertyChanged]
+public partial class AppShellViewModel : BaseViewModel
 {
-    public string UserName { set; get; } = string.Empty;
-
-    public AppShellViewModel()
-    {
-        UserName = User.Name;
-        OnPropertyChanged(nameof(UserName));
-    }
+    [ICommand]
+    private async Task Logout() =>
+        await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
 }

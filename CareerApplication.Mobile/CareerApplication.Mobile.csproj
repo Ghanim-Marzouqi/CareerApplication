@@ -31,22 +31,15 @@
 		<MauiFont Include="Resources\Fonts\*" />
 	</ItemGroup>
     <ItemGroup>
-      <None Remove="Resources\Fonts\MaterialDesignIcons.ttf" />
-      <None Remove="Resources\Images\avatar_placeholder.jpg" />
-      <None Remove="Resources\Images\ic_about.png" />
-      <None Remove="Resources\Images\ic_home.png" />
-      <None Remove="Resources\Images\ic_settings.png" />
-      <None Remove="Resources\Images\white_logo.png" />
-    </ItemGroup>
-    <ItemGroup>
       <ProjectReference Include="..\CareerApplication.Core\CareerApplication.Core.csproj" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="11.0.1" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-      <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-pre7" />
-      <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.0.0-pre7" />
-      <PackageReference Include="CommunityToolkit.Maui.Markup" Version="1.0.0-pre5" />
+      <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-pre8" />
+      <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.0.0-pre8" />
+      <PackageReference Include="CommunityToolkit.Maui.Markup" Version="1.0.0-pre8" />
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview2" />
       <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
       <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
       <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />

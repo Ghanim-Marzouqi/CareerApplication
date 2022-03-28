@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CareerApplication.Mobile.ViewModels"
+             xmlns:converters="clr-namespace:CareerApplication.Mobile.Converters"
              x:Class="CareerApplication.Mobile.Views.LoginPage"
              Title="Login"
              BackgroundColor="{DynamicResource BackgroundColor}"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarIsVisible="False">
+    <!--<ContentPage.BindingContext>
+        <viewmodels:LoginPageViewModel />
+    </ContentPage.BindingContext>-->
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:NotConverter x:Key="isNot" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout 
@@ -44,7 +56,8 @@
                         Text="SIGN IN"
                         CornerRadius="30"
                         BackgroundColor="{DynamicResource PrimaryColor}"
-                        Command="{Binding LoginButtonClicked}"/>
+                        IsEnabled="{Binding LoginCommand.IsRunning, Converter={StaticResource isNot}, Mode=OneWay}"
+                        Command="{Binding LoginCommand}"/>
 
                     <Button 
                         Text="SIGN UP"
@@ -53,8 +66,9 @@
                         BorderWidth="1" 
                         BorderColor="{DynamicResource PrimaryColor}"
                         TextColor = "{DynamicResource PrimaryColor}"
-                        BackgroundColor = "White"
-                        Command="{Binding GoToRegistrationPageButtonClicked}"/>
+                        BackgroundColor="White"
+                        IsEnabled="{Binding GoToRegistrationPageCommand.IsRunning, Converter={StaticResource isNot}, Mode=OneWay}"
+                        Command="{Binding GoToRegistrationPageCommand}"/>
                 </VerticalStackLayout>
 
                 <HorizontalStackLayout Spacing="10">
@@ -65,7 +79,7 @@
                         TextColor="{DynamicResource SecondaryColor}"
                         FontAttributes="Bold">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding GoToForgotPasswordPageButtonClicked}" />
+                            <TapGestureRecognizer Command="{Binding GoToForgotPasswordPageCommand}" />
                         </Label.GestureRecognizers>
                     </Label>
                 </HorizontalStackLayout>
@@ -73,4 +87,5 @@
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

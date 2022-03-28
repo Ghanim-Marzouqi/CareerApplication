@@ -1,9 +1,12 @@
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CareerApplication.Mobile.runtimeconfig.json
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CareerApplication.Mobile.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CareerApplication.Mobile.pdb
+C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\AutoMapper.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CommunityToolkit.Maui.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CommunityToolkit.Maui.Core.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CommunityToolkit.Maui.Markup.dll
+C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\CommunityToolkit.Mvvm.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Firebase.Auth.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Firebase.dll
 C:\Projects\CareerApplication\CareerApplication.Mobile\bin\Debug\net6.0-ios\iossimulator-x64\Firebase.Storage.dll
@@ -254,6 +257,9 @@ C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\ioss
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_home.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_home@2x.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_home@3x.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_logout.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_logout@2x.png
+C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_logout@3x.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_settings.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_settings@2x.png
 C:\Projects\CareerApplication\CareerApplication.Mobile\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\ic_settings@3x.png

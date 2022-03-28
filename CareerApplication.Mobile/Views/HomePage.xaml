@@ -21,6 +21,11 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"/>
 
+                <Label 
+                    Text="{Binding User.Name}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

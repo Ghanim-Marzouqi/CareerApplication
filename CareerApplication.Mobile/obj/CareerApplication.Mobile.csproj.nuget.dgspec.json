@@ -163,15 +163,19 @@
             },
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.0.0-pre7, )"
+              "version": "[1.0.0-pre8, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.0.0-pre7, )"
+              "version": "[1.0.0-pre8, )"
             },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
-              "version": "[1.0.0-pre5, )"
+              "version": "[1.0.0-pre8, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.0.0-preview2, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -252,15 +256,19 @@
             },
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.0.0-pre7, )"
+              "version": "[1.0.0-pre8, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.0.0-pre7, )"
+              "version": "[1.0.0-pre8, )"
             },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
-              "version": "[1.0.0-pre5, )"
+              "version": "[1.0.0-pre8, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.0.0-preview2, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -331,15 +339,19 @@
             },
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.0.0-pre7, )"
+              "version": "[1.0.0-pre8, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.0.0-pre7, )"
+              "version": "[1.0.0-pre8, )"
             },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
-              "version": "[1.0.0-pre5, )"
+              "version": "[1.0.0-pre8, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.0.0-preview2, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
