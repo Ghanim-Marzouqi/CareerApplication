@@ -21,21 +21,23 @@
     </ToolBarContent>
     <HeaderContent>
         <MudTh>Title</MudTh>
-        <MudTh>Job Category</MudTh>
+        <MudTh>Sector</MudTh>
         <MudTh>Applying Due Date</MudTh>
+        <MudTh>Job Location</MudTh>
         <MudTh>View</MudTh>
         <MudTh>Edit</MudTh>
         <MudTh>Delete</MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="Title">@context.Title</MudTd>
-        <MudTd DataLabel="Job Category">@context.JobCategory?.Name</MudTd>
+        <MudTd DataLabel="Job Category">@context.Sector?.Name</MudTd>
         <MudTd DataLabel="Applying Due Date">@context.ApplicationDueDate</MudTd>
+        <MudTd DataLabel="Job Location">@context.JobLocation</MudTd>
         <MudTd DataLabel="View">
             <MudIconButton Icon="@Icons.Material.Filled.Visibility" Color="Color.Success" Class="px-1"></MudIconButton>
         </MudTd>
         <MudTd DataLabel="Edit">
-            <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Info" Class="px-1"></MudIconButton>
+            <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Info" Class="px-1" OnClick="() => OpenEditJobDialog(context)"></MudIconButton>
         </MudTd>
         <MudTd DataLabel="Delete">
             <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" Class="px-1"></MudIconButton>
@@ -72,11 +74,11 @@
 
                 foreach (var job in _jobs)
                 {
-                    Func<JobCategoryEntity, bool> jobCategpryPredicate = (jc) => jc.Id == job.JobCategoryId;
-                    Func<FirebaseObject<JobCategoryEntity>, JobCategoryEntity> jobCategprySelector = (jc) => _mapper.Map<JobCategoryEntity>(jc.Object);
+                    Func<SectorEntity, bool> sectorPredicate = (sector) => sector.Id == job.SectorId;
+                    Func<FirebaseObject<SectorEntity>, SectorEntity> sectorSelector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
 
-                    var jobCategory = await _db.GetById<JobCategoryEntity>(JobCategoryEntity.Node, jobCategpryPredicate, jobCategprySelector);
-                    _jobs.Where(j => j.Id == job.Id).First().JobCategory = _mapper.Map<JobCategoryModel>(jobCategory);
+                    var sector = await _db.GetById<SectorEntity>(SectorEntity.Node, sectorPredicate, sectorSelector);
+                    _jobs.Where(j => j.Id == job.Id).First().Sector = _mapper.Map<SectorModel>(sector);
                 }
             }
 
@@ -107,6 +109,30 @@
         var parameters = new DialogParameters { ["Type"] = "Add" };
         var options = new DialogOptions { CloseOnEscapeKey = true, FullWidth = true, MaxWidth = MaxWidth.Medium };
         var dialog = _dialogService.Show<AddOrEditJobDialog>("Add New Job", parameters, options);
+        var result = await dialog.Result;
+
+        if (!result.Cancelled)
+        {
+            var isModified = (bool) result.Data;
+
+            if (isModified)
+            {
+                _snackbar.Add("Operation done successfully", Severity.Success);
+                await GetPostedJobsAsync();
+                StateHasChanged();
+            }
+            else
+            {
+                _snackbar.Add("An error has occurred", Severity.Success);
+            }
+        }
+    }
+
+    private async void OpenEditJobDialog(JobModel job)
+    {
+        var parameters = new DialogParameters { ["Type"] = "Edit", ["Job"] = job };
+        var options = new DialogOptions { CloseOnEscapeKey = true, FullWidth = true, MaxWidth = MaxWidth.Medium };
+        var dialog = _dialogService.Show<AddOrEditJobDialog>("Edit Job", parameters, options);
         var result = await dialog.Result;
 
         if (!result.Cancelled)

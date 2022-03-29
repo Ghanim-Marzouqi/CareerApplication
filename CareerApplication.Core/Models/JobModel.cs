@@ -2,5 +2,5 @@
 
 public class JobModel : JobEntity
 {
-    public JobCategoryModel? JobCategory { get; set; }
+    public SectorModel? Sector { get; set; }
 }

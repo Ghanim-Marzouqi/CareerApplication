@@ -14,21 +14,21 @@ async Task InsertMasterData()
     if (dbProvider == null)
         return;
 
-    await dbProvider.Add(JobCategoryEntity.Node, new JobCategoryEntity
+    await dbProvider.Add(SectorEntity.Node, new SectorEntity
     {
         Id = Guid.NewGuid().ToString(),
         Name = "Information Technology",
         CreatedBy = "Amani"
     });
 
-    await dbProvider.Add(JobCategoryEntity.Node, new JobCategoryEntity
+    await dbProvider.Add(SectorEntity.Node, new SectorEntity
     {
         Id = Guid.NewGuid().ToString(),
         Name = "Finance",
         CreatedBy = "Amani"
     });
 
-    await dbProvider.Add(JobCategoryEntity.Node, new JobCategoryEntity
+    await dbProvider.Add(SectorEntity.Node, new SectorEntity
     {
         Id = Guid.NewGuid().ToString(),
         Name = "Human Resources",

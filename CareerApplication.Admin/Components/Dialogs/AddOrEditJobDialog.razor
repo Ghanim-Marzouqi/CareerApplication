@@ -7,54 +7,108 @@
     <MudDialog>
         <DialogContent>
             <DataAnnotationsValidator />
-            @if (_alert.IsVisible)
-            {
-                <MudAlert Severity="_alert.AlertType">@(_alert.Message)</MudAlert>
-            }
-            <MudTextField 
-                T="string" 
-                @bind-Value="@_model.Title" 
-                For="@(() => _model.Title)" 
-                Label="Job Title" 
-                Class="my-6" 
-                Variant="Variant.Outlined" />
-            <MudSelect T="string" @bind-Value="_model.JobCategoryId" Label="Job Category" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
-                <MudSelectItem T="string" Value="@("select_job_category")">- Select Job Category -</MudSelectItem>
-                @foreach (var category in _jobCategories)
-                {
-                    <MudSelectItem T="string" Value="@(category.Id)">@(category.Name)</MudSelectItem>
-                }
-            </MudSelect>
-            <MudTextField 
-                T="string" 
-                @bind-Value="@_model.Description" 
-                For="@(() => _model.Description)" 
-                Label="Job Description" 
-                Lines="3"
-                Class="my-6" 
-                Variant="Variant.Outlined" />
-            <MudTextField 
-                T="string" 
-                @bind-Value="@_model.Responsibilities" 
-                For="@(() => _model.Responsibilities)" 
-                Label="Applicant Responsibilities" 
-                Lines="3"
-                Class="my-6" 
-                Variant="Variant.Outlined" />
-            <MudTextField 
-                T="string" 
-                @bind-Value="@_model.Qualifications" 
-                For="@(() => _model.Qualifications)" 
-                Label="Applicant Qualifications" 
-                Lines="3"
-                Class="my-6" 
-                Variant="Variant.Outlined" />
-            <MudDatePicker 
-                @bind-Date="_model.ApplicationDueDate"
-                For="@(() => _model.ApplicationDueDate)"
-                Label="Applying Due Date"
-                DateFormat="dd MMM yyyy"
-                Variant="Variant.Outlined"/>
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudTextField 
+                        T="string" 
+                        @bind-Value="@_model.Title" 
+                        For="@(() => _model.Title)" 
+                        Label="Job Title"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudSelect T="string" @bind-Value="_model.SectorId" Label="Job Sector" Margin="Margin.Dense" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                        <MudSelectItem T="string" Value="@("select_job_sector")">- Select Job Sector -</MudSelectItem>
+                        @foreach (var sector in _sectors)
+                        {
+                            <MudSelectItem T="string" Value="@(sector.Id)">@(sector.Name)</MudSelectItem>
+                        }
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField 
+                        T="string" 
+                        @bind-Value="@_model.Description" 
+                        For="@(() => _model.Description)" 
+                        Label="Job Description" 
+                        Lines="3"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField 
+                        T="string" 
+                        @bind-Value="@_model.Responsibilities" 
+                        For="@(() => _model.Responsibilities)" 
+                        Label="Applicant Responsibilities" 
+                        Lines="3"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField 
+                        T="string" 
+                        @bind-Value="@_model.Qualifications" 
+                        For="@(() => _model.Qualifications)" 
+                        Label="Applicant Qualifications" 
+                        Lines="3"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudDatePicker 
+                        @bind-Date="_model.ApplicationDueDate"
+                        For="@(() => _model.ApplicationDueDate)"
+                        Label="Applying Due Date"
+                        DateFormat="dd MMM yyyy"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined"/>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudSelect T="string" @bind-Value="_model.InterviewType" Label="Job Sector" Margin="Margin.Dense" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                        <MudSelectItem T="string" Value="@("select_interview_type")">- Select Interview Type -</MudSelectItem>
+                        <MudSelectItem T="string" Value="@("Full Time")" />
+                        <MudSelectItem T="string" Value="@("Part Time")" />
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField 
+                        T="string" 
+                        @bind-Value="@_model.InterviewLocation" 
+                        For="@(() => _model.InterviewLocation)" 
+                        Label="Interview Location" 
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField 
+                        T="string" 
+                        @bind-Value="@_model.JobLocation" 
+                        For="@(() => _model.JobLocation)" 
+                        Label="Job Location" 
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudDatePicker 
+                        @bind-Date="_model.InterviewDate"
+                        For="@(() => _model.InterviewDate)"
+                        Label="Interview Date"
+                        DateFormat="dd MMM yyyy"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined"/>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTimePicker
+                        @bind-Time="_model.InterviewTime"
+                        For="@(() => _model.InterviewTime)" 
+                        Label="Interview Time" 
+                        AmPm="true"
+                        Margin="Margin.Dense"
+                        Variant="Variant.Outlined" />
+                </MudItem>
+            </MudGrid>
         </DialogContent>
         <DialogActions>
             <MudButton OnClick="Cancel">Cancel</MudButton>
@@ -68,7 +122,7 @@
     [CascadingParameter] MudDialogInstance MudDialog { get; set; } = new MudDialogInstance();
     [Parameter] public JobModel Job { get; set; } = new();
     [Parameter] public string Type { get; set; } = string.Empty;
-    private IEnumerable<JobCategoryModel> _jobCategories = new List<JobCategoryModel>();
+    private IEnumerable<SectorModel> _sectors = new List<SectorModel>();
     private JobFormModel _model = new();
     private AlertModel _alert = new();
 
@@ -77,32 +131,42 @@
     {
         if (Type == "Edit" && Job != null)
         {
-            bool isValidDate = DateTime.TryParse(Job.ApplicationDueDate, out DateTime applicationDueDate);
+            bool isValidApplicationDueDate = DateTime.TryParse(Job.ApplicationDueDate, out DateTime applicationDueDate);
+            bool isValidInterviewDate = DateTime.TryParse(Job.InterviewDate, out DateTime interviewDate);
+            bool isValidTime = TimeSpan.TryParse(Job.InterviewTime, out TimeSpan interviewTime);
 
             _model.Title = Job.Title;
-            _model.JobCategoryId = Job.JobCategoryId;
+            _model.SectorId = Job.SectorId;
             _model.Description = Job.Description;
             _model.Responsibilities = Job.Responsibilities;
             _model.Qualifications = Job.Qualifications;
+            _model.InterviewLocation = Job.InterviewLocation;
+            _model.JobLocation = Job.JobLocation;
 
-            if (isValidDate)
+            if (isValidApplicationDueDate)
                 _model.ApplicationDueDate = applicationDueDate;
+
+            if (isValidInterviewDate)
+                _model.InterviewDate = interviewDate;
+
+            if (isValidTime)
+                _model.InterviewTime = interviewTime;
         }
     }
 
     protected override async Task OnInitializedAsync()
     {
-        await GetJobCategoriesAsync();
+        await GetSectorsAsync();
     }
 
     // Private Methods
-    private async Task GetJobCategoriesAsync()
+    private async Task GetSectorsAsync()
     {
         try
         {
-            Func<FirebaseObject<JobCategoryEntity>, JobCategoryEntity> selector = (jc) => _mapper.Map<JobCategoryEntity>(jc.Object);
-            var jobCategories = await _db.GetAll(JobCategoryEntity.Node, selector);
-            _jobCategories = _mapper.Map<IEnumerable<JobCategoryModel>>(jobCategories);
+            Func<FirebaseObject<SectorEntity>, SectorEntity> selector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
+            var sectors = await _db.GetAll(SectorEntity.Node, selector);
+            _sectors = _mapper.Map<IEnumerable<SectorModel>>(sectors);
         }
         catch (Exception e)
         {
@@ -136,13 +200,18 @@
                 await _db.Add(JobEntity.Node, new JobEntity
                 {
                     Id = Guid.NewGuid().ToString(),
-                    JobCategoryId = _model.JobCategoryId,
                     CompanyId = user.Id,
+                    SectorId = _model.SectorId,
                     Title = _model.Title,
                     Description = _model.Description,
                     Responsibilities = _model.Responsibilities,
                     Qualifications = _model.Qualifications,
                     ApplicationDueDate = _model.ApplicationDueDate.HasValue ? _model.ApplicationDueDate.Value.ToString("dd MMM yyyy") : DateTime.Now.ToString("dd MMM yyyy"),
+                    InterviewType = _model.InterviewType,
+                    InterviewLocation = _model.InterviewLocation,
+                    JobLocation = _model.JobLocation,
+                    InterviewDate = _model.InterviewDate.HasValue ? _model.InterviewDate.Value.ToString("dd MMM yyyy") : DateTime.Now.ToString("dd MMM yyyy"),
+                    InterviewTime = _model.InterviewTime.HasValue ? _model.InterviewTime.Value.ToString() : string.Empty,
                     CreatedBy = user.Name
                 });
 
