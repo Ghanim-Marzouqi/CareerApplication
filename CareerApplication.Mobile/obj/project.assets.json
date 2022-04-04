@@ -44790,26 +44790,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MUCI226-D\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\CareerApplication\\CareerApplication.Mobile\\CareerApplication.Mobile.csproj",
+      "projectUniqueName": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Mobile\\CareerApplication.Mobile.csproj",
       "projectName": "CareerApplication.Mobile",
-      "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Mobile\\CareerApplication.Mobile.csproj",
-      "packagesPath": "C:\\Users\\MUCI226-D\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\CareerApplication\\CareerApplication.Mobile\\obj\\",
+      "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Mobile\\CareerApplication.Mobile.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MUCI226-D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -44821,31 +44819,30 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/free/api": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
-              "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
+            "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
+              "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
             }
           }
         },
         "net6.0-ios15.2": {
           "targetAlias": "net6.0-ios",
           "projectReferences": {
-            "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
-              "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
+            "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
+              "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
             }
           }
         },
         "net6.0-maccatalyst15.2": {
           "targetAlias": "net6.0-maccatalyst",
           "projectReferences": {
-            "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
-              "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
+            "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
+              "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
             }
           }
         }
@@ -44918,6 +44915,10 @@
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
+          {
+            "name": "Microsoft.Android.Ref.31",
+            "version": "[31.0.101-preview.11.117, 31.0.101-preview.11.117]"
+          },
           {
             "name": "Microsoft.NETCore.App.Host.linux-arm",
             "version": "[6.0.2, 6.0.2]"

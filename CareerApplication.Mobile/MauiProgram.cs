@@ -31,7 +31,6 @@ public static class MauiProgram
         builder.Services.AddSingleton<LoginPageViewModel>();
         builder.Services.AddSingleton<RegistrationPageViewModel>();
         builder.Services.AddSingleton<ForgotPasswordPageViewModel>();
-        builder.Services.AddSingleton<HomePageViewModel>();
         builder.Services.AddSingleton<ProfilePageViewModel>();
         builder.Services.AddSingleton<AboutPageViewModel>();
         builder.Services.AddSingleton<SettingsPageViewModel>();
@@ -42,7 +41,6 @@ public static class MauiProgram
         builder.Services.AddSingleton<LoginPage>();
         builder.Services.AddSingleton<RegistrationPage>();
         builder.Services.AddSingleton<ForgotPasswordPage>();
-        builder.Services.AddSingleton<HomePage>();
         builder.Services.AddSingleton<ProfilePage>();
         builder.Services.AddSingleton<AboutPage>();
         builder.Services.AddSingleton<SettingsPage>();

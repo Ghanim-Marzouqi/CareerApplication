@@ -1,0 +1,12 @@
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\bin\Release\net6.0\CareerApplication.Core.deps.json
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\bin\Release\net6.0\CareerApplication.Core.dll
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\bin\Release\net6.0\CareerApplication.Core.pdb
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.csproj.AssemblyReference.cache
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.AssemblyInfoInputs.cache
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.AssemblyInfo.cs
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.csproj.CoreCompileInputs.cache
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.dll
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\refint\CareerApplication.Core.dll
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\CareerApplication.Core.pdb
+C:\Projects\dotnet\CareerApplication\CareerApplication.Core\obj\Release\net6.0\ref\CareerApplication.Core.dll

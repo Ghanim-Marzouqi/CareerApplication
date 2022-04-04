@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj": {}
+    "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj": {
+    "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
+        "projectUniqueName": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
         "projectName": "CareerApplication.Admin",
-        "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
-        "packagesPath": "C:\\Users\\MUCI226-D\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\",
+        "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MUCI226-D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,15 +27,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/free/api": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
-                "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
+              "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
+                "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
               }
             }
           }
@@ -64,13 +62,12 @@
               "version": "[6.0.3, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.3, )"
             },
             "MudBlazor": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.9, )"
             },
             "MudBlazor.ThemeManager": {
               "target": "Package",
@@ -101,21 +98,20 @@
         }
       }
     },
-    "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
+    "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj",
+        "projectUniqueName": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj",
         "projectName": "CareerApplication.Core",
-        "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj",
-        "packagesPath": "C:\\Users\\MUCI226-D\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\obj\\",
+        "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MUCI226-D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,8 +121,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/free/api": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {

@@ -24,23 +24,23 @@
         <MudTh>Sector</MudTh>
         <MudTh>Applying Due Date</MudTh>
         <MudTh>Job Location</MudTh>
-        <MudTh>View</MudTh>
-        <MudTh>Edit</MudTh>
-        <MudTh>Delete</MudTh>
+        <MudTh Class="d-flex justify-center">Actions</MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="Title">@context.Title</MudTd>
         <MudTd DataLabel="Job Category">@context.Sector?.Name</MudTd>
-        <MudTd DataLabel="Applying Due Date">@context.ApplicationDueDate</MudTd>
+        <MudTd DataLabel="Applying Due Date">@context.ApplicationDueDate.ToString("dd MMM yyyy")</MudTd>
         <MudTd DataLabel="Job Location">@context.JobLocation</MudTd>
-        <MudTd DataLabel="View">
-            <MudIconButton Icon="@Icons.Material.Filled.Visibility" Color="Color.Success" Class="px-1"></MudIconButton>
-        </MudTd>
-        <MudTd DataLabel="Edit">
-            <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Info" Class="px-1" OnClick="() => OpenEditJobDialog(context)"></MudIconButton>
-        </MudTd>
-        <MudTd DataLabel="Delete">
-            <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" Class="px-1"></MudIconButton>
+        <MudTd DataLabel="Actions" Class="d-flex justify-center">
+            <MudTooltip Text="View">
+                <MudIconButton Icon="@Icons.Material.Filled.Visibility" Color="Color.Success" Link="@($"/company/posted-job-details/{context.Id}")"></MudIconButton>
+            </MudTooltip>
+            <MudTooltip Text="Edit">
+                <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Info" OnClick="() => OpenEditJobDialog(context)"></MudIconButton>
+            </MudTooltip>
+            <MudTooltip Text="Delete">
+                <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error"></MudIconButton>
+            </MudTooltip>
         </MudTd>
     </RowTemplate>
     <PagerContent>
@@ -99,7 +99,7 @@
             return true;
         if (job.Title.Contains(searchString, StringComparison.OrdinalIgnoreCase))
             return true;
-        if (job.ApplicationDueDate.Contains(searchString))
+        if (job.ApplicationDueDate.ToString().Contains(searchString))
             return true;
         return false;
     }

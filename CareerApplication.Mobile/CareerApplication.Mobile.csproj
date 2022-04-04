@@ -9,7 +9,7 @@
         <RootNamespace>CareerApplication.Mobile</RootNamespace>
         <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
         <!-- Display name -->
-        <ApplicationTitle>CareerApplication.Mobile</ApplicationTitle>
+        <ApplicationTitle>Career Application</ApplicationTitle>
         <!-- App Identifier -->
         <ApplicationId>com.companyname.CareerApplication.Mobile</ApplicationId>
         <!-- Versions -->
@@ -29,6 +29,9 @@
 		<MauiImage Include="Resources\Images\*" />
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Resources\Images\ic_logout.png" />
 	</ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\CareerApplication.Core\CareerApplication.Core.csproj" />

@@ -49,13 +49,13 @@
 
 @code {
     // Properties
-    LoginModel _model = new();
-    AlertModel _alert = new();
-    UserModel _user = new();
-    bool _isLoading;
-    bool _passwordVisibility;
-    InputType _passwordInput = InputType.Password;
-    string _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+    private LoginModel _model = new();
+    private AlertModel _alert = new();
+    private UserModel _user = new();
+    private bool _isLoading;
+    private bool _passwordVisibility;
+    private InputType _passwordInput = InputType.Password;
+    private string _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
 
     // Private Methods
     private void TogglePasswordVisibility()
@@ -86,7 +86,7 @@
             if (result != null && result.User != null)
             {
                 // Retieve user data from database
-                Func<UserEntity, bool> usersPredicate = (user) => user.Id == result.User.LocalId;
+                Func<UserEntity, bool> usersPredicate = (user) => user.AuthId == result.User.LocalId;
                 Func<FirebaseObject<UserEntity>, UserEntity> usersSelector = (user) => _mapper.Map<UserEntity>(user.Object);
 
                 var loggedInUser = await _db.GetById<UserEntity>(UserEntity.Node, usersPredicate, usersSelector);

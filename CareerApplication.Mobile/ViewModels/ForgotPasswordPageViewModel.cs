@@ -22,7 +22,7 @@ public partial class ForgotPasswordPageViewModel : BaseViewModel
 
     #region Private Methods
     [ICommand]
-    private async Task ForgetPassword()
+    private async Task ForgetPasswordAsync()
     {
         if (string.IsNullOrEmpty(Email))
         {
@@ -59,7 +59,7 @@ public partial class ForgotPasswordPageViewModel : BaseViewModel
     }
 
     [ICommand]
-    private async Task GoBack() => 
+    private async Task GoBackAsync() => 
         await Shell.Current.GoToAsync("..");
 
     private void ClearFields()

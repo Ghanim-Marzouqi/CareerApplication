@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = CareerApplication.Admin
+build_property.RootNamespace = CareerApplication.Admin
+build_property.ProjectDir = C:\Projects\dotnet\CareerApplication\CareerApplication.Admin\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Projects\dotnet\CareerApplication\CareerApplication.Admin
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Components/Dialogs/AddOrEditJobDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dzXEFkZE9yRWRpdEpvYkRpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Components/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Components/PersonCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQZXJzb25DYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Layouts/AuthLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xBdXRoTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/Admin/DashboardPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/Admin/ProfilePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/Company/DashboardPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxEYXNoYm9hcmRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/Company/PostedJobsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxQb3N0ZWRKb2JzUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/Company/ProfilePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxQcm9maWxlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/ForgotPasswordPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/Pages/LoginPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Admin/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

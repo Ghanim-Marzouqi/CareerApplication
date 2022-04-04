@@ -431,11 +431,11 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MudBlazor/6.0.7": {
+      "MudBlazor/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.2",
-          "Microsoft.AspNetCore.Components.Web": "6.0.2"
+          "Microsoft.AspNetCore.Components": "6.0.3",
+          "Microsoft.AspNetCore.Components.Web": "6.0.3"
         },
         "compile": {
           "lib/net6.0/MudBlazor.dll": {}
@@ -2169,11 +2169,11 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MudBlazor/6.0.7": {
+      "MudBlazor/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.2",
-          "Microsoft.AspNetCore.Components.Web": "6.0.2"
+          "Microsoft.AspNetCore.Components": "6.0.3",
+          "Microsoft.AspNetCore.Components.Web": "6.0.3"
         },
         "compile": {
           "lib/net6.0/MudBlazor.dll": {}
@@ -4317,10 +4317,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MudBlazor/6.0.7": {
-      "sha512": "7NYG50IAgGAmWEWBNzjEOjWmyk9PEkSTDnGMppXzoS1F4CBJe7KkyhDFFHPBpuTpNqJ4r7Xw36R+LPgw7mKoFA==",
+    "MudBlazor/6.0.9": {
+      "sha512": "PDBCp76JjU6JPTECPrVh4eHySgBuuTiDN9sd0YFlhIRuKs4X5/5nePqPIm5pfZiCHscRHeTfSRLs2Kjv40u6uw==",
       "type": "package",
-      "path": "mudblazor/6.0.7",
+      "path": "mudblazor/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4332,7 +4332,7 @@
         "buildTransitive/MudBlazor.props",
         "lib/net6.0/MudBlazor.dll",
         "lib/net6.0/MudBlazor.xml",
-        "mudblazor.6.0.7.nupkg.sha512",
+        "mudblazor.6.0.9.nupkg.sha512",
         "mudblazor.nuspec",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
@@ -8233,30 +8233,28 @@
       "CareerApplication.Core >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.3",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.3",
-      "MudBlazor >= 6.0.7",
+      "MudBlazor >= 6.0.9",
       "MudBlazor.ThemeManager >= 1.0.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MUCI226-D\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
+      "projectUniqueName": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
       "projectName": "CareerApplication.Admin",
-      "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
-      "packagesPath": "C:\\Users\\MUCI226-D\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\CareerApplication\\CareerApplication.Admin\\obj\\",
+      "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\CareerApplication.Admin.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Admin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MUCI226-D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8266,15 +8264,14 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/free/api": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
-              "projectPath": "C:\\Projects\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
+            "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj": {
+              "projectPath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.Core\\CareerApplication.Core.csproj"
             }
           }
         }
@@ -8302,13 +8299,12 @@
             "version": "[6.0.3, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.3, )"
           },
           "MudBlazor": {
             "target": "Package",
-            "version": "[6.0.7, )"
+            "version": "[6.0.9, )"
           },
           "MudBlazor.ThemeManager": {
             "target": "Package",

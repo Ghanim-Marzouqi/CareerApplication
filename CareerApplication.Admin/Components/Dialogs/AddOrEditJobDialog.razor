@@ -18,11 +18,11 @@
                         Variant="Variant.Outlined" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudSelect T="string" @bind-Value="_model.SectorId" Label="Job Sector" Margin="Margin.Dense" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
-                        <MudSelectItem T="string" Value="@("select_job_sector")">- Select Job Sector -</MudSelectItem>
+                    <MudSelect T="int" @bind-Value="_model.SectorId" Label="Job Sector" Margin="Margin.Dense" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                        <MudSelectItem T="int" Value="0">- Select Job Sector -</MudSelectItem>
                         @foreach (var sector in _sectors)
                         {
-                            <MudSelectItem T="string" Value="@(sector.Id)">@(sector.Name)</MudSelectItem>
+                            <MudSelectItem T="int" Value="@(sector.Id)">@(sector.Name)</MudSelectItem>
                         }
                     </MudSelect>
                 </MudItem>
@@ -66,20 +66,11 @@
                         Variant="Variant.Outlined"/>
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudSelect T="string" @bind-Value="_model.InterviewType" Label="Job Sector" Margin="Margin.Dense" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
-                        <MudSelectItem T="string" Value="@("select_interview_type")">- Select Interview Type -</MudSelectItem>
-                        <MudSelectItem T="string" Value="@("Full Time")" />
-                        <MudSelectItem T="string" Value="@("Part Time")" />
+                    <MudSelect T="int" @bind-Value="_model.JobTypeId" Label="Job Type" Margin="Margin.Dense" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                        <MudSelectItem T="int" Value="0">- Select Job Type -</MudSelectItem>
+                        <MudSelectItem T="int" Value="1">Full Time</MudSelectItem>
+                        <MudSelectItem T="int" Value="2">Part Time</MudSelectItem>
                     </MudSelect>
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTextField 
-                        T="string" 
-                        @bind-Value="@_model.InterviewLocation" 
-                        For="@(() => _model.InterviewLocation)" 
-                        Label="Interview Location" 
-                        Margin="Margin.Dense"
-                        Variant="Variant.Outlined" />
                 </MudItem>
                 <MudItem xs="12" md="6">
                     <MudTextField 
@@ -91,20 +82,11 @@
                         Variant="Variant.Outlined" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudDatePicker 
-                        @bind-Date="_model.InterviewDate"
-                        For="@(() => _model.InterviewDate)"
-                        Label="Interview Date"
-                        DateFormat="dd MMM yyyy"
-                        Margin="Margin.Dense"
-                        Variant="Variant.Outlined"/>
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTimePicker
-                        @bind-Time="_model.InterviewTime"
-                        For="@(() => _model.InterviewTime)" 
-                        Label="Interview Time" 
-                        AmPm="true"
+                    <MudTextField 
+                        T="int" 
+                        @bind-Value="@_model.NumberOfVacancies" 
+                        For="@(() => _model.NumberOfVacancies)" 
+                        Label="Number Of Vacancies" 
                         Margin="Margin.Dense"
                         Variant="Variant.Outlined" />
                 </MudItem>
@@ -112,7 +94,9 @@
         </DialogContent>
         <DialogActions>
             <MudButton OnClick="Cancel">Cancel</MudButton>
-            <MudButton ButtonType="ButtonType.Submit" Color="Color.Primary">Add</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Color="Color.Primary">
+                @Type
+            </MudButton>
         </DialogActions>
     </MudDialog>
 </EditForm>
@@ -127,36 +111,23 @@
     private AlertModel _alert = new();
 
     // Lifecycle Methods
-    protected override void OnInitialized()
-    {
-        if (Type == "Edit" && Job != null)
-        {
-            bool isValidApplicationDueDate = DateTime.TryParse(Job.ApplicationDueDate, out DateTime applicationDueDate);
-            bool isValidInterviewDate = DateTime.TryParse(Job.InterviewDate, out DateTime interviewDate);
-            bool isValidTime = TimeSpan.TryParse(Job.InterviewTime, out TimeSpan interviewTime);
-
-            _model.Title = Job.Title;
-            _model.SectorId = Job.SectorId;
-            _model.Description = Job.Description;
-            _model.Responsibilities = Job.Responsibilities;
-            _model.Qualifications = Job.Qualifications;
-            _model.InterviewLocation = Job.InterviewLocation;
-            _model.JobLocation = Job.JobLocation;
-
-            if (isValidApplicationDueDate)
-                _model.ApplicationDueDate = applicationDueDate;
-
-            if (isValidInterviewDate)
-                _model.InterviewDate = interviewDate;
-
-            if (isValidTime)
-                _model.InterviewTime = interviewTime;
-        }
-    }
-
     protected override async Task OnInitializedAsync()
     {
         await GetSectorsAsync();
+
+        if (Type == "Edit" && Job != null)
+        {
+            _model.SectorId = Job.SectorId;
+            _model.Title = Job.Title;
+            _model.Description = Job.Description;
+            _model.Responsibilities = Job.Responsibilities;
+            _model.Qualifications = Job.Qualifications;
+            _model.JobTypeId = Job.JobTypeId;
+            _model.JobLocation = Job.JobLocation;
+            _model.ApplicationDueDate = Job.ApplicationDueDate;
+            _model.NumberOfVacancies = Job.NumberOfVacancies;
+            StateHasChanged();
+        }
     }
 
     // Private Methods
@@ -195,31 +166,50 @@
                 MudDialog.Close(DialogResult.Ok(false));
             }
 
-            if (Type == "Add")
+            if (Type == "Add" && user != null)
             {
-                await _db.Add(JobEntity.Node, new JobEntity
+                var id = await _db.GenerateNewId<JobEntity>(JobEntity.Node);
+
+                var isAdded = await _db.Add(JobEntity.Node, new JobEntity
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = id,
                     CompanyId = user.Id,
                     SectorId = _model.SectorId,
                     Title = _model.Title,
                     Description = _model.Description,
                     Responsibilities = _model.Responsibilities,
                     Qualifications = _model.Qualifications,
-                    ApplicationDueDate = _model.ApplicationDueDate.HasValue ? _model.ApplicationDueDate.Value.ToString("dd MMM yyyy") : DateTime.Now.ToString("dd MMM yyyy"),
-                    InterviewType = _model.InterviewType,
-                    InterviewLocation = _model.InterviewLocation,
+                    ApplicationDueDate = _model.ApplicationDueDate.HasValue ? _model.ApplicationDueDate.Value : DateTime.Now,
                     JobLocation = _model.JobLocation,
-                    InterviewDate = _model.InterviewDate.HasValue ? _model.InterviewDate.Value.ToString("dd MMM yyyy") : DateTime.Now.ToString("dd MMM yyyy"),
-                    InterviewTime = _model.InterviewTime.HasValue ? _model.InterviewTime.Value.ToString() : string.Empty,
+                    NumberOfVacancies = _model.NumberOfVacancies,
                     CreatedBy = user.Name
                 });
 
-                MudDialog.Close(DialogResult.Ok(true));
+                MudDialog.Close(DialogResult.Ok(isAdded));
             }
-            else if (Type == "Edit")
+            else if (Type == "Edit" && user != null)
             {
-                MudDialog.Close(DialogResult.Ok(false));
+                Func<JobEntity, bool> predicate = (job) => job.Key == Job.Key;
+                Func<FirebaseObject<JobEntity>, JobEntity> selector = (job) => _mapper.Map<JobEntity>(job.Object);
+                var isUpdated = await _db.Update(JobEntity.Node, Job.Key, predicate, selector, new JobEntity
+                {
+                    Id = Job.Id,
+                    Key = Job.Key,
+                    CompanyId = Job.CompanyId,
+                    SectorId = _model.SectorId,
+                    Title = _model.Title,
+                    Description = _model.Description,
+                    ApplicationDueDate = _model.ApplicationDueDate.HasValue ? _model.ApplicationDueDate.Value : DateTime.Now,
+                    Qualifications = _model.Qualifications,
+                    Responsibilities = _model.Responsibilities,
+                    JobLocation = _model.JobLocation,
+                    JobTypeId = _model.JobTypeId,
+                    NumberOfVacancies = _model.NumberOfVacancies,
+                    UpdatedBy = user.Name,
+                    UpdatedAt = DateTime.Now.ToString("dd MMM yyyy")
+                });
+
+                MudDialog.Close(DialogResult.Ok(isUpdated));
             }
             else
             {

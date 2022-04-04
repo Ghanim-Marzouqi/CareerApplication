@@ -1,4 +1,5 @@
-﻿global using System.Diagnostics;
+﻿global using System.Collections.ObjectModel;
+global using System.Diagnostics;
 global using System.Globalization;
 global using System.Text.Json;
 global using System.Text.Json.Nodes;
@@ -12,6 +13,7 @@ global using Firebase.Auth;
 global using Firebase.Database;
 global using CareerApplication.Core;
 global using CareerApplication.Core.Entities;
+global using CareerApplication.Core.Models;
 global using CareerApplication.Core.Providers;
 global using CareerApplication.Core.Services;
 global using CareerApplication.Mobile.Models;

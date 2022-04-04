@@ -1,0 +1,20 @@
+﻿@page "/company/posted-job-details/{JobId:int}"
+
+<PageTitle>Career Application | Posted Jobs</PageTitle>
+
+<MudText Typo="Typo.h5" Color="Color.Secondary" Class="d-inline-flex justify-space-between align-center mb-4" Style="width: 100%">
+    <strong>Posted Jobs</strong>
+    <MudBreadcrumbs Items="_links"></MudBreadcrumbs>
+</MudText>
+
+<p>Posted Job Details</p>
+
+@code {
+    // Properties
+    [Parameter] public int? JobId { get; set; }
+    private List<BreadcrumbItem> _links = new List<BreadcrumbItem>
+    {
+        new BreadcrumbItem("Posted Jobs", href: "/company/posted-jobs"),
+        new BreadcrumbItem("Posted Job Destails", href: null, disabled: true)
+    };
+}

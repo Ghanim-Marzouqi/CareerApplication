@@ -38,7 +38,7 @@ public partial class RegistrationPageViewModel : BaseViewModel
 
     #region Private Methods
     [ICommand]
-    private async Task Register()
+    private async Task RegisterAsync()
     {
         // Validate user input
         if (string.IsNullOrEmpty(Name))
@@ -98,9 +98,11 @@ public partial class RegistrationPageViewModel : BaseViewModel
                 Func<RoleEntity, bool> rolesPredicate = (role) => role.Name == "Job Seeker";
                 Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) => _mapper.Map<RoleEntity>(role.Object);
                 var role = await _db.GetById(RoleEntity.Node, rolesPredicate, rolesSelector);
+                var id = await _db.GenerateNewId<UserEntity>(UserEntity.Node);
                 var isAdded = await _db.Add(UserEntity.Node, new UserEntity
                 {
-                    Id = result.User.LocalId,
+                    Id = id,
+                    AuthId = result.User.LocalId,
                     RoleId = role.Id,
                     Name = Name,
                     Email = Email,
@@ -140,7 +142,7 @@ public partial class RegistrationPageViewModel : BaseViewModel
     }
 
     [ICommand]
-    private async Task GoBack() => 
+    private async Task GoBackAsync() => 
         await Shell.Current.GoToAsync("..");
 
     private void ClearFields()

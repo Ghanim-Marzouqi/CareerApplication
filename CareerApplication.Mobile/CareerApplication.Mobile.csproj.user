@@ -3,10 +3,14 @@
   <PropertyGroup>
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugProfile>Pixel 5 - API 30 (Android 11.0 - API 30)</ActiveDebugProfile>
+    <ActiveDebugProfile>Pixel 5 - API 31 (Android 12.0 - API 31)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <SelectedDevice>pixel_5_-_api_30</SelectedDevice>
-    <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
+    <SelectedDevice>iPhone 11 Pro iOS 15.4</SelectedDevice>
+    <DefaultDevice>iPhone 11 Pro iOS 15.4</DefaultDevice>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetPlatformIdentifier)'=='iOS'">
+    <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <MauiXaml Update="AppShell.xaml">
@@ -16,9 +20,6 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\ForgotPasswordPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Views\HomePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\LoginPage.xaml">

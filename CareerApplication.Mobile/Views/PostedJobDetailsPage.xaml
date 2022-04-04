@@ -4,9 +4,10 @@
              x:Class="CareerApplication.Mobile.Views.PostedJobDetailsPage"
              Title="Job Details"
              BackgroundColor="White">
-    <StackLayout>
-        <Label Text="Welcome to .NET MAUI!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-    </StackLayout>
+    <ContentPage.Content>
+        <Label
+            Text="Posted Job Details"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+    </ContentPage.Content>
 </ContentPage>

@@ -3,16 +3,14 @@
 public class JobEntity : BaseEntity
 {
     public static string Node { get => "Jobs"; }
-    public string CompanyId { get; set; } = string.Empty;
-    public string SectorId { get; set; } = string.Empty;
+    public int CompanyId { get; set; }
+    public int SectorId { get; set; }
     public string Title { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public string Responsibilities { get; set; } = string.Empty;
     public string Qualifications { get; set; } = string.Empty;
-    public string ApplicationDueDate { get; set; } = string.Empty;
-    public string InterviewType { get; set; } = string.Empty;
-    public string InterviewLocation { get; set; } = string.Empty;
+    public DateTime ApplicationDueDate { get; set; }
+    public int JobTypeId { get; set; } = 1; // 1 => Full Time, 2 => Part Time
     public string JobLocation { get; set; } = string.Empty;
-    public string InterviewDate { get; set; } = string.Empty;
-    public string InterviewTime { get; set; } = string.Empty;
+    public int NumberOfVacancies { get; set; }
 }

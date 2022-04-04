@@ -49,7 +49,7 @@ public partial class LoginPageViewModel : BaseViewModel
 
     #region Private Methods
     [ICommand]
-    private async Task Login()
+    private async Task LoginAsync()
     {
         // Validate user input
         if (string.IsNullOrEmpty(Email))
@@ -77,7 +77,7 @@ public partial class LoginPageViewModel : BaseViewModel
             if (result != null && result.User != null)
             {
                 // Retieve user data from database
-                Func<UserEntity, bool> predicate = (user) => user.Id == result.User.LocalId;
+                Func<UserEntity, bool> predicate = (user) => user.AuthId == result.User.LocalId;
                 Func<FirebaseObject<UserEntity>, UserEntity> selector = (user) => _mapper.Map<UserEntity>(user.Object);
                 var loggedInUser = await _db.GetById(UserEntity.Node, predicate, selector);
 
@@ -95,7 +95,7 @@ public partial class LoginPageViewModel : BaseViewModel
                     RemoveData("credentials");
 
                 await Toast.Make("Login successfull", ToastDuration.Long).Show();
-                await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
+                await Shell.Current.GoToAsync($"//{nameof(PostedJobsPage)}");
                 ClearFields();
             }
             else
@@ -123,11 +123,11 @@ public partial class LoginPageViewModel : BaseViewModel
     }
 
     [ICommand]
-    async Task GoToRegistrationPage() =>
+    async Task GoToRegistrationPageAsync() =>
         await Shell.Current.GoToAsync(nameof(RegistrationPage));
 
     [ICommand]
-    async Task GoToForgotPasswordPage() =>
+    async Task GoToForgotPasswordPageAsync() =>
         await Shell.Current.GoToAsync(nameof(ForgotPasswordPage));
 
     private void ClearFields()

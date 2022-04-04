@@ -1,0 +1,89 @@
+﻿@page "/company/rate-us"
+@inject DatabaseProvider _db
+@inject IBrowserStorageService _broswerStorageService
+@inject ISnackbar _snackbar
+
+<PageTitle>Career Application | Rate Us</PageTitle>
+
+<MudText Typo="Typo.h5" Color="Color.Secondary" Class="mb-8">
+    <strong>Rate Us</strong>
+</MudText>
+
+<MudPaper Class="d-flex flex-column align-start pa-4">
+    <MudText>How much do you like our app?</MudText>
+    <MudRating @bind-SelectedValue="@_rating" Size="Size.Large" />
+    <MudText Class="mt-4">Do you have any comments for us?</MudText>
+    <MudTextField 
+        @bind-Value="@_comment" 
+        Variant="Variant.Outlined"
+        Lines="3"
+        Class="mt-2"
+        Style="min-width: 400px"/>
+    <MudButton Variant="Variant.Filled" Disabled="@_loading" Color="Color.Primary" Class="mt-2" OnClick="Submit">
+        Submit
+    </MudButton>
+</MudPaper>
+
+@code {
+    // Properties
+    private int _rating { get; set; }
+    private string _comment { get; set; } = string.Empty;
+    private UserModel? _user { get; set; }
+    private bool _loading;
+
+    // Lifecycle Method
+    protected override async Task OnInitializedAsync()
+    {
+        var user = await _broswerStorageService.GetItem<UserModel>("user");
+
+        if (user != null)
+            _user = user;
+    }
+
+    private async Task Submit()
+    {
+        if (_rating == 0 || _user == null)
+        {
+            _snackbar.Add("Please give your rating", Severity.Warning);
+            return;
+        }
+
+        _loading = true;
+        StateHasChanged();
+
+        try
+        {
+            var id = await _db.GenerateNewId<RatingEntity>(RatingEntity.Node);
+            var isAdded = await _db.Add(RatingEntity.Node, new RatingEntity
+            {
+                Id = id,
+                UserId = _user.Id,
+                Rating = _rating,
+                Comments = _comment,
+                CreatedBy = _user.Name
+            });
+
+            if (isAdded)
+            {
+                _loading = false;
+                _snackbar.Add("Thank you for rating", Severity.Success);
+                _rating = 0;
+                _comment = string.Empty;
+                StateHasChanged();
+            }
+            else
+            {
+                _loading = false;
+                _snackbar.Add("Cannot send rating", Severity.Error);
+                StateHasChanged();
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            _loading = false;
+            _snackbar.Add("Cannot send rating", Severity.Error);
+            StateHasChanged();
+        }
+    }
+}
