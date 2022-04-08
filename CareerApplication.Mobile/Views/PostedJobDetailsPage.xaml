@@ -3,11 +3,140 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CareerApplication.Mobile.Views.PostedJobDetailsPage"
              Title="Job Details"
-             BackgroundColor="White">
+             BackgroundColor="{DynamicResource BackgroundColor}">
     <ContentPage.Content>
-        <Label
-            Text="Posted Job Details"
-            HorizontalOptions="Center"
-            VerticalOptions="Center" />
+        <ScrollView>
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Title"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold" 
+                    Margin="10"/>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding Job.Title}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Company"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding Job.Company.Name}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="Sector"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Text="{Binding Job.Sector.Name}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Text="Description"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Text="{Binding Job.Description}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Text="Responsibilities"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Text="{Binding Job.Responsibilities}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Text="Qualifications"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Text="{Binding Job.Qualifications}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Text="Job Type"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Text="{Binding Job.JobType}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Text="Job Location"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Text="{Binding Job.JobLocation}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="8"
+                    Grid.Column="0"
+                    Text="Available Vacancies"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    Text="{Binding Job.NumberOfVacancies}"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Text="Due Date"
+                    TextColor="{DynamicResource SecondaryColor}"
+                    FontAttributes="Bold"
+                    Margin="10"/>
+                <Label
+                    Grid.Row="9"
+                    Grid.Column="1"
+                    Text="{Binding Job.DueDate}"
+                    Margin="10"/>
+                <Button
+                    Grid.Row="10"
+                    Grid.ColumnSpan="2"
+                    Margin="20"
+                    Text="APPLY NOW"
+                    CornerRadius="30"
+                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    IsEnabled="{Binding ApplyCommand.IsRunning, Converter={StaticResource isNot}, Mode=OneWay}"
+                    Command="{Binding ApplyCommand}"/>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

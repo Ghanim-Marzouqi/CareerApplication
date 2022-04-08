@@ -13,7 +13,7 @@
 <div class="d-flex justify-end my-2">
     <MudButton Variant="Variant.Filled" Size="Size.Small" StartIcon="@Icons.Material.Filled.PostAdd" Color="Color.Primary" OnClick="OpenAddJobDialog">Add New Job</MudButton>
 </div>
-<MudTable Items="@_jobs" Dense="true" Striped="true" Filter="new Func<JobModel,bool>(FilterJobs)">
+<MudTable Items="@_jobs" Dense="true" Striped="true" Filter="new Func<Job,bool>(FilterJobs)">
     <ToolBarContent>
         <MudText Typo="Typo.h6">Job List</MudText>
         <MudSpacer />
@@ -50,7 +50,7 @@
 
 @code {
     // Properties
-    private IEnumerable<JobModel> _jobs = new List<JobModel>();
+    private IEnumerable<Job> _jobs = new List<Job>();
     private string _searchString = string.Empty;
 
     // Lifecycle Methods
@@ -70,7 +70,7 @@
 
             if (jobs != null && jobs.Count() > 0)
             {
-                _jobs = jobs.Select(job => _mapper.Map<JobModel>(job)).ToList();
+                _jobs = jobs.Select(job => _mapper.Map<Job>(job)).ToList();
 
                 foreach (var job in _jobs)
                 {
@@ -78,7 +78,7 @@
                     Func<FirebaseObject<SectorEntity>, SectorEntity> sectorSelector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
 
                     var sector = await _db.GetById<SectorEntity>(SectorEntity.Node, sectorPredicate, sectorSelector);
-                    _jobs.Where(j => j.Id == job.Id).First().Sector = _mapper.Map<SectorModel>(sector);
+                    _jobs.Where(j => j.Id == job.Id).First().Sector = _mapper.Map<Sector>(sector);
                 }
             }
 
@@ -91,9 +91,9 @@
 
     }
 
-    private bool FilterJobs(JobModel job) => FilterFunc(job, _searchString);
+    private bool FilterJobs(Job job) => FilterFunc(job, _searchString);
 
-    private bool FilterFunc(JobModel job, string searchString)
+    private bool FilterFunc(Job job, string searchString)
     {
         if (string.IsNullOrWhiteSpace(searchString))
             return true;
@@ -128,7 +128,7 @@
         }
     }
 
-    private async void OpenEditJobDialog(JobModel job)
+    private async void OpenEditJobDialog(Job job)
     {
         var parameters = new DialogParameters { ["Type"] = "Edit", ["Job"] = job };
         var options = new DialogOptions { CloseOnEscapeKey = true, FullWidth = true, MaxWidth = MaxWidth.Medium };

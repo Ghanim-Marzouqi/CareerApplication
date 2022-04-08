@@ -28,13 +28,13 @@
     // Properties
     private int _rating { get; set; }
     private string _comment { get; set; } = string.Empty;
-    private UserModel? _user { get; set; }
+    private User? _user { get; set; }
     private bool _loading;
 
     // Lifecycle Method
     protected override async Task OnInitializedAsync()
     {
-        var user = await _broswerStorageService.GetItem<UserModel>("user");
+        var user = await _broswerStorageService.GetItem<User>("user");
 
         if (user != null)
             _user = user;

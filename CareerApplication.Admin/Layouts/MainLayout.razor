@@ -43,7 +43,7 @@
 @code {
     // Properties
     private readonly ThemeManagerTheme _themeManager = new();
-    private UserModel _user = new();
+    private User _user = new();
     private bool _drawerOpen = true;
 
     // Lifecycle Methods
@@ -60,7 +60,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var user = await _browserService.GetItem<UserModel>("user");
+        var user = await _browserService.GetItem<User>("user");
 
         if (user == null)
         {
@@ -76,7 +76,7 @@
         _drawerOpen = !_drawerOpen;
     }
 
-    private string GetProfileLink(UserModel user)
+    private string GetProfileLink(User user)
     {
         if (user == null || user.Role == null)
             return string.Empty;

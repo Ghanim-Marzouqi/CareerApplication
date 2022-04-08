@@ -1,19 +1,21 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-[INotifyPropertyChanged]
 public partial class PostedJobsPageViewModel : BaseViewModel
 {
     #region Properties
     private readonly DatabaseProvider _db;
     private readonly IMapper _mapper;
 
-    public ObservableCollection<JobModel> Jobs { get; } = new();
+    public ObservableCollection<Job> Jobs { get; } = new();
 
     [ObservableProperty]
     private bool isRefreshing;
 
     [ObservableProperty]
     private bool isBusy;
+
+    [ObservableProperty]
+    private bool image;
     #endregion
 
     #region Constructors
@@ -40,8 +42,23 @@ public partial class PostedJobsPageViewModel : BaseViewModel
 
             foreach (var job in jobs)
             {
-                var postedJob = _mapper.Map<JobModel>(job);
-                Jobs.Add(postedJob);
+                int dateComparisonResult = DateTime.Compare(job.ApplicationDueDate, DateTime.Today);
+
+                if (dateComparisonResult >= 0)
+                {
+                    Func<SectorEntity, bool> sectorPredicate = (sector) => sector.Id == job.SectorId;
+                    Func<FirebaseObject<SectorEntity>, SectorEntity> sectorSelector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
+                    var sector = await _db.GetById(SectorEntity.Node, sectorPredicate, sectorSelector);
+
+                    Func<UserEntity, bool> userPredicate = (user) => user.Id == job.CompanyId;
+                    Func<FirebaseObject<UserEntity>, UserEntity> userSelector = (user) => _mapper.Map<UserEntity>(user.Object);
+                    var company = await _db.GetById(UserEntity.Node, userPredicate, userSelector);
+
+                    var postedJob = _mapper.Map<Job>(job);
+                    postedJob.Company = _mapper.Map<Core.Models.User>(company);
+                    postedJob.Sector = _mapper.Map<Sector>(sector);
+                    Jobs.Add(postedJob);
+                }
             }
                 
         }

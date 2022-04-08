@@ -18,12 +18,12 @@
 
 @code {
     // Properties
-    UserModel _user = new();
+    User _user = new();
 
     // Lifecycle Methods
     protected override async Task OnInitializedAsync()
     {
-        var user = await _browserStorageService.GetItem<UserModel>("user");
+        var user = await _browserStorageService.GetItem<User>("user");
 
         if (user != null)
         {

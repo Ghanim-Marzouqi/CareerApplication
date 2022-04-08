@@ -1,6 +1,5 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-[INotifyPropertyChanged]
 public partial class ForgotPasswordPageViewModel : BaseViewModel
 {
     #region Properties

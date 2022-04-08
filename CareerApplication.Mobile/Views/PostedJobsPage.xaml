@@ -30,21 +30,33 @@
                 SelectionChanged="CollectionView_SelectionChanged"
                 SelectionMode="Single">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:JobModel">
+                    <DataTemplate x:DataType="model:Job">
                         <Grid Padding="10,5">
                             <Frame HeightRequest="125" Style="{StaticResource CardView}">
                                 <Grid Padding="0" ColumnDefinitions="125,*">
                                     <Image
-                                        Source="ic_about"
+                                        Source="{Binding Image}"
                                         Aspect="AspectFill"
-                                        HeightRequest="125"
-                                        WidthRequest="125" />
+                                        HeightRequest="110"
+                                        WidthRequest="110"
+                                        Margin="5,5,5,5"/>
                                     <StackLayout
                                         Grid.Column="1"
                                         Padding="10"
                                         VerticalOptions="Center">
-                                        <Label Text="{Binding Title}" />
+                                        <Label Text="{Binding Title}" TextColor="{DynamicResource SecondaryColor}" FontSize="Subtitle" Margin="0,0,0,10" FontAttributes="Bold" />
                                         <Label Text="{Binding JobType}" />
+                                        <HorizontalStackLayout Spacing="20">
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Due Date: "/>
+                                                        <Span Text="{Binding DueDate}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label Text="Apply Now" TextColor="{DynamicResource PrimaryColor}" FontSize="Caption" />
+                                        </HorizontalStackLayout>
                                     </StackLayout>
                                 </Grid>
                             </Frame>

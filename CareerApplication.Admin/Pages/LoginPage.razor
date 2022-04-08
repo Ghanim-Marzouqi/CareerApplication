@@ -51,7 +51,7 @@
     // Properties
     private LoginModel _model = new();
     private AlertModel _alert = new();
-    private UserModel _user = new();
+    private User _user = new();
     private bool _isLoading;
     private bool _passwordVisibility;
     private InputType _passwordInput = InputType.Password;
@@ -101,7 +101,7 @@
                     return;
                 }
 
-                _user = _mapper.Map<UserModel>(loggedInUser);
+                _user = _mapper.Map<User>(loggedInUser);
 
                 Func<RoleEntity, bool> rolesPredicate = (role) => role.Id == loggedInUser.RoleId;
                 Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) => _mapper.Map<RoleEntity>(role.Object);
@@ -109,7 +109,7 @@
                 var userRole = await _db.GetById<RoleEntity>(RoleEntity.Node, rolesPredicate, rolesSelector);
 
                 if (userRole != null)
-                    _user.Role = _mapper.Map<RoleModel>(userRole);
+                    _user.Role = _mapper.Map<Role>(userRole);
 
                 await _browserStorageService.SetItem("user", _user);
 

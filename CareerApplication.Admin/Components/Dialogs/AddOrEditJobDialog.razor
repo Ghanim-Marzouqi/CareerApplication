@@ -104,9 +104,9 @@
 @code {
     // Private Methods
     [CascadingParameter] MudDialogInstance MudDialog { get; set; } = new MudDialogInstance();
-    [Parameter] public JobModel Job { get; set; } = new();
+    [Parameter] public Job Job { get; set; } = new();
     [Parameter] public string Type { get; set; } = string.Empty;
-    private IEnumerable<SectorModel> _sectors = new List<SectorModel>();
+    private IEnumerable<Sector> _sectors = new List<Sector>();
     private JobFormModel _model = new();
     private AlertModel _alert = new();
 
@@ -137,7 +137,7 @@
         {
             Func<FirebaseObject<SectorEntity>, SectorEntity> selector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
             var sectors = await _db.GetAll(SectorEntity.Node, selector);
-            _sectors = _mapper.Map<IEnumerable<SectorModel>>(sectors);
+            _sectors = _mapper.Map<IEnumerable<Sector>>(sectors);
         }
         catch (Exception e)
         {
@@ -152,7 +152,7 @@
     {
         try
         {
-            var user = await _browserStorageService.GetItem<UserModel>("user");
+            var user = await _browserStorageService.GetItem<User>("user");
 
             if (user == null)
             {

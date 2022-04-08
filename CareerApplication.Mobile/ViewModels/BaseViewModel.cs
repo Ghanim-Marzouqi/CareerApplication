@@ -1,6 +1,6 @@
 ﻿namespace CareerApplication.Mobile.ViewModels;
 
-public class BaseViewModel
+public partial class BaseViewModel : ObservableObject
 {
     public bool IsValidEmail(string email)
     {

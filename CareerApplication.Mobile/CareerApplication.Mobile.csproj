@@ -30,9 +30,6 @@
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Resources\Images\ic_logout.png" />
-	</ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\CareerApplication.Core\CareerApplication.Core.csproj" />
     </ItemGroup>
@@ -52,6 +49,9 @@
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
       <MauiXaml Update="Views\AboutPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\JobApplicationPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
       <MauiXaml Update="Views\PostedJobDetailsPage.xaml">

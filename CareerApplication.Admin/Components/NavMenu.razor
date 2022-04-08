@@ -21,12 +21,12 @@
 
 @code {
     // Properties
-    private UserModel _user = new();
+    private User _user = new();
 
     // Lifecycle Methods
     protected override async Task OnInitializedAsync()
     {
-        var user = await _browserService.GetItem<UserModel>("user");
+        var user = await _browserService.GetItem<User>("user");
 
         if (user == null)
             _navigationManager.NavigateTo(_navigationManager.BaseUri, replace: true);

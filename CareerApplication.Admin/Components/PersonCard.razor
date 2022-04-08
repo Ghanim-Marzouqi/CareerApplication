@@ -19,12 +19,12 @@
     [Parameter]
     public string Style { get; set; } = string.Empty;
 
-    UserModel loggedInUser = new();
+    User loggedInUser = new();
 
     // Lifecycle Methods
     protected override async Task OnInitializedAsync()
     {
-        var user = await _browserStorageService.GetItem<UserModel>("user");
+        var user = await _browserStorageService.GetItem<User>("user");
 
         if (user != null) loggedInUser = user;
     }

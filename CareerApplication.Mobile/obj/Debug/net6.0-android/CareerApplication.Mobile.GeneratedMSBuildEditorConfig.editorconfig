@@ -33,6 +33,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.V
 build_metadata.AdditionalFiles.TargetPath = Views\ForgotPasswordPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ForgotPasswordPage.xaml
 
+[C:/Projects/dotnet/CareerApplication/CareerApplication.Mobile/Views/JobApplicationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.Views.JobApplicationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\JobApplicationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\JobApplicationPage.xaml
+
 [C:/Projects/dotnet/CareerApplication/CareerApplication.Mobile/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CareerApplication.Mobile.Views.LoginPage.xaml
