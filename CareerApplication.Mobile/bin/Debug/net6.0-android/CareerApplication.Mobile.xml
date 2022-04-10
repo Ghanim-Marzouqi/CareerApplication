@@ -39,6 +39,12 @@
         <member name="P:CareerApplication.Mobile.ViewModels.JobApplicationViewModel.Job">
             <inheritdoc cref="F:CareerApplication.Mobile.ViewModels.JobApplicationViewModel.job"/>
         </member>
+        <member name="P:CareerApplication.Mobile.ViewModels.JobApplicationViewModel.Cv">
+            <inheritdoc cref="F:CareerApplication.Mobile.ViewModels.JobApplicationViewModel.cv"/>
+        </member>
+        <member name="P:CareerApplication.Mobile.ViewModels.JobApplicationViewModel.Covid19Certificate">
+            <inheritdoc cref="F:CareerApplication.Mobile.ViewModels.JobApplicationViewModel.covid19Certificate"/>
+        </member>
         <member name="F:CareerApplication.Mobile.ViewModels.LoginPageViewModel.loginCommand">
             <summary>The backing field for <see cref="P:CareerApplication.Mobile.ViewModels.LoginPageViewModel.LoginCommand"/>.</summary>
         </member>

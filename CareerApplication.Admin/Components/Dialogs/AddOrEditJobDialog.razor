@@ -136,7 +136,7 @@
         try
         {
             Func<FirebaseObject<SectorEntity>, SectorEntity> selector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
-            var sectors = await _db.GetAll(SectorEntity.Node, selector);
+            var sectors = await _db.GetAllAsync(SectorEntity.Node, selector);
             _sectors = _mapper.Map<IEnumerable<Sector>>(sectors);
         }
         catch (Exception e)
@@ -168,9 +168,9 @@
 
             if (Type == "Add" && user != null)
             {
-                var id = await _db.GenerateNewId<JobEntity>(JobEntity.Node);
+                var id = await _db.GenerateNewIdAsync<JobEntity>(JobEntity.Node);
 
-                var isAdded = await _db.Add(JobEntity.Node, new JobEntity
+                var isAdded = await _db.AddAsync(JobEntity.Node, new JobEntity
                 {
                     Id = id,
                     CompanyId = user.Id,
@@ -191,7 +191,7 @@
             {
                 Func<JobEntity, bool> predicate = (job) => job.Key == Job.Key;
                 Func<FirebaseObject<JobEntity>, JobEntity> selector = (job) => _mapper.Map<JobEntity>(job.Object);
-                var isUpdated = await _db.Update(JobEntity.Node, Job.Key, predicate, selector, new JobEntity
+                var isUpdated = await _db.UpdateAsync(JobEntity.Node, Job.Key, predicate, selector, new JobEntity
                 {
                     Id = Job.Id,
                     Key = Job.Key,

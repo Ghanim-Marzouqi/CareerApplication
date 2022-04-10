@@ -14,27 +14,27 @@ async Task InsertMasterData()
     if (dbProvider == null)
         return;
 
-    var id1 = await dbProvider.GenerateNewId<SectorEntity>(SectorEntity.Node);
+    var id1 = await dbProvider.GenerateNewIdAsync<SectorEntity>(SectorEntity.Node);
 
-    await dbProvider.Add(SectorEntity.Node, new SectorEntity
+    await dbProvider.AddAsync(SectorEntity.Node, new SectorEntity
     {
         Id = id1,
         Name = "Information Technology",
         CreatedBy = "Amani"
     });
 
-    var id2 = await dbProvider.GenerateNewId<SectorEntity>(SectorEntity.Node);
+    var id2 = await dbProvider.GenerateNewIdAsync<SectorEntity>(SectorEntity.Node);
 
-    await dbProvider.Add(SectorEntity.Node, new SectorEntity
+    await dbProvider.AddAsync(SectorEntity.Node, new SectorEntity
     {
         Id = id2,
         Name = "Finance",
         CreatedBy = "Amani"
     });
 
-    var id3 = await dbProvider.GenerateNewId<SectorEntity>(SectorEntity.Node);
+    var id3 = await dbProvider.GenerateNewIdAsync<SectorEntity>(SectorEntity.Node);
 
-    await dbProvider.Add(SectorEntity.Node, new SectorEntity
+    await dbProvider.AddAsync(SectorEntity.Node, new SectorEntity
     {
         Id = id3,
         Name = "Human Resources",

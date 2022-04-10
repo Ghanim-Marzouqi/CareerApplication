@@ -53,8 +53,8 @@
 
         try
         {
-            var id = await _db.GenerateNewId<RatingEntity>(RatingEntity.Node);
-            var isAdded = await _db.Add(RatingEntity.Node, new RatingEntity
+            var id = await _db.GenerateNewIdAsync<RatingEntity>(RatingEntity.Node);
+            var isAdded = await _db.AddAsync(RatingEntity.Node, new RatingEntity
             {
                 Id = id,
                 UserId = _user.Id,

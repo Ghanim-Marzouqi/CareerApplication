@@ -66,7 +66,7 @@
         {
             Func<FirebaseObject<JobEntity>, JobEntity> selector = (job) => _mapper.Map<JobEntity>(job.Object);
 
-            var jobs = await _db.GetAll<JobEntity>(JobEntity.Node, selector);
+            var jobs = await _db.GetAllAsync<JobEntity>(JobEntity.Node, selector);
 
             if (jobs != null && jobs.Count() > 0)
             {
@@ -77,7 +77,7 @@
                     Func<SectorEntity, bool> sectorPredicate = (sector) => sector.Id == job.SectorId;
                     Func<FirebaseObject<SectorEntity>, SectorEntity> sectorSelector = (sector) => _mapper.Map<SectorEntity>(sector.Object);
 
-                    var sector = await _db.GetById<SectorEntity>(SectorEntity.Node, sectorPredicate, sectorSelector);
+                    var sector = await _db.GetByIdAsync<SectorEntity>(SectorEntity.Node, sectorPredicate, sectorSelector);
                     _jobs.Where(j => j.Id == job.Id).First().Sector = _mapper.Map<Sector>(sector);
                 }
             }

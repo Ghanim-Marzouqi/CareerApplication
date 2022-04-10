@@ -5,4 +5,10 @@ public partial class JobApplicationViewModel : BaseViewModel
 {
     [ObservableProperty]
     private Job job;
+
+    [ObservableProperty]
+    private string cv;
+
+    [ObservableProperty]
+    private string covid19Certificate;
 }

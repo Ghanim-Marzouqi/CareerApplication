@@ -12,7 +12,7 @@ public class DatabaseProvider
         _db = db;
     }
 
-    public async Task<bool> Add<T>(string resource, T entity) where T : BaseEntity
+    public async Task<bool> AddAsync<T>(string resource, T entity) where T : BaseEntity
     {
         if (string.IsNullOrEmpty(resource) || entity == null)
             return false;
@@ -26,7 +26,7 @@ public class DatabaseProvider
             else
             {
                 entity.Key = result.Key;
-                return await InsertKey(resource, result.Key, entity);
+                return await InsertKeyAsync(resource, result.Key, entity);
             }
         }
         catch (Exception)
@@ -35,28 +35,28 @@ public class DatabaseProvider
         }
     }
 
-    public async Task<int> GenerateNewId<T>(string resource) where T : BaseEntity
+    public async Task<int> GenerateNewIdAsync<T>(string resource) where T : BaseEntity
     {
         var items = (await _db.Child(resource).OnceAsync<T>()).ToList();
         return (items != null && items.Count > 0) ? items.Count + 1 : 1;
     }
 
-    public async Task<IEnumerable<T>> GetAll<T>(string resource, Func<FirebaseObject<T>, T> selector) where T : BaseEntity
+    public async Task<IEnumerable<T>> GetAllAsync<T>(string resource, Func<FirebaseObject<T>, T> selector) where T : BaseEntity
     {
         return (await _db.Child(resource).OnceAsync<T>()).Select(selector).ToList();
     }
 
-    public async Task<T?> GetById<T>(string resource, Func<T, bool> predicate, Func<FirebaseObject<T>, T> selector) where T : BaseEntity, new()
+    public async Task<T?> GetByIdAsync<T>(string resource, Func<T, bool> predicate, Func<FirebaseObject<T>, T> selector) where T : BaseEntity, new()
     {
         var items = (await _db.Child(resource).OnceAsync<T>()).Select(selector).ToList();
         return (items != null && items.Count > 0) ? items.FirstOrDefault(predicate) : new T();
     }
 
-    public async Task<bool> Delete<T>(string resource, string key, Func<T, bool> predicate, Func<FirebaseObject<T>, T> selector) where T : BaseEntity, new()
+    public async Task<bool> DeleteAsync<T>(string resource, string key, Func<T, bool> predicate, Func<FirebaseObject<T>, T> selector) where T : BaseEntity, new()
     {
         try
         {
-            var item = await GetById(resource, predicate, selector);
+            var item = await GetByIdAsync(resource, predicate, selector);
 
             if (item == null)
                 return false;
@@ -71,11 +71,11 @@ public class DatabaseProvider
         }
     }
 
-    public async Task<bool> Update<T>(string resource, string key, Func<T, bool> predicate, Func<FirebaseObject<T>, T> selector, T entity) where T : BaseEntity, new()
+    public async Task<bool> UpdateAsync<T>(string resource, string key, Func<T, bool> predicate, Func<FirebaseObject<T>, T> selector, T entity) where T : BaseEntity, new()
     {
         try
         {
-            var item = await GetById(resource, predicate, selector);
+            var item = await GetByIdAsync(resource, predicate, selector);
 
             if (item == null)
                 return false;
@@ -93,7 +93,7 @@ public class DatabaseProvider
         }
     }
 
-    private async Task<bool> InsertKey<T>(string resource, string key, T entity) where T : BaseEntity
+    private async Task<bool> InsertKeyAsync<T>(string resource, string key, T entity) where T : BaseEntity
     {
         try
         {

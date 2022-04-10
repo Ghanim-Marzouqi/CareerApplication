@@ -78,7 +78,7 @@ public partial class LoginPageViewModel : BaseViewModel
                 // Retieve user data from database
                 Func<UserEntity, bool> predicate = (user) => user.AuthId == result.User.LocalId;
                 Func<FirebaseObject<UserEntity>, UserEntity> selector = (user) => _mapper.Map<UserEntity>(user.Object);
-                var loggedInUser = await _db.GetById(UserEntity.Node, predicate, selector);
+                var loggedInUser = await _db.GetByIdAsync(UserEntity.Node, predicate, selector);
 
                 if (loggedInUser == null)
                 {

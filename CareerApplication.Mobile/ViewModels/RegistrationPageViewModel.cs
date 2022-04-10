@@ -96,9 +96,9 @@ public partial class RegistrationPageViewModel : BaseViewModel
             {
                 Func<RoleEntity, bool> rolesPredicate = (role) => role.Name == "Job Seeker";
                 Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) => _mapper.Map<RoleEntity>(role.Object);
-                var role = await _db.GetById(RoleEntity.Node, rolesPredicate, rolesSelector);
-                var id = await _db.GenerateNewId<UserEntity>(UserEntity.Node);
-                var isAdded = await _db.Add(UserEntity.Node, new UserEntity
+                var role = await _db.GetByIdAsync(RoleEntity.Node, rolesPredicate, rolesSelector);
+                var id = await _db.GenerateNewIdAsync<UserEntity>(UserEntity.Node);
+                var isAdded = await _db.AddAsync(UserEntity.Node, new UserEntity
                 {
                     Id = id,
                     AuthId = result.User.LocalId,

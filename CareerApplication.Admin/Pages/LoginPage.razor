@@ -89,7 +89,7 @@
                 Func<UserEntity, bool> usersPredicate = (user) => user.AuthId == result.User.LocalId;
                 Func<FirebaseObject<UserEntity>, UserEntity> usersSelector = (user) => _mapper.Map<UserEntity>(user.Object);
 
-                var loggedInUser = await _db.GetById<UserEntity>(UserEntity.Node, usersPredicate, usersSelector);
+                var loggedInUser = await _db.GetByIdAsync<UserEntity>(UserEntity.Node, usersPredicate, usersSelector);
 
                 if (loggedInUser == null)
                 {
@@ -106,7 +106,7 @@
                 Func<RoleEntity, bool> rolesPredicate = (role) => role.Id == loggedInUser.RoleId;
                 Func<FirebaseObject<RoleEntity>, RoleEntity> rolesSelector = (role) => _mapper.Map<RoleEntity>(role.Object);
 
-                var userRole = await _db.GetById<RoleEntity>(RoleEntity.Node, rolesPredicate, rolesSelector);
+                var userRole = await _db.GetByIdAsync<RoleEntity>(RoleEntity.Node, rolesPredicate, rolesSelector);
 
                 if (userRole != null)
                     _user.Role = _mapper.Map<Role>(userRole);
