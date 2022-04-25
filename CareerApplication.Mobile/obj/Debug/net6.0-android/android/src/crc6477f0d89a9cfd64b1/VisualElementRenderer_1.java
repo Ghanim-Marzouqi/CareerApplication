@@ -2,7 +2,7 @@ package crc6477f0d89a9cfd64b1;
 
 
 public abstract class VisualElementRenderer_1
-	extends com.xamarin.forms.platform.android.FormsViewGroup
+	extends com.microsoft.maui.MauiViewGroup
 	implements
 		mono.android.IGCUserPeer
 {

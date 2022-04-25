@@ -11,7 +11,7 @@ public class fileProvider
 	static {
 		__md_methods = 
 			"";
-		mono.android.Runtime.register ("Microsoft.Maui.Essentials.FileProvider, Microsoft.Maui.Essentials", fileProvider.class, __md_methods);
+		mono.android.Runtime.register ("Microsoft.Maui.Storage.FileProvider, Microsoft.Maui.Essentials", fileProvider.class, __md_methods);
 	}
 
 
@@ -19,7 +19,7 @@ public class fileProvider
 	{
 		super ();
 		if (getClass () == fileProvider.class)
-			mono.android.TypeManager.Activate ("Microsoft.Maui.Essentials.FileProvider, Microsoft.Maui.Essentials", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Microsoft.Maui.Storage.FileProvider, Microsoft.Maui.Essentials", "", this, new java.lang.Object[] {  });
 	}
 
 	private java.util.ArrayList refList;

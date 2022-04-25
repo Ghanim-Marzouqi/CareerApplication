@@ -13,6 +13,7 @@ public class LayoutViewGroup
 			"n_dispatchTouchEvent:(Landroid/view/MotionEvent;)Z:GetDispatchTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
+			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Microsoft.Maui.Platform.LayoutViewGroup, Microsoft.Maui", LayoutViewGroup.class, __md_methods);
 	}
@@ -72,6 +73,14 @@ public class LayoutViewGroup
 	}
 
 	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
+
+
+	public boolean onTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_onTouchEvent (p0);
+	}
+
+	private native boolean n_onTouchEvent (android.view.MotionEvent p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

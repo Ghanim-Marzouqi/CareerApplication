@@ -10,16 +10,16 @@ public partial class PostedJobsPage : ContentPage
 
     private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-		var job = e.CurrentSelection.FirstOrDefault() as Job;
+        var job = e.CurrentSelection.FirstOrDefault() as Job;
 
-		if (job == null)
-			return;
+        if (job == null)
+            return;
 
-		await Shell.Current.GoToAsync(nameof(PostedJobDetailsPage), true, new Dictionary<string, object>
-		{
-			{ nameof(Job), job }
-		});
+        await Shell.Current.GoToAsync(nameof(PostedJobDetailsPage), true, new Dictionary<string, object>
+        {
+            { "Job", job }
+        });
 
-		((CollectionView)sender).SelectedItem = null;
-	}
+        ((CollectionView)sender).SelectedItem = null;
+    }
 }

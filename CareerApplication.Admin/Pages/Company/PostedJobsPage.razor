@@ -24,6 +24,7 @@
         <MudTh>Sector</MudTh>
         <MudTh>Applying Due Date</MudTh>
         <MudTh>Job Location</MudTh>
+        <MudTh>Posted By</MudTh>
         <MudTh Class="d-flex justify-center">Actions</MudTh>
     </HeaderContent>
     <RowTemplate>
@@ -31,6 +32,7 @@
         <MudTd DataLabel="Job Category">@context.Sector?.Name</MudTd>
         <MudTd DataLabel="Applying Due Date">@context.ApplicationDueDate.ToString("dd MMM yyyy")</MudTd>
         <MudTd DataLabel="Job Location">@context.JobLocation</MudTd>
+        <MudTd DataLabel="Posted By">@context.Company?.Name</MudTd>
         <MudTd DataLabel="Actions" Class="d-flex justify-center">
             <MudTooltip Text="View">
                 <MudIconButton Icon="@Icons.Material.Filled.Visibility" Color="Color.Success" Link="@($"/company/posted-job-details/{context.Id}")"></MudIconButton>
@@ -79,6 +81,12 @@
 
                     var sector = await _db.GetByIdAsync<SectorEntity>(SectorEntity.Node, sectorPredicate, sectorSelector);
                     _jobs.Where(j => j.Id == job.Id).First().Sector = _mapper.Map<Sector>(sector);
+
+                    Func<UserEntity, bool> companyPredicate = (company) => company.Id == job.CompanyId;
+                    Func<FirebaseObject<UserEntity>, UserEntity> companySelector = (company) => _mapper.Map<UserEntity>(company.Object);
+
+                    var company = await _db.GetByIdAsync<UserEntity>(UserEntity.Node, companyPredicate, companySelector);
+                    _jobs.Where(j => j.Id == job.Id).First().Company = _mapper.Map<User>(company);
                 }
             }
 

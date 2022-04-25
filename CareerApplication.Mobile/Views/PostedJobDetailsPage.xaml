@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CareerApplication.Mobile.Views.PostedJobDetailsPage"
              Title="Job Details"
-             BackgroundColor="{DynamicResource BackgroundColor}">
+             BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
             <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
@@ -11,7 +11,7 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     Text="Title"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold" 
                     Margin="10"/>
                 <Label
@@ -23,7 +23,7 @@
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Company"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -35,7 +35,7 @@
                     Grid.Row="2"
                     Grid.Column="0"
                     Text="Sector"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -47,7 +47,7 @@
                     Grid.Row="3"
                     Grid.Column="0"
                     Text="Description"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -59,7 +59,7 @@
                     Grid.Row="4"
                     Grid.Column="0"
                     Text="Responsibilities"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -71,7 +71,7 @@
                     Grid.Row="5"
                     Grid.Column="0"
                     Text="Qualifications"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -83,7 +83,7 @@
                     Grid.Row="6"
                     Grid.Column="0"
                     Text="Job Type"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -95,7 +95,7 @@
                     Grid.Row="7"
                     Grid.Column="0"
                     Text="Job Location"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -107,7 +107,7 @@
                     Grid.Row="8"
                     Grid.Column="0"
                     Text="Available Vacancies"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -119,7 +119,7 @@
                     Grid.Row="9"
                     Grid.Column="0"
                     Text="Due Date"
-                    TextColor="{DynamicResource SecondaryColor}"
+                    TextColor="#046fad"
                     FontAttributes="Bold"
                     Margin="10"/>
                 <Label
@@ -133,7 +133,7 @@
                     Margin="20"
                     Text="APPLY NOW"
                     CornerRadius="30"
-                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    BackgroundColor="#f37422"
                     IsEnabled="{Binding ApplyCommand.IsRunning, Converter={StaticResource isNot}, Mode=OneWay}"
                     Command="{Binding ApplyCommand}"/>
             </Grid>

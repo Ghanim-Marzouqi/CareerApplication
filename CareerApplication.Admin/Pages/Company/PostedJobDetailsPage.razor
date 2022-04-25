@@ -1,4 +1,8 @@
 ﻿@page "/company/posted-job-details/{JobId:int}"
+@inject DatabaseProvider _db
+@inject IDialogService _dialogService
+@inject IMapper _mapper
+@inject ISnackbar _snackbar
 
 <PageTitle>Career Application | Posted Jobs</PageTitle>
 
@@ -7,7 +11,28 @@
     <MudBreadcrumbs Items="_links"></MudBreadcrumbs>
 </MudText>
 
-<p>Posted Job Details</p>
+<MudText Typo="Typo.body1">Number Of Applications: @(_numOfApplications)</MudText>
+
+<MudTable Items="@_users" Dense="true" Striped="true" Class="mt-4" Filter="new Func<UserEntity,bool>(FilterJobs)">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Applied People</MudText>
+        <MudSpacer />
+        <MudTextField @bind-Value="_searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Email</MudTh>
+        <MudTh>Phone</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Email">@context.Email</MudTd>
+        <MudTd DataLabel="Phone">@context.Phone</MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
 
 @code {
     // Properties
@@ -17,4 +42,70 @@
         new BreadcrumbItem("Posted Jobs", href: "/company/posted-jobs"),
         new BreadcrumbItem("Posted Job Destails", href: null, disabled: true)
     };
+    private int _numOfApplications = 0;
+    private IEnumerable<UserEntity> _users = new List<UserEntity>();
+    private string _searchString = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetAppliedPeople();
+    }
+
+    private async Task GetAppliedPeople()
+    {
+        try
+        {
+            var list = new List<JobApplicationEntity>();
+            var ids = new List<int>();
+            var users = new List<UserEntity>();
+
+            // Retieve user data from database
+            Func<FirebaseObject<JobApplicationEntity>, JobApplicationEntity> selector = (job) => _mapper.Map<JobApplicationEntity>(job.Object);
+            var applications = await _db.GetAllAsync(JobApplicationEntity.Node, selector);
+
+            foreach (var application in applications)
+            {
+                if (application.JobId == JobId)
+                    list.Add(application);
+            }
+
+            foreach (var item in list)
+            {
+                ids.Add(item.JobSeekerId);
+            }
+
+            foreach (var id in ids)
+            {
+                Func<UserEntity, bool> usersPredicate = (user) => user.Id == id;
+                Func<FirebaseObject<UserEntity>, UserEntity> usersSelector = (user) => _mapper.Map<UserEntity>(user.Object);
+                var user = await _db.GetByIdAsync<UserEntity>(UserEntity.Node, usersPredicate, usersSelector);
+
+                if (user != null)
+                    users.Add(user);
+            }
+
+            _numOfApplications = list.Count;
+            _users = users;
+            StateHasChanged();
+        }
+        catch (Exception)
+        {
+            
+        }
+    }
+
+    private bool FilterJobs(UserEntity user) => FilterFunc(user, _searchString);
+
+    private bool FilterFunc(UserEntity user, string searchString)
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+            return true;
+        if (user.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (user.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (user.Phone.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        return false;
+    }
 }

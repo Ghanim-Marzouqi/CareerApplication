@@ -14,6 +14,7 @@ public static class MauiProgram
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("MaterialDesignIcons.ttf", "IconFontTypes");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
         // Register AutoMapper
@@ -35,8 +36,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<AboutPageViewModel>();
         builder.Services.AddSingleton<SettingsPageViewModel>();
         builder.Services.AddSingleton<PostedJobsPageViewModel>();
-        builder.Services.AddSingleton<PostedJobDetailsPageViewModel>();
-        builder.Services.AddSingleton<JobApplicationViewModel>();
+        builder.Services.AddTransient<PostedJobDetailsPageViewModel>();
 
         // Register Views
         builder.Services.AddSingleton<LoginPage>();
@@ -44,10 +44,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<ForgotPasswordPage>();
         builder.Services.AddSingleton<ProfilePage>();
         builder.Services.AddSingleton<AboutPage>();
-        builder.Services.AddSingleton<SettingsPage>();
         builder.Services.AddSingleton<PostedJobsPage>();
-        builder.Services.AddSingleton<PostedJobDetailsPage>();
-        builder.Services.AddSingleton<JobApplicationPage>();
+        builder.Services.AddTransient<PostedJobDetailsPage>();
 
         return builder.Build();
     }

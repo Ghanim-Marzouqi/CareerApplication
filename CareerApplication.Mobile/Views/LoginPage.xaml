@@ -8,10 +8,7 @@
              BackgroundColor="{DynamicResource BackgroundColor}"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarIsVisible="False">
-    <!--<ContentPage.BindingContext>
-        <viewmodels:LoginPageViewModel />
-    </ContentPage.BindingContext>-->
-    
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:NotConverter x:Key="isNot" />
@@ -61,11 +58,11 @@
 
                     <Button 
                         Text="SIGN UP"
+                        TextColor="#046fad"
                         TextTransform="Uppercase"
                         CornerRadius="30"
-                        BorderWidth="1" 
-                        BorderColor="{DynamicResource PrimaryColor}"
-                        TextColor = "{DynamicResource PrimaryColor}"
+                        BorderWidth="1"
+                        BorderColor="#046fad"
                         BackgroundColor="White"
                         IsEnabled="{Binding GoToRegistrationPageCommand.IsRunning, Converter={StaticResource isNot}, Mode=OneWay}"
                         Command="{Binding GoToRegistrationPageCommand}"/>
@@ -76,7 +73,7 @@
                         Text="Forgot your password?"/>
                     <Label
                         Text="Reset Password"
-                        TextColor="{DynamicResource SecondaryColor}"
+                        TextColor="#046fad"
                         FontAttributes="Bold">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding GoToForgotPasswordPageCommand}" />

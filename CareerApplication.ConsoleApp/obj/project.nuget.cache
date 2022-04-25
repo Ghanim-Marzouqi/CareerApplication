@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c3pvW/hqsAnWfNeYTgPa3TYW5O7cV65Y9KSHrMj3J6H+W2FZeexjIREt0pWu6H1OgrCxxmcJU63fk3OJGrMJaA==",
+  "dgSpecHash": "ouQL6nNPkKW2MJ7U3evlOYO61mI/e31LCuaV5xMZzqbPEs+2eO7Mkqx7Eezn4hCHoY/49YD4zG323bSVjr83BA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\dotnet\\CareerApplication\\CareerApplication.ConsoleApp\\CareerApplication.ConsoleApp.csproj",
   "expectedPackageFiles": [
@@ -81,7 +81,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\hp\\.nuget\\packages\\system.text.json\\6.0.2\\system.text.json.6.0.2.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.text.json\\6.0.3\\system.text.json.6.0.3.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

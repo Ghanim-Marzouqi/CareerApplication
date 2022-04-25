@@ -8,14 +8,14 @@
              x:Class="CareerApplication.Mobile.Views.PostedJobsPage"
              x:DataType="viewmodel:PostedJobsPageViewModel"
              Title="Posted Jobs"
-             BackgroundColor="{DynamicResource BackgroundColor}">
+             BackgroundColor="White">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="CardView" TargetType="Frame">
-                <Setter Property="BorderColor" Value="#DDDDDD" />
+                <Setter Property="BorderColor" Value="#f37422" />
                 <Setter Property="HasShadow" Value="True" />
                 <Setter Property="Padding" Value="0" />
-                <Setter Property="Background" Value="{DynamicResource BackgroundColor}" />
+                <Setter Property="Background" Value="White" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
         </ResourceDictionary>
@@ -44,7 +44,7 @@
                                         Grid.Column="1"
                                         Padding="10"
                                         VerticalOptions="Center">
-                                        <Label Text="{Binding Title}" TextColor="{DynamicResource SecondaryColor}" FontSize="Subtitle" Margin="0,0,0,10" FontAttributes="Bold" />
+                                        <Label Text="{Binding Title}" TextColor="#046fad" FontSize="Subtitle" Margin="0,0,0,10" FontAttributes="Bold" />
                                         <Label Text="{Binding JobType}" />
                                         <HorizontalStackLayout Spacing="20">
                                             <Label>
@@ -55,7 +55,7 @@
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
-                                            <Label Text="Apply Now" TextColor="{DynamicResource PrimaryColor}" FontSize="Caption" />
+                                            <Label Text="Apply Now" TextColor="#f37422" FontSize="Caption" />
                                         </HorizontalStackLayout>
                                     </StackLayout>
                                 </Grid>

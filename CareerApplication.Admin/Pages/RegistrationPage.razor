@@ -1,0 +1,185 @@
+﻿@page "/register"
+@layout AuthLayout
+@inject AuthProvider _auth
+@inject DatabaseProvider _db
+@inject NavigationManager _navigationManager
+@inject IBrowserStorageService _browserStorageService
+@inject IMapper _mapper;
+
+<PageTitle>Career Application | Register</PageTitle>
+
+<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    @if (_alert.IsVisible)
+    {
+        <MudAlert Severity="_alert.AlertType">@(_alert.Message)</MudAlert>
+    }
+    <MudTextField 
+        T="string" 
+        @bind-Value="@_model.Name" 
+        For="@(() => _model.Name)" 
+        Label="Company Name"
+        Class="my-6" 
+        Variant="Variant.Outlined" />
+    <MudTextField 
+        T="string" 
+        @bind-Value="@_model.Email" 
+        For="@(() => _model.Email)" 
+        Label="Email Address"
+        Class="my-6" 
+        Variant="Variant.Outlined" />
+    <MudTextField 
+        T="string" 
+        @bind-Value="@_model.Phone" 
+        For="@(() => _model.Phone)" 
+        Label="Phone Number"
+        Class="my-6" 
+        Variant="Variant.Outlined" />
+    <MudTextField 
+        T="string" 
+        @bind-Value="@_model.Password" 
+        For="@(() => _model.Password)" 
+        Label="Password"
+        InputType="@_passwordInput" 
+        Class="my-6"
+        Variant="Variant.Outlined" 
+        Adornment="Adornment.End"
+        AdornmentIcon="@_passwordInputIcon" 
+        OnAdornmentClick="TogglePasswordVisibility" />
+    <MudTextField 
+        T="string" 
+        @bind-Value="@_model.ConfirmPassword" 
+        For="@(() => _model.ConfirmPassword)" 
+        Label="Confirm Password"
+        InputType="@_passwordInput" 
+        Variant="Variant.Outlined" 
+        Class="my-6"
+        Adornment="Adornment.End"
+        AdornmentIcon="@_passwordInputIcon" 
+        OnAdornmentClick="TogglePasswordVisibility" />
+    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="my-3">
+        @if (_isLoading)
+        {
+            <MudProgressCircular Color="Color.Tertiary" Size="Size.Small" Style="margin-left: 10px;" Indeterminate="true" />
+        }
+        else
+        {
+            @("Sign Up")
+        }
+    </MudButton>
+    <MudButton Variant="Variant.Text" Color="Color.Primary" Size="Size.Large" FullWidth="true" OnClick="() => _navigationManager.NavigateTo(_navigationManager.BaseUri)">
+        Go Back
+    </MudButton>
+</EditForm>
+
+@code {
+    // Properties
+    private RegistrationModel _model = new();
+    private AlertModel _alert = new();
+    private User _user = new();
+    private bool _isLoading;
+    private bool _passwordVisibility;
+    private InputType _passwordInput = InputType.Password;
+    private string _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+
+    // Private Methods
+    private void TogglePasswordVisibility()
+    {
+        if (_passwordVisibility)
+        {
+            _passwordVisibility = false;
+            _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+            _passwordInput = InputType.Password;
+        }
+        else
+        {
+            _passwordVisibility = true;
+            _passwordInputIcon = Icons.Material.Filled.Visibility;
+            _passwordInput = InputType.Text;
+        }
+    }
+
+    private async void OnValidSubmit(EditContext context)
+    {
+        _isLoading = true;
+        StateHasChanged();
+
+        try
+        {
+            var result = await _auth.CreateUserWithEmailAndPassword(_model.Email, _model.Password);
+
+            if (result != null && result.User != null)
+            {
+                var id = await _db.GenerateNewIdAsync<UserEntity>(UserEntity.Node);
+                var isAdded = await _db.AddAsync(UserEntity.Node, new UserEntity
+                {
+                    Id = id,
+                    AuthId = result.User.LocalId,
+                    RoleId = 2,
+                    Name = _model.Name,
+                    Email = _model.Email,
+                    Phone = _model.Phone,
+                    CreatedBy = _model.Name
+                });
+
+                if (isAdded)
+                {
+                    // Send email verification request
+                    await _auth.SendEmailVerification(result.FirebaseToken);
+                    _isLoading = false;
+                    _alert.IsVisible = true;
+                    _alert.Message = "Company Registered Successfully";
+                    _alert.AlertType = Severity.Success;
+                    StateHasChanged();
+                }
+                else
+                {
+                    _isLoading = false;
+                    _alert.IsVisible = true;
+                    _alert.Message = "Failed To Register Company";
+                    _alert.AlertType = Severity.Error;
+                    StateHasChanged();
+                }
+            }
+            else
+            {
+                _isLoading = false;
+                _alert.IsVisible = true;
+                _alert.Message = "Failed To Register Company";
+                _alert.AlertType = Severity.Error;
+                StateHasChanged();
+            }
+        }
+        catch (FirebaseAuthException e)
+        {
+            var json = JsonNode.Parse(e.ResponseData);
+            var code = json?["error"]?["message"]?.GetValue<string>();
+
+            if (code != null && code == "EMAIL_EXISTS")
+            {
+                _isLoading = false;
+                _alert.IsVisible = true;
+                _alert.Message = "Company already exists";
+                _alert.AlertType = Severity.Error;
+                StateHasChanged();
+            }
+            else
+            {
+                _isLoading = false;
+                _alert.IsVisible = true;
+                _alert.Message = "Unknown error";
+                _alert.AlertType = Severity.Error;
+                StateHasChanged();
+            }
+        }
+        catch (Exception e)
+        {
+            _isLoading = false;
+            _alert.IsVisible = true;
+            _alert.Message = "Cannot send register request";
+            _alert.AlertType = Severity.Error;
+            StateHasChanged();
+            Console.WriteLine(e.Message);
+        }
+    }
+}

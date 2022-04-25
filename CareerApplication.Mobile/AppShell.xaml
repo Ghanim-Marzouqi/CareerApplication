@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:pages="clr-namespace:CareerApplication.Mobile.Views"
+       xmlns:views="clr-namespace:CareerApplication.Mobile.Views"
        xmlns:helpers="clr-namespace:CareerApplication.Mobile.Helpers"
        xmlns:viewmodels="clr-namespace:CareerApplication.Mobile.ViewModels"
        x:Class="CareerApplication.Mobile.AppShell"
@@ -12,25 +12,20 @@
         <viewmodels:AppShellViewModel />
     </Shell.BindingContext>
 
-    <Shell.Resources>
-        <ResourceDictionary>
-            <Color x:Key="NavigationPrimaryColor">#F37422</Color>
-            <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimaryColor}" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#FFFFFF" />
-                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimaryColor}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
-            </Style>
-            <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
-            <Style BasedOn="{StaticResource BaseStyle}" TargetType="FlyoutItem" />
-        </ResourceDictionary>
-    </Shell.Resources>
-    
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*">
+                <Image Source="{Binding FlyoutIcon}"
+                       HeightRequest="36"
+                       WidthRequest="36"
+                       Margin="5"/>
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
     <Shell.FlyoutHeader>
         <Grid RowDefinitions="Auto,Auto" Padding="0,10,0,10">
             <Image
@@ -41,9 +36,8 @@
                 HorizontalOptions="Center">
                 <Image.Clip>
                     <EllipseGeometry 
-                        RadiusX="150"
-                        RadiusY="150"
-                        Center="150,150" />
+                        RadiusX="55"
+                        RadiusY="55"/>
                 </Image.Clip>
             </Image>
             <Label
@@ -55,45 +49,46 @@
     </Shell.FlyoutHeader>
 
     <ShellItem Route="LoginPage" FlyoutItemIsVisible="False">
-        <ShellContent ContentTemplate="{DataTemplate pages:LoginPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}"/>
     </ShellItem>
 
-    <FlyoutItem Title="Posted Jobs">
-        <FlyoutItem.Icon>
-            <FontImageSource FontFamily="IconFontTypes"
-                             Color="{x:StaticResource SecondaryColor}"
-                             Glyph="{x:Static helpers:IconFont.FileDocumentMultiple}"/>
-        </FlyoutItem.Icon>
-        <ShellContent ContentTemplate="{DataTemplate pages:PostedJobsPage}" Route="PostedJobsPage" />
+    <FlyoutItem Title="Posted Jobs"
+                Icon="ic_jobs.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:PostedJobsPage}" Route="PostedJobsPage" />
+        </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Profile">
-        <FlyoutItem.Icon>
-            <FontImageSource FontFamily="IconFontTypes"
-                             Color="{x:StaticResource SecondaryColor}"
-                             Glyph="{x:Static helpers:IconFont.AccountBox}"/>
-        </FlyoutItem.Icon>
-        <ShellContent ContentTemplate="{DataTemplate pages:ProfilePage}" Route="ProfilePage" />
+    <FlyoutItem Title="Profile"
+                Icon="ic_profile.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}" Route="ProfilePage" />
+        </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="About">
-        <FlyoutItem.Icon>
-            <FontImageSource FontFamily="IconFontTypes"
-                             Color="{x:StaticResource SecondaryColor}"
-                             Glyph="{x:Static helpers:IconFont.Information}"/>
-        </FlyoutItem.Icon>
-        <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}" Route="AboutPage" />
-    </FlyoutItem>
-
-    <FlyoutItem Title="Settings">
-        <FlyoutItem.Icon>
-            <FontImageSource FontFamily="IconFontTypes"
-                             Color="{x:StaticResource SecondaryColor}"
-                             Glyph="{x:Static helpers:IconFont.Cogs}"/>
-        </FlyoutItem.Icon>
-        <ShellContent ContentTemplate="{DataTemplate pages:SettingsPage}" Route="SettingsPage" />
+    <FlyoutItem Title="About"
+                Icon="ic_info.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" Route="AboutPage" />
+        </Tab>
     </FlyoutItem>
 
     <MenuItem Text="Logout" IconImageSource="ic_logout.png" Command="{Binding LogoutCommand}">
+        <Shell.MenuItemTemplate>
+            <DataTemplate>
+                <Grid ColumnDefinitions="0.2*,0.8*">
+                    <Image 
+                        Source="{Binding FlyoutIcon}"
+                        HeightRequest="36"
+                        WidthRequest="36"
+                        Margin="5"/>
+
+                    <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       VerticalTextAlignment="Center" />
+
+                </Grid>
+            </DataTemplate>
+        </Shell.MenuItemTemplate>
     </MenuItem>
 </Shell>
